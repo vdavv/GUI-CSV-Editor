@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ab785dfb8cffa3f4af4d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "healthServices",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "healthServices::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-healthServices-Debug-80c54fcc0f144d846865.json",
+					"name" : "healthServices",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "healthServices_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-healthServices_autogen-Debug-7141566d4693fb52de41.json",
+					"name" : "healthServices_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/healthServices/build-healthServices-Clang-Debug",
+		"source" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/healthServices/healthServices"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
