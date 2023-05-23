@@ -2196,8 +2196,58 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/include/QtWidgets/qdialog.h
+  /opt/homebrew/include/QtWidgets/qdialog.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent \
+  /opt/homebrew/lib/QtGui.framework/Headers/qevent.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
+  /opt/homebrew/include/QtCore/qpointer.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/include/QtGui/qeventpoint.h \
+  /opt/homebrew/include/QtGui/qvector2d.h \
+  /opt/homebrew/include/QtGui/qvectornd.h \
+  /opt/homebrew/include/QtGui/qpointingdevice.h \
+  /opt/homebrew/include/QtGui/qinputdevice.h \
+  /opt/homebrew/include/QtGui/qscreen.h \
+  /opt/homebrew/include/QtCore/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
+  /opt/homebrew/include/QtCore/QObject \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
+  /opt/homebrew/include/QtCore/QRect \
+  /opt/homebrew/lib/QtCore.framework/Headers/qrect.h \
+  /opt/homebrew/include/QtCore/QSize \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsize.h \
+  /opt/homebrew/include/QtCore/QSizeF \
+  /opt/homebrew/include/QtGui/QTransform \
+  /opt/homebrew/lib/QtGui.framework/Headers/qtransform.h
 
+
+/opt/homebrew/lib/QtCore.framework/Headers/qsize.h:
+
+/opt/homebrew/include/QtCore/QSize:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qrect.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qobject.h:
+
+/opt/homebrew/include/QtCore/QObject:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
+
+/opt/homebrew/include/QtGui/qscreen.h:
+
+/opt/homebrew/include/QtGui/qinputdevice.h:
+
+/opt/homebrew/include/QtGui/qpointingdevice.h:
+
+/opt/homebrew/include/QtGui/qvector2d.h:
+
+/opt/homebrew/include/QtGui/qeventpoint.h:
+
+/opt/homebrew/include/QtCore/qurl.h:
+
+/opt/homebrew/include/QtCore/qpointer.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent:
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h:
 
@@ -2359,6 +2409,8 @@ healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_wctype.h:
 
+/opt/homebrew/include/QtGui/qvectornd.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_wchar.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_string.h:
@@ -2478,6 +2530,8 @@ healthServices_autogen/mocs_compilation.cpp:
 /opt/homebrew/include/QtCore/qstringtokenizer.h:
 
 /opt/homebrew/include/QtCore/qanystringview.h:
+
+/opt/homebrew/include/QtGui/QTransform:
 
 /opt/homebrew/include/QtCore/qstringalgorithms.h:
 
@@ -2837,6 +2891,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
 
+/opt/homebrew/include/QtCore/QRect:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h:
@@ -2890,6 +2946,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/errno.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qevent.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h:
 
@@ -3159,6 +3217,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/declval.h:
 
+/opt/homebrew/lib/QtGui.framework/Headers/qtransform.h:
+
 /opt/homebrew/include/QtWidgets/QRadioButton:
 
 /opt/homebrew/include/QtCore/qassert.h:
@@ -3333,6 +3393,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/limits.h:
 
+/opt/homebrew/include/QtCore/QList:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h:
@@ -3426,6 +3488,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef:
 
 /opt/homebrew/include/QtCore/qtcore-config.h:
+
+/opt/homebrew/include/QtCore/QSizeF:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wctype.h:
 

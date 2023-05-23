@@ -2201,4 +2201,26 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o
  /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox
  /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h
  /opt/homebrew/include/QtWidgets/qdialog.h
+ /opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent
+ /opt/homebrew/lib/QtGui.framework/Headers/qevent.h
+ /opt/homebrew/include/QtCore/qiodevice.h
+ /opt/homebrew/include/QtCore/qpointer.h
+ /opt/homebrew/include/QtCore/qurl.h
+ /opt/homebrew/include/QtGui/qeventpoint.h
+ /opt/homebrew/include/QtGui/qvector2d.h
+ /opt/homebrew/include/QtGui/qvectornd.h
+ /opt/homebrew/include/QtGui/qpointingdevice.h
+ /opt/homebrew/include/QtGui/qinputdevice.h
+ /opt/homebrew/include/QtGui/qscreen.h
+ /opt/homebrew/include/QtCore/QList
+ /opt/homebrew/lib/QtCore.framework/Headers/qlist.h
+ /opt/homebrew/include/QtCore/QObject
+ /opt/homebrew/lib/QtCore.framework/Headers/qobject.h
+ /opt/homebrew/include/QtCore/QRect
+ /opt/homebrew/lib/QtCore.framework/Headers/qrect.h
+ /opt/homebrew/include/QtCore/QSize
+ /opt/homebrew/lib/QtCore.framework/Headers/qsize.h
+ /opt/homebrew/include/QtCore/QSizeF
+ /opt/homebrew/include/QtGui/QTransform
+ /opt/homebrew/lib/QtGui.framework/Headers/qtransform.h
 

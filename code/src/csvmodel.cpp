@@ -56,3 +56,19 @@ QVariant CSVModel::data(const QModelIndex &index, int role) const {
 
     return m_data.at(index.row()).at(index.column());
 }
+
+
+QStringList CSVModel::getRowData(int row) const {
+    if (row >= 0 && row < m_data.size()) {
+        return m_data.at(row);
+    }
+    return QStringList();
+}
+
+
+QStringList CSVModel::getHeaderData() const {
+    // assuming m_data[0] contains the header row
+    return m_data.at(0);
+}
+
+

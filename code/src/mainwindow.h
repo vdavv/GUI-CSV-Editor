@@ -17,7 +17,14 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    bool eventFilter(QObject *watched, QEvent *event) override;
     ~MainWindow();
+
+
+private slots:
+    // void on_tableView_doubleClicked(const QModelIndex &index);
+    void handleRowHeaderClicked(int row);
+
 
 private:
     Ui::MainWindow *ui;
