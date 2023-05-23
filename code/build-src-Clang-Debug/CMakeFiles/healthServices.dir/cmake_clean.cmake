@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/healthServices_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/healthServices_autogen.dir/ParseCache.txt"
   "healthServices_autogen"
+  "CMakeFiles/healthServices.dir/csvmodel.cpp.o"
+  "CMakeFiles/healthServices.dir/csvmodel.cpp.o.d"
   "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/healthServices.dir/main.cpp.o"
