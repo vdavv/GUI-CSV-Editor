@@ -5,7 +5,7 @@
 
 CSVModel::CSVModel(QObject *parent) : QAbstractTableModel(parent) {}
 
-bool CSVModel::loadCSV(const QString &filepath) {
+bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
     QFile file(filepath);
     if (!file.open(QIODevice::ReadOnly)) {
         qDebug() << "Failed to open file" << filepath;
@@ -14,12 +14,22 @@ bool CSVModel::loadCSV(const QString &filepath) {
 
     QTextStream stream(&file);
     while (!stream.atEnd()) {
-        const QStringList row = stream.readLine().split(",");
-        m_data.append(row);
+        QStringList row = stream.readLine().split(",");
+        QStringList selectedColumns;
+        for (int column : columns) {
+            if (column < row.size()) {
+                // Remove double quotes from the string
+                QString text = row[column];
+                text.remove('"');
+                selectedColumns.append(text);
+            }
+        }
+        m_data.append(selectedColumns);
     }
 
     return true;
 }
+
 
 int CSVModel::rowCount(const QModelIndex &parent) const {
     Q_UNUSED(parent)

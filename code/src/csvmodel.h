@@ -9,7 +9,8 @@ class CSVModel : public QAbstractTableModel
 
 public:
     explicit CSVModel(QObject *parent = nullptr);
-    bool loadCSV(const QString &filepath);
+    bool loadCSV(const QString &filepath, const QVector<int> &columns);
+    // bool loadCSV(const QString &filepath);
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
