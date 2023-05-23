@@ -1,4 +1,4 @@
-"","City","NumMDs","RateMDs","NumHospitals","NumBeds","RateBeds","NumMedicare","PctChangeMedicare","MedicareRate","SSBNum","SSBRate","SSBChange","NumRetired","SSINum","SSIRate","SqrtMDs"
+"","City","State","NumMDs","RateMDs","NumHospitals","NumBeds","RateBeds","NumMedicare","PctChangeMedicare","MedicareRate","SSBNum","SSBRate","SSBChange","NumRetired","SSINum","SSIRate","SqrtMDs"
 "1","Holland-Grand Haven, MI",349,140,3,316,127,29533,8.3,11835,34135,13679,8.1,23165,2070,820,18.6815
 "2","Louisville, KY-IN",4042,340,18,3909,328,173845,3,14606,202485,17013,3,118920,29017,2416,63.5767
 "3","Battle Creek, MI",256,184,3,517,372,22972,2.4,16539,27245,19615,3.3,16645,4095,2945,16

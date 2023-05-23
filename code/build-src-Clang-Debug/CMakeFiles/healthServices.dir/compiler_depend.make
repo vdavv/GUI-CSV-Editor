@@ -2148,19 +2148,8 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qinputmethod.h \
   /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
-  /opt/homebrew/include/QtWidgets/QGridLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/include/QtWidgets/QHeaderView \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
-  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/include/QtWidgets/QComboBox \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
   /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
   /opt/homebrew/include/QtWidgets/qstyleoption.h \
   /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
@@ -2171,14 +2160,37 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtWidgets/qstyle.h \
   /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtWidgets/QGridLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/include/QtWidgets/QHBoxLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/QHeaderView \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
   /opt/homebrew/include/QtWidgets/QMainWindow \
   /opt/homebrew/include/QtWidgets/QMenuBar \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmenubar.h \
   /opt/homebrew/include/QtWidgets/qmenu.h \
+  /opt/homebrew/include/QtWidgets/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/include/QtWidgets/qabstractbutton.h \
+  /opt/homebrew/include/QtWidgets/QRadioButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qradiobutton.h \
+  /opt/homebrew/include/QtWidgets/QSpacerItem \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
   /opt/homebrew/include/QtWidgets/QStatusBar \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qstatusbar.h \
   /opt/homebrew/include/QtWidgets/QTableView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtableview.h \
+  /opt/homebrew/include/QtWidgets/QVBoxLayout \
   /opt/homebrew/include/QtWidgets/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
@@ -2189,11 +2201,29 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h:
 
+/opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qradiobutton.h:
+
+/opt/homebrew/include/QtWidgets/qabstractbutton.h:
+
 /opt/homebrew/include/QtWidgets/qmenu.h:
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/qmenubar.h:
 
 /opt/homebrew/include/QtWidgets/QMainWindow:
+
+/opt/homebrew/include/QtWidgets/qabstractscrollarea.h:
+
+/opt/homebrew/include/QtWidgets/qgridlayout.h:
+
+/opt/homebrew/include/QtWidgets/qboxlayout.h:
+
+/opt/homebrew/include/QtWidgets/qlayout.h:
+
+/opt/homebrew/include/QtWidgets/QGridLayout:
+
+/opt/homebrew/include/QtCore/qabstractitemmodel.h:
 
 /opt/homebrew/include/QtWidgets/qrubberband.h:
 
@@ -2207,23 +2237,17 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
 
 /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h:
 
-/opt/homebrew/include/QtCore/qabstractitemmodel.h:
+/opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h:
 
-/opt/homebrew/include/QtWidgets/qabstractscrollarea.h:
-
-/opt/homebrew/include/QtWidgets/qgridlayout.h:
-
-/opt/homebrew/include/QtWidgets/qboxlayout.h:
-
-/opt/homebrew/include/QtWidgets/qlayout.h:
-
-/opt/homebrew/include/QtWidgets/QGridLayout:
+/opt/homebrew/include/QtWidgets/QComboBox:
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp:
 
 /opt/homebrew/include/QtGui/qinputmethod.h:
 
 /opt/homebrew/include/QtGui/qguiapplication.h:
+
+/opt/homebrew/include/QtWidgets/QPushButton:
 
 /opt/homebrew/include/QtCore/qnativeinterface.h:
 
@@ -2303,6 +2327,8 @@ healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_setsize.h:
 
+/opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_def.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_suseconds_t.h:
@@ -2360,6 +2386,8 @@ healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque:
 
 /opt/homebrew/include/QtWidgets/QStatusBar:
+
+/opt/homebrew/include/QtWidgets/QHBoxLayout:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stack:
 
@@ -2506,6 +2534,8 @@ healthServices_autogen/mocs_compilation.cpp:
 /opt/homebrew/include/QtGui/qpixelformat.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
+
+/opt/homebrew/include/QtWidgets/QSpacerItem:
 
 /opt/homebrew/include/QtWidgets/qstyleoption.h:
 
@@ -2737,6 +2767,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
+/opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
@@ -2957,6 +2989,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h:
 
+/opt/homebrew/include/QtWidgets/QVBoxLayout:
+
 /opt/homebrew/include/QtCore/qtresource.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigset_t.h:
@@ -3124,6 +3158,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/signal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/declval.h:
+
+/opt/homebrew/include/QtWidgets/QRadioButton:
 
 /opt/homebrew/include/QtCore/qassert.h:
 
