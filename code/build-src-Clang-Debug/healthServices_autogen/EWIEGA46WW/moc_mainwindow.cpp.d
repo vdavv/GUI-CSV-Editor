@@ -307,6 +307,9 @@
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdarg.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QAbstractTableModel \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QFileSystemWatcher \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QList \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QStringList \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h \
@@ -338,6 +341,7 @@
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qfilesystemwatcher.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qfloat16.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qforeach.h \

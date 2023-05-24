@@ -306,6 +306,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdarg.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QAbstractTableModel \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QStringList \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h \

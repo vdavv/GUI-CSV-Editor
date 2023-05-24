@@ -1076,7 +1076,11 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h
+  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h
 
 CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
@@ -1597,9 +1601,13 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/include/QtCore/qcoreapplication.h \
@@ -2131,9 +2139,13 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   healthServices_autogen/include/ui_mainwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -2209,7 +2221,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qinputdevice.h \
   /opt/homebrew/include/QtGui/qscreen.h \
   /opt/homebrew/include/QtCore/QList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   /opt/homebrew/include/QtCore/QObject \
   /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
   /opt/homebrew/include/QtCore/QRect \
@@ -2230,8 +2241,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
 /opt/homebrew/lib/QtCore.framework/Headers/qobject.h:
 
 /opt/homebrew/include/QtCore/QObject:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
 
 /opt/homebrew/include/QtGui/qscreen.h:
 
@@ -2308,6 +2317,10 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
 /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication:
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h:
 
 /opt/homebrew/include/QtWidgets/qtabwidget.h:
 
@@ -3161,6 +3174,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/malloc/_malloc.h:
 
+/opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher:
+
 /opt/homebrew/include/QtGui/qfontinfo.h:
 
 /opt/homebrew/include/QtCore/qforeach.h:
@@ -3238,6 +3253,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_clock_t.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QList:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/signal.h:
 
