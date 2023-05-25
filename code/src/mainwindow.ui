@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1050</width>
+    <width>970</width>
     <height>650</height>
    </rect>
   </property>
@@ -101,7 +101,8 @@
               <string>Not Sorted</string>
              </property>
              <property name="icon">
-              <iconset theme="view-fullscreen"/>
+              <iconset theme="view-fullscreen">
+               <normaloff>.</normaloff>.</iconset>
              </property>
             </item>
             <item>
@@ -180,7 +181,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1050</width>
+     <width>970</width>
      <height>37</height>
     </rect>
    </property>

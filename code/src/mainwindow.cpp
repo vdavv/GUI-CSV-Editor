@@ -5,19 +5,19 @@
 #include <QMouseEvent>
 
 
-const QList<int> CSVCOLUMNS = {0,1,2,3,4,5,6,7,8,9};
-const QString FILEPATH = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83.csv";
+const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
+const QString MainWindow::FILEPATH = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83Original.csv";
 
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
     // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
-    if (!m_model.loadCSV(FILEPATH, CSVCOLUMNS)) {
+    if (!m_model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) {
         QMessageBox::critical(this, "Error", "Failed to load CSV file.");
         return;
     }
-    m_watcher.addPath(FILEPATH);
+    m_watcher.addPath(MainWindow::FILEPATH);
     connect(&m_watcher, &QFileSystemWatcher::fileChanged, this, &MainWindow::onFileChanged);
     ui->tableView->setModel(&m_model);
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -59,7 +59,7 @@ void MainWindow::RemoveRow() {
 }
 
 void MainWindow::SaveCSV() {
-    if (!m_model.saveCSV(FILEPATH)) {
+    if (!m_model.saveCSV(MainWindow::FILEPATH)) {
         QMessageBox::critical(this, "Error", "Failed to save CSV file.");
     }
 }
@@ -82,7 +82,7 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 }
 
 void MainWindow::onFileChanged(const QString &path) {
-    m_model.loadCSV(path, CSVCOLUMNS);
+    m_model.loadCSV(path, MainWindow::CSVCOLUMNS);
 }
 
 

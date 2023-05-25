@@ -57,7 +57,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->setWindowModality(Qt::ApplicationModal);
-        MainWindow->resize(1050, 650);
+        MainWindow->resize(970, 650);
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -113,7 +113,13 @@ public:
         horizontalLayout_3->addWidget(orderButton);
 
         sortBox = new QComboBox(centralwidget);
-        QIcon icon(QIcon::fromTheme(QString::fromUtf8("view-fullscreen")));
+        QIcon icon;
+        QString iconThemeName = QString::fromUtf8("view-fullscreen");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
+        }
         sortBox->addItem(icon, QString());
         sortBox->addItem(QString());
         sortBox->addItem(QString());
@@ -168,7 +174,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1050, 37));
+        menubar->setGeometry(QRect(0, 0, 970, 37));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

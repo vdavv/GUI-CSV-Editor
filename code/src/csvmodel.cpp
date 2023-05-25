@@ -1,9 +1,14 @@
 #include "csvmodel.h"
+#include "QtCore/qregularexpression.h"
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
 
 CSVModel::CSVModel(QObject *parent) : QAbstractTableModel(parent) {}
+
+
+QVector<int> m_columnIndices;
+
 
 bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
     QFile file(filepath);
@@ -11,17 +16,24 @@ bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
         qDebug() << "Failed to open file" << filepath;
         return false;
     }
+    m_columnIndices = columns;
 
     QTextStream stream(&file);
     while (!stream.atEnd()) {
-        QStringList row = stream.readLine().split(",");
+        QRegularExpression re("(\"[^\"]*\"|[^,]*),?");
+        QRegularExpressionMatchIterator it = re.globalMatch(stream.readLine());
+        QStringList row;
+        while(it.hasNext()) {
+            QRegularExpressionMatch match = it.next();
+            QString cell = match.captured(1);
+            cell.remove('"');
+            row.append(cell);
+        }
+
         QStringList selectedColumns;
         for (int column : columns) {
             if (column < row.size()) {
-                // Remove double quotes from the string
-                QString text = row[column];
-                text.remove('"');
-                selectedColumns.append(text);
+                selectedColumns.append(row[column]);
             }
         }
         m_data.append(selectedColumns);
@@ -29,6 +41,7 @@ bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
 
     return true;
 }
+
 
 bool CSVModel::saveCSV(const QString &filepath) {
     QFile file(filepath);
@@ -38,16 +51,25 @@ bool CSVModel::saveCSV(const QString &filepath) {
     }
 
     QTextStream stream(&file);
+    bool firstRow = true;
     for (const QStringList &row : m_data) {
-        QStringList quotedRow;
+        QStringList adjustedRow;
+        bool firstCellQuoted = true;
         for (const QString &cell : row) {
-            quotedRow << (cell);
+            if (firstCellQuoted || firstRow){
+                firstCellQuoted = false;
+                adjustedRow << "\"" + cell + "\"";
+                continue;
+            }
+            adjustedRow << cell;
         }
-        stream << quotedRow.join(",") << "\n";
+        stream << adjustedRow.join(",") << "\n";
+        firstRow = false;
     }
 
     return true;
 }
+
 
 int CSVModel::rowCount(const QModelIndex &parent) const {
     Q_UNUSED(parent)

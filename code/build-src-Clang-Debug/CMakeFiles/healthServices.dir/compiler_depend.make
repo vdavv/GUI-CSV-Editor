@@ -485,6 +485,9 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QFile \
   /opt/homebrew/lib/QtCore.framework/Headers/qfile.h \
   /opt/homebrew/include/QtCore/qfiledevice.h \
@@ -1036,6 +1039,8 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/include/QtCore/qtmochelpers.h \
   healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
@@ -1606,6 +1611,8 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
@@ -2144,6 +2151,8 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   healthServices_autogen/include/ui_mainwindow.h \
@@ -2370,10 +2379,6 @@ healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QDebug:
 
-/opt/homebrew/include/QtCore/qregularexpression.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h:
@@ -2462,6 +2467,12 @@ healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QFile:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset:
+
+/opt/homebrew/include/QtCore/qregularexpression.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h:
+
 /opt/homebrew/include/QtCore/q20memory.h:
 
 /opt/homebrew/include/QtCore/qvarlengtharray.h:
@@ -2527,6 +2538,8 @@ healthServices_autogen/mocs_compilation.cpp:
 /opt/homebrew/include/QtCore/qstringmatcher.h:
 
 /opt/homebrew/include/QtCore/qstringlist.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QStringList:
 
 /opt/homebrew/include/QtCore/qbytearraylist.h:
 
