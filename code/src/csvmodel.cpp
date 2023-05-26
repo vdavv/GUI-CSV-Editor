@@ -140,4 +140,23 @@ bool CSVModel::removeRow(int row, const QModelIndex &parent) {
 }
 
 
+bool CSVModel::insertRow(int row, const QModelIndex &parent) {
+    beginInsertRows(parent, row, row);
+
+    QStringList newRow;
+    for(int i = 0; i < columnCount(); i++) {
+        if(i == 0) {
+            newRow.append("city, state");
+        } else {
+            newRow.append("0");
+        }
+    }
+    m_data.insert(row, newRow);
+
+    endInsertRows();
+    return true;
+}
+
+
+
 

@@ -14,6 +14,7 @@ public:
     bool loadCSV(const QString &filepath, const QVector<int>& columns);
     bool saveCSV(const QString &filepath);
     bool removeRow(int row, const QModelIndex &parent);
+    bool insertRow(int row, const QModelIndex &parent);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;

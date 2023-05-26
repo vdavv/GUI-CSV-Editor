@@ -48,9 +48,25 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 
 
 void MainWindow::AddRow() {
-    int rowCount = m_model.rowCount();
-    m_model.insertRow(rowCount);
+    QItemSelectionModel *select = ui->tableView->selectionModel();
+    int selectedRow = m_model.rowCount(); // default to end of list
+
+    if(select->hasSelection()) { // if a row is selected
+        selectedRow = select->selectedRows().first().row() + 1; // get selected row
+    }
+
+    if(m_model.insertRow(selectedRow, QModelIndex())) {
+        for(int column = 0; column < m_model.columnCount(); column++) {
+            QModelIndex index = m_model.index(selectedRow, column);
+            if (column == 0) {
+                m_model.setData(index, "City, State");
+            } else {
+                m_model.setData(index, 0);
+            }
+        }
+    }
 }
+
 
 void MainWindow::RemoveRow() {
     QItemSelectionModel *select = ui->tableView->selectionModel();
