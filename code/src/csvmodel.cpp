@@ -128,5 +128,16 @@ QStringList CSVModel::getHeaderData() const {
     return m_data.at(0);
 }
 
+bool CSVModel::removeRow(int row, const QModelIndex &parent) {
+    Q_UNUSED(parent)
+    if (row < 0 || row >= m_data.size())
+        return false;
+
+    beginRemoveRows(QModelIndex(), row, row);
+    m_data.removeAt(row);
+    endRemoveRows();
+    return true;
+}
+
 
 

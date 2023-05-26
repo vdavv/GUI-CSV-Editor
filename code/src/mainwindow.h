@@ -31,6 +31,7 @@ private slots:
     void RemoveRow();
     void SaveCSV();
     void onFileChanged(const QString &path);
+    void EditRow();
 
 private:
     Ui::MainWindow *ui;

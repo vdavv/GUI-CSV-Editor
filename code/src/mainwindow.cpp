@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "roweditdialog.h"
 #include "ui_mainwindow.h"
 #include <QTableView>
 #include <QMessageBox>
@@ -29,6 +30,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->addRowButton, &QPushButton::clicked, this, &MainWindow::AddRow);
     connect(ui->removeRowButton, &QPushButton::clicked, this, &MainWindow::RemoveRow);
     connect(ui->saveButton, &QPushButton::clicked, this, &MainWindow::SaveCSV);
+    connect(ui->editRowButton, &QPushButton::clicked, this, &MainWindow::EditRow);
+
 }
 
 bool MainWindow::eventFilter(QObject *watched, QEvent *event)
@@ -52,17 +55,46 @@ void MainWindow::AddRow() {
 void MainWindow::RemoveRow() {
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
-    if(select->hasSelection()) //check if has selection
-    {
-        m_model.removeRow(select->selectedRows().first().row());
+    if(select->hasSelection()) { //check if has selection
+        m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
     }
 }
+
 
 void MainWindow::SaveCSV() {
     if (!m_model.saveCSV(MainWindow::FILEPATH)) {
         QMessageBox::critical(this, "Error", "Failed to save CSV file.");
     }
 }
+
+
+void MainWindow::EditRow() {
+    QItemSelectionModel *select = ui->tableView->selectionModel();
+
+    if(select->hasSelection()) { //check if has selection
+        // Getting the selected row number
+        int row = select->selectedRows().first().row();
+
+        // Getting current data of the row
+        QStringList rowData = m_model.getRowData(row);
+
+        // Create and setup dialog
+        RowEditDialog dialog(this);
+        dialog.setRowData(rowData); // use setRowData instead of setData
+
+        // If Ok is pressed then apply changes to the model
+        if (dialog.exec() == QDialog::Accepted) {
+            QStringList newData = dialog.rowData(); // use rowData instead of getData
+            for (int i = 0; i < newData.size(); ++i) {
+                QModelIndex index = m_model.index(row, i);
+                m_model.setData(index, newData[i]);
+            }
+        }
+    }
+}
+
+
+
 
 void MainWindow::handleRowHeaderClicked(int row) {
     QStringList rowData = m_model.getRowData(row);

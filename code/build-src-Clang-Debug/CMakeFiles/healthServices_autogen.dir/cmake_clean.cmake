@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/healthServices_autogen"
   "healthServices_autogen/include/ui_mainwindow.h"
+  "healthServices_autogen/include/ui_roweditdialog.h"
   "healthServices_autogen/mocs_compilation.cpp"
 )
 

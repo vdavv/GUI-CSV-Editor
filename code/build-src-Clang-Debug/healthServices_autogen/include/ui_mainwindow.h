@@ -187,7 +187,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CSVEditor", nullptr));
         undoButton->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
         redoButton->setText(QCoreApplication::translate("MainWindow", "Redo", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));

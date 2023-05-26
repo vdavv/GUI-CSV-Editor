@@ -283,6 +283,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+roweditdialog.o: roweditdialog.cpp.o
+.PHONY : roweditdialog.o
+
+# target to build an object file
+roweditdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/roweditdialog.cpp.o
+.PHONY : roweditdialog.cpp.o
+
+roweditdialog.i: roweditdialog.cpp.i
+.PHONY : roweditdialog.i
+
+# target to preprocess a source file
+roweditdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/roweditdialog.cpp.i
+.PHONY : roweditdialog.cpp.i
+
+roweditdialog.s: roweditdialog.cpp.s
+.PHONY : roweditdialog.s
+
+# target to generate assembly for a file
+roweditdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/roweditdialog.cpp.s
+.PHONY : roweditdialog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -309,6 +333,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... roweditdialog.o"
+	@echo "... roweditdialog.i"
+	@echo "... roweditdialog.s"
 .PHONY : help
 
 
