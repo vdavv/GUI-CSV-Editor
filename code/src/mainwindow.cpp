@@ -24,6 +24,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->tableView->setModel(&m_model);
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
 
+
+    // Sorting using QSortFilterProxyModel
+    m_proxyModel = new QSortFilterProxyModel(this);
+    m_proxyModel->setSourceModel(&m_model);
+    ui->tableView->setModel(m_proxyModel);
+
     // Connect sectionClicked signal of the vertical header to handleRowHeaderClicked slot
     connect(ui->tableView->verticalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::handleRowHeaderClicked);
 
@@ -38,6 +44,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->orderButton, &QRadioButton::toggled, [this]() {
         emit ui->sortBox->currentIndexChanged(ui->sortBox->currentIndex());
     });
+    connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
+
 
 }
 
@@ -118,13 +126,13 @@ void MainWindow::EditRow() {
 
 
 void MainWindow::ReloadCSV() {
+    m_proxyModel->setSourceModel(nullptr); // Temporarily unset the source model
     m_model.clear(); // Clears the current data of the model
     if (!m_model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) { // Load the CSV file again
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
+    m_proxyModel->setSourceModel(&m_model); // Reset the source model to the loaded data
 }
-
-
 
 
 void MainWindow::handleRowHeaderClicked(int row) {
@@ -138,6 +146,7 @@ void MainWindow::handleRowHeaderClicked(int row) {
 
     QMessageBox::information(this, "Row Data", info);
 }
+
 
 void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 {
@@ -157,16 +166,54 @@ void MainWindow::openHelpWindow() {
 
 void MainWindow::onSortBoxChanged(int index) {
     if (index == 0) {  // Not Sorted
-        ReloadCSV();
+        delete m_proxyModel;
+        m_proxyModel = new QSortFilterProxyModel(this);
+        m_proxyModel->setSourceModel(&m_model);
+        ui->tableView->setModel(m_proxyModel);
     } else {
-        // Assuming the remaining items in sortBox match the column order in the CSV
         bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
-        m_model.sort(index - 1, reverseOrder);  // Pass the reverseOrder flag to sort()
+        m_proxyModel->sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
     }
 }
 
 
+
+
+
+void MainWindow::sort(int column, bool ascending) {
+    // Map column to CSV model index
+    column = MainWindow::CSVCOLUMNS[column - 1];
+
+    if (column < 0) { // Not Sorted selected
+        m_proxyModel->invalidate(); // Invalidate the current sorting
+    } else {
+        m_proxyModel->setDynamicSortFilter(true); // Enable sorting
+        m_proxyModel->setSortRole(Qt::DisplayRole);
+        m_proxyModel->setSortCaseSensitivity(Qt::CaseInsensitive);
+        m_proxyModel->sort(column, ascending ? Qt::AscendingOrder : Qt::DescendingOrder);
+    }
+}
+
+
+
+
+void MainWindow::onHeaderSectionClicked(int logicalIndex) {
+    bool reverseOrder = false;
+    if (logicalIndex == m_lastClickedSection) {
+        // If the same section is clicked twice, reverse the order
+        reverseOrder = !ui->orderButton->isChecked();
+        ui->orderButton->setChecked(reverseOrder);
+    }
+    m_lastClickedSection = logicalIndex;
+    ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
+}
+
+
+
+
 MainWindow::~MainWindow() {
+    delete m_proxyModel;
     delete ui;
 }
+
 

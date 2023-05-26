@@ -26,10 +26,11 @@ public:
     QStringList getRowData(int row) const;
     QStringList getHeaderData() const;
 
-    void sort(int column, bool reverseOrder);
+    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 
 private:
     QList<QStringList> m_data;
+    QStringList m_headerData;
 };
 
 #endif // CSVMODEL_H

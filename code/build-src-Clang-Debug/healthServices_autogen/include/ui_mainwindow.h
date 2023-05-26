@@ -178,6 +178,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(tableView->sizePolicy().hasHeightForWidth());
         tableView->setSizePolicy(sizePolicy1);
+        tableView->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
 
         gridLayout->addWidget(tableView, 1, 0, 1, 1);
 

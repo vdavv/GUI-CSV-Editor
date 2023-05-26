@@ -212,6 +212,9 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
        </widget>
       </item>
      </layout>

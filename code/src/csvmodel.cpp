@@ -8,6 +8,7 @@ CSVModel::CSVModel(QObject *parent) : QAbstractTableModel(parent) {}
 
 
 QVector<int> m_columnIndices;
+QStringList m_headerData;
 
 
 bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
@@ -17,8 +18,8 @@ bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
         return false;
     }
     m_columnIndices = columns;
-
     QTextStream stream(&file);
+    bool firstRow = true;
     while (!stream.atEnd()) {
         QRegularExpression re("(\"[^\"]*\"|[^,]*),?");
         QRegularExpressionMatchIterator it = re.globalMatch(stream.readLine());
@@ -29,18 +30,34 @@ bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
             cell.remove('"');
             row.append(cell);
         }
-
         QStringList selectedColumns;
         for (int column : columns) {
             if (column < row.size()) {
                 selectedColumns.append(row[column]);
             }
         }
-        m_data.append(selectedColumns);
+        if (firstRow) {  // This is header row
+            m_headerData = selectedColumns;
+            firstRow = false;
+        } else {
+            m_data.append(selectedColumns);
+        }
     }
-
     return true;
 }
+
+
+QVariant CSVModel::headerData(int section, Qt::Orientation orientation, int role) const {
+    if (role != Qt::DisplayRole)
+        return QVariant();
+
+    if (orientation == Qt::Horizontal && section < m_headerData.size()) {
+        return m_headerData[section];
+    } else {
+        return QAbstractTableModel::headerData(section, orientation, role);
+    }
+}
+
 
 
 bool CSVModel::saveCSV(const QString &filepath) {
@@ -51,12 +68,19 @@ bool CSVModel::saveCSV(const QString &filepath) {
     }
 
     QTextStream stream(&file);
-    bool firstRow = true;
+
+    // Save the header data first
+    QStringList adjustedHeader;
+    for (const QString &headerCell : m_headerData) {
+        adjustedHeader << "\"" + headerCell + "\"";
+    }
+    stream << adjustedHeader.join(",") << "\n";
+
     for (const QStringList &row : m_data) {
         QStringList adjustedRow;
         bool firstCellQuoted = true;
         for (const QString &cell : row) {
-            if (firstCellQuoted || firstRow){
+            if (firstCellQuoted){
                 firstCellQuoted = false;
                 adjustedRow << "\"" + cell + "\"";
                 continue;
@@ -64,11 +88,11 @@ bool CSVModel::saveCSV(const QString &filepath) {
             adjustedRow << cell;
         }
         stream << adjustedRow.join(",") << "\n";
-        firstRow = false;
     }
 
     return true;
 }
+
 
 
 int CSVModel::rowCount(const QModelIndex &parent) const {
@@ -162,32 +186,8 @@ bool CSVModel::insertRow(int row, const QModelIndex &parent) {
 }
 
 
-void CSVModel::sort(int column, bool reverseOrder) {
-    auto comparator = [column, reverseOrder](const QStringList &a, const QStringList &b) {
-        bool aIsNumber, bIsNumber;
-        double aValue = a.at(column).toDouble(&aIsNumber);
-        double bValue = b.at(column).toDouble(&bIsNumber);
-
-        if (aIsNumber && bIsNumber) {
-            return reverseOrder ? aValue > bValue : aValue < bValue;
-        } else {
-            return reverseOrder ? a.at(column) > b.at(column) : a.at(column) < b.at(column);
-        }
-    };
-    std::sort(m_data.begin() + 1, m_data.end(), comparator);
-    emit layoutChanged();
-}
-
-
-
-
 void CSVModel::clear() {
     beginRemoveRows(QModelIndex(), 0, rowCount());
     m_data.clear();
     endRemoveRows();
 }
-
-
-
-
-

@@ -1,10 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "csvmodel.h"
 #include <QMainWindow>
 #include <QFileSystemWatcher>
-#include "csvmodel.h"
 #include <QList>
+#include <QSortFilterProxyModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,13 +28,20 @@ public:
 private slots:
     void on_tableView_doubleClicked(const QModelIndex &index);
     void handleRowHeaderClicked(int row);
+
     void AddRow();
     void RemoveRow();
-    void SaveCSV();
-    void onFileChanged(const QString &path);
     void EditRow();
+    void SaveCSV();
+
+    void onFileChanged(const QString &path);
+
+
     void openHelpWindow();
+
     void onSortBoxChanged(int index);
+    void onHeaderSectionClicked(int logicalIndex);
+    void sort(int column, bool ascending);
 
 
 public slots:
@@ -43,6 +51,9 @@ private:
     Ui::MainWindow *ui;
     CSVModel m_model;
     QFileSystemWatcher m_watcher;
+    QSortFilterProxyModel *m_proxyModel;
+    int m_lastClickedSection = -1;
+
 
 };
 #endif // MAINWINDOW_H

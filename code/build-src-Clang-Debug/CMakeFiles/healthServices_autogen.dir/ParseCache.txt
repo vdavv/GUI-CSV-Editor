@@ -778,10 +778,12 @@
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QAbstractTableModel
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QFileSystemWatcher
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QList
+ mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QSortFilterProxyModel
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/QStringList
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20memory.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h
+ mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qabstractproxymodel.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qanystringview.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qarraydata.h
@@ -845,6 +847,7 @@
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qrect.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qrefcount.h
+ mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qset.h
@@ -853,6 +856,7 @@
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qsharedpointer.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qsharedpointer_impl.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qsize.h
+ mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qsortfilterproxymodel.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qstring.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qstringconverter_base.h
