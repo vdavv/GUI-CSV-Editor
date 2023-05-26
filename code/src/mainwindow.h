@@ -32,6 +32,7 @@ private slots:
     void SaveCSV();
     void onFileChanged(const QString &path);
     void EditRow();
+    void openHelpWindow();
 
 public slots:
     void ReloadCSV();

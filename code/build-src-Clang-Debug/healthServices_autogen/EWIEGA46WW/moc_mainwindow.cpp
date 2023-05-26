@@ -51,11 +51,12 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "onFileChanged",
     "path",
     "EditRow",
+    "openHelpWindow",
     "ReloadCSV"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[28];
+    uint offsetsAndSizes[30];
     char stringdata0[11];
     char stringdata1[27];
     char stringdata2[1];
@@ -69,7 +70,8 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata10[14];
     char stringdata11[5];
     char stringdata12[8];
-    char stringdata13[10];
+    char stringdata13[15];
+    char stringdata14[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -88,7 +90,8 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(109, 13),  // "onFileChanged"
         QT_MOC_LITERAL(123, 4),  // "path"
         QT_MOC_LITERAL(128, 7),  // "EditRow"
-        QT_MOC_LITERAL(136, 9)   // "ReloadCSV"
+        QT_MOC_LITERAL(136, 14),  // "openHelpWindow"
+        QT_MOC_LITERAL(151, 9)   // "ReloadCSV"
     },
     "MainWindow",
     "on_tableView_doubleClicked",
@@ -103,6 +106,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "onFileChanged",
     "path",
     "EditRow",
+    "openHelpWindow",
     "ReloadCSV"
 };
 #undef QT_MOC_LITERAL
@@ -115,7 +119,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -123,14 +127,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   62,    2, 0x08,    1 /* Private */,
-       5,    1,   65,    2, 0x08,    3 /* Private */,
-       7,    0,   68,    2, 0x08,    5 /* Private */,
-       8,    0,   69,    2, 0x08,    6 /* Private */,
-       9,    0,   70,    2, 0x08,    7 /* Private */,
-      10,    1,   71,    2, 0x08,    8 /* Private */,
-      12,    0,   74,    2, 0x08,   10 /* Private */,
-      13,    0,   75,    2, 0x0a,   11 /* Public */,
+       1,    1,   68,    2, 0x08,    1 /* Private */,
+       5,    1,   71,    2, 0x08,    3 /* Private */,
+       7,    0,   74,    2, 0x08,    5 /* Private */,
+       8,    0,   75,    2, 0x08,    6 /* Private */,
+       9,    0,   76,    2, 0x08,    7 /* Private */,
+      10,    1,   77,    2, 0x08,    8 /* Private */,
+      12,    0,   80,    2, 0x08,   10 /* Private */,
+      13,    0,   81,    2, 0x08,   11 /* Private */,
+      14,    0,   82,    2, 0x0a,   12 /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -139,6 +144,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   11,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -171,6 +177,8 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'EditRow'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'openHelpWindow'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'ReloadCSV'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -190,7 +198,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->SaveCSV(); break;
         case 5: _t->onFileChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 6: _t->EditRow(); break;
-        case 7: _t->ReloadCSV(); break;
+        case 7: _t->openHelpWindow(); break;
+        case 8: _t->ReloadCSV(); break;
         default: ;
         }
     }
@@ -215,13 +224,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

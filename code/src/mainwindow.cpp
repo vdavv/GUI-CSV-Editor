@@ -1,6 +1,7 @@
 #include "mainwindow.h"
-#include "roweditdialog.h"
 #include "ui_mainwindow.h"
+#include "roweditdialog.h"
+#include "helpwindow.h"
 #include <QTableView>
 #include <QMessageBox>
 #include <QMouseEvent>
@@ -32,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->saveButton, &QPushButton::clicked, this, &MainWindow::SaveCSV);
     connect(ui->editRowButton, &QPushButton::clicked, this, &MainWindow::EditRow);
     connect(ui->reloadButton, &QPushButton::clicked, this, &MainWindow::ReloadCSV);
+    connect(ui->helpButton, &QPushButton::clicked, this, &MainWindow::openHelpWindow);
 
 }
 
@@ -140,6 +142,12 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::onFileChanged(const QString &path) {
     m_model.loadCSV(path, MainWindow::CSVCOLUMNS);
+}
+
+
+void MainWindow::openHelpWindow() {
+    HelpWindow* helpWindow = new HelpWindow(this);
+    helpWindow->show();
 }
 
 

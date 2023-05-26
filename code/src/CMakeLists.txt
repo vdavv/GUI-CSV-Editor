@@ -27,6 +27,10 @@ set(PROJECT_SOURCES
         roweditdialog.h
         roweditdialog.cpp
         roweditdialog.ui
+
+        helpwindow.h
+        helpwindow.cpp
+        helpwindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
