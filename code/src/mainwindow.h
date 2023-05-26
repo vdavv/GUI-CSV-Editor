@@ -33,6 +33,8 @@ private slots:
     void onFileChanged(const QString &path);
     void EditRow();
     void openHelpWindow();
+    void onSortBoxChanged(int index);
+
 
 public slots:
     void ReloadCSV();

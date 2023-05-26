@@ -26,6 +26,8 @@ public:
     QStringList getRowData(int row) const;
     QStringList getHeaderData() const;
 
+    void sort(int column, bool reverseOrder);
+
 private:
     QList<QStringList> m_data;
 };

@@ -34,6 +34,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->editRowButton, &QPushButton::clicked, this, &MainWindow::EditRow);
     connect(ui->reloadButton, &QPushButton::clicked, this, &MainWindow::ReloadCSV);
     connect(ui->helpButton, &QPushButton::clicked, this, &MainWindow::openHelpWindow);
+    connect(ui->sortBox, SIGNAL(currentIndexChanged(int)), this, SLOT(onSortBoxChanged(int)));
+    connect(ui->orderButton, &QRadioButton::toggled, [this]() {
+        emit ui->sortBox->currentIndexChanged(ui->sortBox->currentIndex());
+    });
 
 }
 
@@ -148,6 +152,17 @@ void MainWindow::onFileChanged(const QString &path) {
 void MainWindow::openHelpWindow() {
     HelpWindow* helpWindow = new HelpWindow(this);
     helpWindow->show();
+}
+
+
+void MainWindow::onSortBoxChanged(int index) {
+    if (index == 0) {  // Not Sorted
+        ReloadCSV();
+    } else {
+        // Assuming the remaining items in sortBox match the column order in the CSV
+        bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
+        m_model.sort(index - 1, reverseOrder);  // Pass the reverseOrder flag to sort()
+    }
 }
 
 

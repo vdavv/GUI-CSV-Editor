@@ -162,6 +162,25 @@ bool CSVModel::insertRow(int row, const QModelIndex &parent) {
 }
 
 
+void CSVModel::sort(int column, bool reverseOrder) {
+    auto comparator = [column, reverseOrder](const QStringList &a, const QStringList &b) {
+        bool aIsNumber, bIsNumber;
+        double aValue = a.at(column).toDouble(&aIsNumber);
+        double bValue = b.at(column).toDouble(&bIsNumber);
+
+        if (aIsNumber && bIsNumber) {
+            return reverseOrder ? aValue > bValue : aValue < bValue;
+        } else {
+            return reverseOrder ? a.at(column) > b.at(column) : a.at(column) < b.at(column);
+        }
+    };
+    std::sort(m_data.begin() + 1, m_data.end(), comparator);
+    emit layoutChanged();
+}
+
+
+
+
 void CSVModel::clear() {
     beginRemoveRows(QModelIndex(), 0, rowCount());
     m_data.clear();

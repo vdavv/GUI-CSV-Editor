@@ -129,6 +129,13 @@ public:
         sortBox->addItem(icon, QString());
         sortBox->addItem(QString());
         sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
+        sortBox->addItem(QString());
         sortBox->setObjectName("sortBox");
         sortBox->setFrame(true);
 
@@ -201,8 +208,15 @@ public:
         helpButton->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         orderButton->setText(QString());
         sortBox->setItemText(0, QCoreApplication::translate("MainWindow", "Not Sorted", nullptr));
-        sortBox->setItemText(1, QCoreApplication::translate("MainWindow", "NumMDS", nullptr));
-        sortBox->setItemText(2, QCoreApplication::translate("MainWindow", "RateMDS", nullptr));
+        sortBox->setItemText(1, QCoreApplication::translate("MainWindow", "City", nullptr));
+        sortBox->setItemText(2, QCoreApplication::translate("MainWindow", "NumMDS", nullptr));
+        sortBox->setItemText(3, QCoreApplication::translate("MainWindow", "NumHospitals", nullptr));
+        sortBox->setItemText(4, QCoreApplication::translate("MainWindow", "RateBeds", nullptr));
+        sortBox->setItemText(5, QCoreApplication::translate("MainWindow", "NumMedicare", nullptr));
+        sortBox->setItemText(6, QCoreApplication::translate("MainWindow", "PctChangeMedicare", nullptr));
+        sortBox->setItemText(7, QCoreApplication::translate("MainWindow", "MedicareRate", nullptr));
+        sortBox->setItemText(8, QCoreApplication::translate("MainWindow", "NumRetired", nullptr));
+        sortBox->setItemText(9, QCoreApplication::translate("MainWindow", "SSINum", nullptr));
 
         filterButton->setText(QCoreApplication::translate("MainWindow", "Filter", nullptr));
         editRowButton->setText(QCoreApplication::translate("MainWindow", "Edit", nullptr));

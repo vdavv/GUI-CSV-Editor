@@ -114,12 +114,47 @@
             </item>
             <item>
              <property name="text">
+              <string>City</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
               <string>NumMDS</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>RateMDS</string>
+              <string>NumHospitals</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RateBeds</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>NumMedicare</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>PctChangeMedicare</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>MedicareRate</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>NumRetired</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>SSINum</string>
              </property>
             </item>
            </widget>
