@@ -38,6 +38,7 @@ public:
     QPushButton *redoButton;
     QSpacerItem *horizontalSpacer_2;
     QPushButton *saveButton;
+    QPushButton *reloadButton;
     QPushButton *helpButton;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout_3;
@@ -89,6 +90,11 @@ public:
         saveButton->setObjectName("saveButton");
 
         horizontalLayout_2->addWidget(saveButton);
+
+        reloadButton = new QPushButton(centralwidget);
+        reloadButton->setObjectName("reloadButton");
+
+        horizontalLayout_2->addWidget(reloadButton);
 
         helpButton = new QPushButton(centralwidget);
         helpButton->setObjectName("helpButton");
@@ -191,6 +197,7 @@ public:
         undoButton->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
         redoButton->setText(QCoreApplication::translate("MainWindow", "Redo", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+        reloadButton->setText(QCoreApplication::translate("MainWindow", "Load", nullptr));
         helpButton->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         orderButton->setText(QString());
         sortBox->setItemText(0, QCoreApplication::translate("MainWindow", "Not Sorted", nullptr));

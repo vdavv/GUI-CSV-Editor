@@ -31,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->removeRowButton, &QPushButton::clicked, this, &MainWindow::RemoveRow);
     connect(ui->saveButton, &QPushButton::clicked, this, &MainWindow::SaveCSV);
     connect(ui->editRowButton, &QPushButton::clicked, this, &MainWindow::EditRow);
+    connect(ui->reloadButton, &QPushButton::clicked, this, &MainWindow::ReloadCSV);
 
 }
 
@@ -106,6 +107,14 @@ void MainWindow::EditRow() {
                 m_model.setData(index, newData[i]);
             }
         }
+    }
+}
+
+
+void MainWindow::ReloadCSV() {
+    m_model.clear(); // Clears the current data of the model
+    if (!m_model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) { // Load the CSV file again
+        QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
 }
 

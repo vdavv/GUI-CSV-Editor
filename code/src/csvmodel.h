@@ -13,6 +13,7 @@ public:
 
     bool loadCSV(const QString &filepath, const QVector<int>& columns);
     bool saveCSV(const QString &filepath);
+    void clear();
     bool removeRow(int row, const QModelIndex &parent);
     bool insertRow(int row, const QModelIndex &parent);
 

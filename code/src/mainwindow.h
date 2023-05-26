@@ -33,6 +33,9 @@ private slots:
     void onFileChanged(const QString &path);
     void EditRow();
 
+public slots:
+    void ReloadCSV();
+
 private:
     Ui::MainWindow *ui;
     CSVModel m_model;

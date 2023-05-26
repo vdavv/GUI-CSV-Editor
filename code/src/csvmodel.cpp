@@ -109,12 +109,14 @@ bool CSVModel::setData(const QModelIndex &index, const QVariant &value, int role
     return true;
 }
 
+
 Qt::ItemFlags CSVModel::flags(const QModelIndex &index) const {
     if (!index.isValid())
         return Qt::NoItemFlags;
 
     return Qt::ItemIsEditable | QAbstractTableModel::flags(index);
 }
+
 
 QStringList CSVModel::getRowData(int row) const {
     if (row >= 0 && row < m_data.size()) {
@@ -123,10 +125,12 @@ QStringList CSVModel::getRowData(int row) const {
     return QStringList();
 }
 
+
 QStringList CSVModel::getHeaderData() const {
     // assuming m_data[0] contains the header row
     return m_data.at(0);
 }
+
 
 bool CSVModel::removeRow(int row, const QModelIndex &parent) {
     Q_UNUSED(parent)
@@ -156,6 +160,14 @@ bool CSVModel::insertRow(int row, const QModelIndex &parent) {
     endInsertRows();
     return true;
 }
+
+
+void CSVModel::clear() {
+    beginRemoveRows(QModelIndex(), 0, rowCount());
+    m_data.clear();
+    endRemoveRows();
+}
+
 
 
 
