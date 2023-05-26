@@ -36,8 +36,8 @@ private slots:
 
     void onFileChanged(const QString &path);
 
-
     void openHelpWindow();
+    void openFilterDialog();
 
     void onSortBoxChanged(int index);
     void onHeaderSectionClicked(int logicalIndex);

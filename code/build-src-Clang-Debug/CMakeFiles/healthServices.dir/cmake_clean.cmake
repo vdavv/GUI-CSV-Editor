@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "healthServices_autogen"
   "CMakeFiles/healthServices.dir/csvmodel.cpp.o"
   "CMakeFiles/healthServices.dir/csvmodel.cpp.o.d"
+  "CMakeFiles/healthServices.dir/filterdialog.cpp.o"
+  "CMakeFiles/healthServices.dir/filterdialog.cpp.o.d"
   "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/healthServices.dir/helpwindow.cpp.o"

@@ -31,6 +31,10 @@ set(PROJECT_SOURCES
         helpwindow.h
         helpwindow.cpp
         helpwindow.ui
+
+        filterdialog.h
+        filterdialog.cpp
+        filterdialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

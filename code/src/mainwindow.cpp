@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "roweditdialog.h"
 #include "helpwindow.h"
+#include "filterdialog.h"
 #include <QTableView>
 #include <QMessageBox>
 #include <QMouseEvent>
@@ -45,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         emit ui->sortBox->currentIndexChanged(ui->sortBox->currentIndex());
     });
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
+    connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
 
 
 }
@@ -153,6 +155,7 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
     ui->tableView->edit(index);
 }
 
+
 void MainWindow::onFileChanged(const QString &path) {
     m_model.loadCSV(path, MainWindow::CSVCOLUMNS);
 }
@@ -162,6 +165,13 @@ void MainWindow::openHelpWindow() {
     HelpWindow* helpWindow = new HelpWindow(this);
     helpWindow->show();
 }
+
+
+void MainWindow::openFilterDialog() {
+    FilterDialog* filterDialog = new FilterDialog(this);
+    filterDialog->show(); // or filterDialog->exec();
+}
+
 
 
 void MainWindow::onSortBoxChanged(int index) {
