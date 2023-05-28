@@ -63,7 +63,6 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 }
 
 
-
 void MainWindow::AddRow() {
     QItemSelectionModel *select = ui->tableView->selectionModel();
     int selectedRow = m_model.rowCount(); // default to end of list
