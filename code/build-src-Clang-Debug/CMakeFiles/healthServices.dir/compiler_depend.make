@@ -1086,7 +1086,45 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.locali
   /opt/homebrew/include/QtGui/qinputmethod.h \
   /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
-  /opt/homebrew/include/QtWidgets/QDialog
+  /opt/homebrew/include/QtWidgets/QComboBox \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
+  /opt/homebrew/include/QtGui/qvalidator.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/include/QtWidgets/qslider.h \
+  /opt/homebrew/include/QtWidgets/qabstractslider.h \
+  /opt/homebrew/include/QtWidgets/qstyle.h \
+  /opt/homebrew/include/QtWidgets/qtabbar.h \
+  /opt/homebrew/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtWidgets/QDialog \
+  /opt/homebrew/include/QtWidgets/QGridLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/include/QtWidgets/QHBoxLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/QLabel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/include/QtGui/qpicture.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/include/QtWidgets/QLineEdit \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /opt/homebrew/include/QtGui/qtextcursor.h \
+  /opt/homebrew/include/QtGui/qtextformat.h \
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/include/QtGui/qtextoption.h \
+  /opt/homebrew/include/QtWidgets/QSpacerItem \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /opt/homebrew/include/QtWidgets/QVBoxLayout
 
 CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: healthServices_autogen/mocs_compilation.cpp \
   healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp \
@@ -3999,27 +4037,35 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /opt/homebrew/include/QtWidgets/qabstractscrollarea.h:
 
-/opt/homebrew/include/QtWidgets/qrubberband.h:
-
-/opt/homebrew/include/QtWidgets/qstyle.h:
-
-/opt/homebrew/include/QtWidgets/qabstractslider.h:
-
-/opt/homebrew/include/QtWidgets/qslider.h:
-
-/opt/homebrew/include/QtWidgets/qabstractspinbox.h:
-
-/opt/homebrew/include/QtWidgets/qabstractitemdelegate.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h:
-
-/opt/homebrew/include/QtWidgets/QComboBox:
-
 /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication:
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp:
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qradiobutton.h:
+
+/opt/homebrew/include/QtWidgets/QAbstractButton:
+
+healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp:
+
+/opt/homebrew/include/QtCore/qabstractproxymodel.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow:
+
+healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
+
+healthServices_autogen/EWIEGA46WW/moc_helpwindow.cpp:
+
+healthServices_autogen/EWIEGA46WW/moc_filterdialog.cpp:
 
 /opt/homebrew/include/QtGui/qtextcursor.h:
 
@@ -4047,37 +4093,29 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /opt/homebrew/include/QtWidgets/QGridLayout:
 
-/opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/qradiobutton.h:
-
-/opt/homebrew/include/QtWidgets/QAbstractButton:
-
-healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp:
-
-/opt/homebrew/include/QtCore/qabstractitemmodel.h:
-
-/opt/homebrew/include/QtCore/qabstractproxymodel.h:
-
-/opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h:
-
-/opt/homebrew/include/QtWidgets/qtabwidget.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow:
-
-healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
-
-healthServices_autogen/EWIEGA46WW/moc_helpwindow.cpp:
-
-healthServices_autogen/EWIEGA46WW/moc_filterdialog.cpp:
-
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp:
 
 /opt/homebrew/include/QtWidgets/QDialog:
+
+/opt/homebrew/include/QtCore/qabstractitemmodel.h:
+
+/opt/homebrew/include/QtWidgets/qrubberband.h:
+
+/opt/homebrew/include/QtWidgets/qtabwidget.h:
+
+/opt/homebrew/include/QtWidgets/qstyle.h:
+
+/opt/homebrew/include/QtWidgets/qabstractslider.h:
+
+/opt/homebrew/include/QtWidgets/qslider.h:
+
+/opt/homebrew/include/QtWidgets/qabstractspinbox.h:
+
+/opt/homebrew/include/QtWidgets/qabstractitemdelegate.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h:
+
+/opt/homebrew/include/QtWidgets/QComboBox:
 
 /opt/homebrew/include/QtGui/qinputmethod.h:
 
@@ -4383,9 +4421,9 @@ healthServices_autogen/mocs_compilation.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
-/opt/homebrew/include/QtWidgets/qstyleoption.h:
-
 /opt/homebrew/include/QtWidgets/QSpacerItem:
+
+/opt/homebrew/include/QtWidgets/qstyleoption.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h:
 

@@ -20,9 +20,6 @@ public:
     // QString getCityFilter() const;
     // ...
 
-private slots:
-    // Slot for the Apply button
-    void on_applyButton_clicked();
 
 private:
     Ui::FilterDialog *ui;

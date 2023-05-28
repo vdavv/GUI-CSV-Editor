@@ -6,6 +6,8 @@ FilterDialog::FilterDialog(QWidget *parent) :
     ui(new Ui::FilterDialog)
 {
     ui->setupUi(this);
+    // Connect the Apply button clicked signal to the on_applyButton_clicked slot
+    // connect(ui->applyButton, &QPushButton::clicked, this, &FilterDialog::on_applyButton_clicked);
 }
 
 FilterDialog::~FilterDialog()
@@ -13,12 +15,12 @@ FilterDialog::~FilterDialog()
     delete ui;
 }
 
-void FilterDialog::on_applyButton_clicked()
-{
-    // When Apply button is clicked, we just close the dialog.
-    // The MainWindow will retrieve the filter parameters using the getter functions.
-    this->close();
-}
+//void FilterDialog::on_applyButton_clicked()
+//{
+//    // Apply filters here, or emit a signal to the MainWindow to apply the filters
+//    // For example:
+//    // emit filtersApplied(getCityFilter(), ...);
+//}
 
 // Getter functions implementation
 // QString FilterDialog::getCityFilter() const

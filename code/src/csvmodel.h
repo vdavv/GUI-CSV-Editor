@@ -28,6 +28,7 @@ public:
 
     QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 
+
 private:
     QList<QStringList> m_data;
     QStringList m_headerData;

@@ -107,10 +107,6 @@
              <property name="text">
               <string>Not Sorted</string>
              </property>
-             <property name="icon">
-              <iconset theme="view-fullscreen">
-               <normaloff>.</normaloff>.</iconset>
-             </property>
             </item>
             <item>
              <property name="text">

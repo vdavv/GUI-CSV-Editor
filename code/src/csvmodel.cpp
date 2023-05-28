@@ -152,7 +152,7 @@ QStringList CSVModel::getRowData(int row) const {
 
 QStringList CSVModel::getHeaderData() const {
     // assuming m_data[0] contains the header row
-    return m_data.at(0);
+    return m_headerData;
 }
 
 

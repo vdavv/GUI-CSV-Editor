@@ -119,14 +119,7 @@ public:
         horizontalLayout_3->addWidget(orderButton);
 
         sortBox = new QComboBox(centralwidget);
-        QIcon icon;
-        QString iconThemeName = QString::fromUtf8("view-fullscreen");
-        if (QIcon::hasThemeIcon(iconThemeName)) {
-            icon = QIcon::fromTheme(iconThemeName);
-        } else {
-            icon.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
-        }
-        sortBox->addItem(icon, QString());
+        sortBox->addItem(QString());
         sortBox->addItem(QString());
         sortBox->addItem(QString());
         sortBox->addItem(QString());
