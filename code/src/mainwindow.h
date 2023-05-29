@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include "csvmodel.h"
+#include "csvfiltermodel.h"
+#include "filterdialog.h"
 #include <QMainWindow>
 #include <QFileSystemWatcher>
 #include <QList>
@@ -23,6 +25,7 @@ public:
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     bool eventFilter(QObject *watched, QEvent *event) override;
+    void openFilterDialog();
     ~MainWindow();
 
 private slots:
@@ -35,9 +38,10 @@ private slots:
     void SaveCSV();
 
     void onFileChanged(const QString &path);
+    void onFilterChanged();
+    void applyFilter();
 
     void openHelpWindow();
-    void openFilterDialog();
 
     void onSortBoxChanged(int index);
     void onHeaderSectionClicked(int logicalIndex);
@@ -53,6 +57,8 @@ private:
     QFileSystemWatcher m_watcher;
     QSortFilterProxyModel *m_proxyModel;
     int m_lastClickedSection = -1;
+    CSVFilterModel *m_filterModel;
+    FilterDialog *m_filterDialog;
 
 
 };

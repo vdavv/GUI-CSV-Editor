@@ -35,6 +35,9 @@ set(PROJECT_SOURCES
         filterdialog.h
         filterdialog.cpp
         filterdialog.ui
+
+        csvfiltermodel.h
+        csvfiltermodel.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

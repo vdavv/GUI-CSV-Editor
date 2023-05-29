@@ -31,6 +31,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     m_proxyModel->setSourceModel(&m_model);
     ui->tableView->setModel(m_proxyModel);
 
+    // Creating FilterDialog
+    m_filterDialog = new FilterDialog(this);
+    connect(m_filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
+
+
+
     // Connect sectionClicked signal of the vertical header to handleRowHeaderClicked slot
     connect(ui->tableView->verticalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::handleRowHeaderClicked);
 
@@ -167,8 +173,33 @@ void MainWindow::openHelpWindow() {
 
 
 void MainWindow::openFilterDialog() {
-    FilterDialog* filterDialog = new FilterDialog(this);
-    filterDialog->show(); // or filterDialog->exec();
+    m_filterDialog->show();
+}
+
+
+void MainWindow::onFilterChanged()
+{
+    qDebug() << "Filter changed";
+
+    m_filterModel->setStateFilter(m_filterDialog->getStateFilter());
+    m_filterModel->setFilterMap(m_filterDialog->getFilterMap());
+    ui->tableView->viewport()->repaint();
+}
+
+
+
+
+
+void MainWindow::applyFilter()
+{
+    qDebug() << "Applying filter";
+
+    QString stateFilter = m_filterDialog->getStateFilter();
+    QMap<int, QPair<double, double>> filterMap = m_filterDialog->getFilterMap();
+
+    m_filterModel->setStateFilter(stateFilter);
+    m_filterModel->setFilterMap(filterMap);
+    m_filterModel->refreshFilter();
 }
 
 
@@ -184,8 +215,6 @@ void MainWindow::onSortBoxChanged(int index) {
         m_proxyModel->sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
     }
 }
-
-
 
 
 
@@ -205,7 +234,6 @@ void MainWindow::sort(int column, bool ascending) {
 
 
 
-
 void MainWindow::onHeaderSectionClicked(int logicalIndex) {
     bool reverseOrder = false;
     if (logicalIndex == m_lastClickedSection) {
@@ -218,11 +246,9 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex) {
 }
 
 
-
-
 MainWindow::~MainWindow() {
     delete m_proxyModel;
+    delete m_filterDialog;
+    // delete m_filterModel;
     delete ui;
 }
-
-

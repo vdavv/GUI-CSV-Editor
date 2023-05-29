@@ -486,8 +486,19 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
   /opt/homebrew/include/QtGui/qtguiglobal.h \
   /opt/homebrew/include/QtGui/qtgui-config.h \
@@ -522,16 +533,25 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtGui/qtextcursor.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/include/QtGui/qtextformat.h \
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/include/QtGui/qtextoption.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
   /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_mainwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -544,7 +564,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtCore/qcoreapplication_platform.h \
   /opt/homebrew/include/QtGui/qguiapplication.h \
   /opt/homebrew/include/QtGui/qinputmethod.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/include/QtWidgets/QComboBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
@@ -557,7 +576,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qstyle.h \
   /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/include/QtWidgets/QGridLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/include/QtWidgets/qlayout.h \
@@ -594,26 +612,15 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/QAbstractButton \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /opt/homebrew/include/QtWidgets/QDialog \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/include/QtWidgets/QDialogButtonBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
   /opt/homebrew/include/QtWidgets/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/include/QtGui/qpicture.h \
   /opt/homebrew/include/QtCore/qiodevice.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtWidgets/QLineEdit \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
-  /opt/homebrew/include/QtGui/qtextcursor.h \
-  /opt/homebrew/include/QtGui/qtextformat.h \
-  /opt/homebrew/include/QtGui/qpen.h \
-  /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_helpwindow.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \

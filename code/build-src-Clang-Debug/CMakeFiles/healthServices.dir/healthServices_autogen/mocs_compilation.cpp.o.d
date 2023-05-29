@@ -1,9 +1,11 @@
 CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/mocs_compilation.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_csvfiltermodel.cpp \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
   /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
@@ -484,9 +486,18 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/include/QtCore/qtmochelpers.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/include/QtCore/qtmochelpers.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_filterdialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/filterdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
@@ -525,6 +536,18 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtGui/qtextcursor.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/include/QtGui/qtextformat.h \
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/include/QtGui/qtextoption.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_helpwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/helpwindow.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_helpwindow.h \
@@ -539,12 +562,13 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtCore/qcoreapplication_platform.h \
   /opt/homebrew/include/QtGui/qguiapplication.h \
   /opt/homebrew/include/QtGui/qinputmethod.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/include/QtWidgets/QDialog \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/mainwindow.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
@@ -552,11 +576,6 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/roweditdialog.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h \
@@ -574,18 +593,9 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /opt/homebrew/include/QtWidgets/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/include/QtGui/qpicture.h \
   /opt/homebrew/include/QtCore/qiodevice.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtWidgets/QLineEdit \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
-  /opt/homebrew/include/QtGui/qtextcursor.h \
-  /opt/homebrew/include/QtGui/qtextformat.h \
-  /opt/homebrew/include/QtGui/qpen.h \
-  /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtWidgets/QSpacerItem \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/QVBoxLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit
+  /opt/homebrew/include/QtWidgets/QVBoxLayout

@@ -2,6 +2,9 @@
 #define FILTERDIALOG_H
 
 #include <QDialog>
+#include <QMap>
+#include <QLineEdit>
+#include <QDoubleValidator>
 
 namespace Ui {
 class FilterDialog;
@@ -15,14 +18,20 @@ public:
     explicit FilterDialog(QWidget *parent = nullptr);
     ~FilterDialog();
 
-    // Create getter functions for each filter parameter
-    // For example:
-    // QString getCityFilter() const;
-    // ...
+    QString getStateFilter() const;
+    QMap<int, QPair<double, double>> getFilterMap() const;
 
+signals:
+    void filterChanged();
+
+private slots:
+    void on_filterApplyButton_clicked();
 
 private:
     Ui::FilterDialog *ui;
+    QString m_stateFilter;
+    QMap<int, QPair<double, double>> m_filterMap;
+    QDoubleValidator m_doubleValidator;
 };
 
 #endif // FILTERDIALOG_H

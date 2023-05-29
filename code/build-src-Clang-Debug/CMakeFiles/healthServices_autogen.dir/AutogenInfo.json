@@ -341,6 +341,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h",
+			"MU",
+			"EWIEGA46WW/moc_csvfiltermodel.cpp",
+			null
+		],
+		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h",
 			"MU",
 			"EWIEGA46WW/moc_csvmodel.cpp",
@@ -430,6 +436,11 @@
 	"SETTINGS_FILE" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles/healthServices_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.cpp",
 			"MU",

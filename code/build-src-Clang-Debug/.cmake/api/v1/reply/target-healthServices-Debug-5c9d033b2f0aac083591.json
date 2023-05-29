@@ -45,7 +45,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 37,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -69,13 +69,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 69,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 59,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -296,7 +296,9 @@
 				2,
 				6,
 				8,
-				11
+				11,
+				14,
+				17
 			]
 		}
 	],
@@ -411,7 +413,9 @@
 				2,
 				6,
 				8,
-				11
+				11,
+				14,
+				17
 			]
 		},
 		{
@@ -423,8 +427,11 @@
 				7,
 				10,
 				13,
-				14,
-				15
+				16,
+				18,
+				19,
+				20,
+				21
 			]
 		},
 		{
@@ -433,7 +440,8 @@
 			[
 				4,
 				9,
-				12
+				12,
+				15
 			]
 		}
 	],
@@ -512,6 +520,33 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "filterdialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "filterdialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "filterdialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "csvfiltermodel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "csvfiltermodel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_mainwindow.h",
@@ -527,6 +562,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_helpwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_filterdialog.h",
 			"sourceGroupIndex" : 1
 		}
 	],

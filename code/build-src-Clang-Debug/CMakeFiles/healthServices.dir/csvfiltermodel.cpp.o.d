@@ -1,10 +1,12 @@
-CMakeFiles/healthServices.dir/filterdialog.cpp.o: \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -309,26 +311,7 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: \
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/include/QtWidgets/qwidget.h \
-  /opt/homebrew/include/QtGui/qwindowdefs.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -425,6 +408,18 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -445,15 +440,15 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: \
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -477,93 +472,45 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/include/QtCore/qmargins.h \
-  /opt/homebrew/include/QtGui/qaction.h \
-  /opt/homebrew/include/QtGui/qkeysequence.h \
-  /opt/homebrew/include/QtGui/qicon.h \
-  /opt/homebrew/include/QtCore/qsize.h \
-  /opt/homebrew/include/QtGui/qpixmap.h \
-  /opt/homebrew/include/QtGui/qpaintdevice.h \
-  /opt/homebrew/include/QtCore/qrect.h \
-  /opt/homebrew/include/QtCore/qpoint.h \
-  /opt/homebrew/include/QtGui/qcolor.h \
-  /opt/homebrew/include/QtGui/qrgb.h \
-  /opt/homebrew/include/QtGui/qrgba64.h \
-  /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
-  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
-  /opt/homebrew/include/QtGui/qimage.h \
-  /opt/homebrew/include/QtGui/qpixelformat.h \
-  /opt/homebrew/include/QtGui/qtransform.h \
-  /opt/homebrew/include/QtGui/qpolygon.h \
-  /opt/homebrew/include/QtGui/qregion.h \
-  /opt/homebrew/include/QtCore/qline.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
   /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/include/QtGui/qpalette.h \
-  /opt/homebrew/include/QtGui/qbrush.h \
-  /opt/homebrew/include/QtGui/qfont.h \
-  /opt/homebrew/include/QtGui/qfontmetrics.h \
-  /opt/homebrew/include/QtGui/qfontinfo.h \
-  /opt/homebrew/include/QtWidgets/qsizepolicy.h \
-  /opt/homebrew/include/QtGui/qcursor.h \
-  /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QMap \
   /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
-  /opt/homebrew/include/QtGui/qtextcursor.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
-  /opt/homebrew/include/QtGui/qtextformat.h \
-  /opt/homebrew/include/QtGui/qpen.h \
-  /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_filterdialog.h \
-  /opt/homebrew/include/QtCore/QVariant \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
-  /opt/homebrew/include/QtWidgets/QApplication \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
-  /opt/homebrew/include/QtCore/qcoreapplication.h \
-  /opt/homebrew/include/QtCore/qcoreevent.h \
-  /opt/homebrew/include/QtCore/qeventloop.h \
-  /opt/homebrew/include/QtCore/qnativeinterface.h \
-  /opt/homebrew/include/QtCore/qcoreapplication_platform.h \
-  /opt/homebrew/include/QtGui/qguiapplication.h \
-  /opt/homebrew/include/QtGui/qinputmethod.h \
-  /opt/homebrew/include/QtGui/qguiapplication_platform.h \
-  /opt/homebrew/include/QtWidgets/QDialog \
-  /opt/homebrew/include/QtWidgets/QGridLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/include/QtWidgets/QHBoxLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/include/QtWidgets/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtGui/qpicture.h \
-  /opt/homebrew/include/QtCore/qiodevice.h \
-  /opt/homebrew/include/QtWidgets/QLineEdit \
-  /opt/homebrew/include/QtWidgets/QPushButton \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /opt/homebrew/include/QtWidgets/qabstractbutton.h \
-  /opt/homebrew/include/QtWidgets/QSpacerItem \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/QVBoxLayout \
-  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
-  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
+  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h \
+  /opt/homebrew/include/QtGui/qbrush.h \
+  /opt/homebrew/include/QtCore/qpoint.h \
+  /opt/homebrew/include/QtGui/qcolor.h \
+  /opt/homebrew/include/QtGui/qrgb.h \
+  /opt/homebrew/include/QtGui/qrgba64.h \
+  /opt/homebrew/include/QtGui/qimage.h \
+  /opt/homebrew/include/QtGui/qpaintdevice.h \
+  /opt/homebrew/include/QtGui/qwindowdefs.h \
+  /opt/homebrew/include/QtCore/qrect.h \
+  /opt/homebrew/include/QtCore/qmargins.h \
+  /opt/homebrew/include/QtCore/qsize.h \
+  /opt/homebrew/include/QtGui/qpixelformat.h \
+  /opt/homebrew/include/QtGui/qtransform.h \
+  /opt/homebrew/include/QtGui/qpolygon.h \
+  /opt/homebrew/include/QtGui/qregion.h \
+  /opt/homebrew/include/QtCore/qline.h \
+  /opt/homebrew/include/QtGui/qpixmap.h \
+  /opt/homebrew/include/QtGui/qfont.h \
+  /opt/homebrew/include/QtGui/qicon.h
