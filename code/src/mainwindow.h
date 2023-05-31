@@ -38,7 +38,6 @@ private slots:
     void SaveCSV();
 
     void onFileChanged(const QString &path);
-    void onFilterChanged();
     void applyFilter();
 
     void openHelpWindow();

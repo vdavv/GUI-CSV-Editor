@@ -31,6 +31,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     m_proxyModel->setSourceModel(&m_model);
     ui->tableView->setModel(m_proxyModel);
 
+
+    // Creating FilterModel
+    m_filterModel = new CSVFilterModel(this);
+    m_filterModel->setSourceModel(&m_model);
+
+
     // Creating FilterDialog
     m_filterDialog = new FilterDialog(this);
     connect(m_filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
@@ -139,6 +145,7 @@ void MainWindow::ReloadCSV() {
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
     m_proxyModel->setSourceModel(&m_model); // Reset the source model to the loaded data
+    m_filterModel->setSourceModel(&m_model);
 }
 
 
@@ -177,31 +184,18 @@ void MainWindow::openFilterDialog() {
 }
 
 
-void MainWindow::onFilterChanged()
-{
-    qDebug() << "Filter changed";
-
-    m_filterModel->setStateFilter(m_filterDialog->getStateFilter());
-    m_filterModel->setFilterMap(m_filterDialog->getFilterMap());
-    ui->tableView->viewport()->repaint();
-}
-
-
-
-
-
 void MainWindow::applyFilter()
 {
     qDebug() << "Applying filter";
+    ui->tableView->setModel(m_filterModel);
 
     QString stateFilter = m_filterDialog->getStateFilter();
+    m_filterModel->setStateFilter(stateFilter);
     QMap<int, QPair<double, double>> filterMap = m_filterDialog->getFilterMap();
 
-    m_filterModel->setStateFilter(stateFilter);
     m_filterModel->setFilterMap(filterMap);
     m_filterModel->refreshFilter();
 }
-
 
 
 void MainWindow::onSortBoxChanged(int index) {
@@ -213,6 +207,7 @@ void MainWindow::onSortBoxChanged(int index) {
     } else {
         bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
         m_proxyModel->sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
+        ui->tableView->setModel(m_proxyModel);
     }
 }
 
@@ -241,6 +236,7 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex) {
         reverseOrder = !ui->orderButton->isChecked();
         ui->orderButton->setChecked(reverseOrder);
     }
+    ui->tableView->setModel(m_proxyModel);
     m_lastClickedSection = logicalIndex;
     ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
 }
@@ -249,6 +245,6 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex) {
 MainWindow::~MainWindow() {
     delete m_proxyModel;
     delete m_filterDialog;
-    // delete m_filterModel;
+    delete m_filterModel;
     delete ui;
 }

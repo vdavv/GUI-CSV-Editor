@@ -15,7 +15,6 @@ public:
     void setFilterMap(const QMap<int, QPair<double, double>> &filterMap);
 
     void refreshFilter();
-    void applyFilter(const QString &state, const QMap<int, QPair<double, double>> &filterMap);
 
 protected:
     bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;
@@ -23,6 +22,7 @@ protected:
 private:
     QString m_stateFilter;
     QMap<int, QPair<double, double>> m_filterMap;
+    bool isUpdatingFilter;
 };
 
 #endif // CSVFILTERMODEL_H

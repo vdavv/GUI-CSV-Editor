@@ -32,7 +32,7 @@ void FilterDialog::on_filterApplyButton_clicked()
     m_stateFilter = ui->stateChoiceLineEdit->text();
 
     // Collect all the filters from the min/max line edits
-    QStringList columnNames = {"ratemds", "healthgrades", "webmd", "ucomparehealthcare", "yelp", "google", "experian", "usnews", "ssinum"};
+    QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
     for (int i = 0; i < columnNames.size(); ++i) {
         QLineEdit *minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
         QLineEdit *maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");

@@ -9,23 +9,17 @@ CSVFilterModel::CSVFilterModel(QObject *parent)
 
 void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>> &filterMap)
 {
+    if (isUpdatingFilter)
+        return;
     m_filterMap = filterMap;
-    invalidateFilter();
 }
 
-
-void CSVFilterModel::applyFilter(const QString &state, const QMap<int, QPair<double, double>> &filterMap)
-{
-    m_stateFilter = state;
-    m_filterMap = filterMap;
-    invalidateFilter();
-}
 
 
 
 bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
 {
-    auto *sourceModel = qobject_cast<QStandardItemModel*>(this->sourceModel());
+    auto *sourceModel = qobject_cast<QAbstractTableModel*>(this->sourceModel());
     if (!sourceModel)
         return false;
 
@@ -50,12 +44,11 @@ bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_
     return true;
 }
 
-// ...
+
 void CSVFilterModel::refreshFilter()
 {
     invalidateFilter();
 }
-// ...
 
 
 void CSVFilterModel::setStateFilter(const QString &state)

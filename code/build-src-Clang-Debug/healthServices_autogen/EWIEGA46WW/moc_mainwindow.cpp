@@ -52,7 +52,6 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "SaveCSV",
     "onFileChanged",
     "path",
-    "onFilterChanged",
     "applyFilter",
     "openHelpWindow",
     "onSortBoxChanged",
@@ -65,7 +64,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[46];
+    uint offsetsAndSizes[44];
     char stringdata0[11];
     char stringdata1[27];
     char stringdata2[1];
@@ -79,16 +78,15 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata10[8];
     char stringdata11[14];
     char stringdata12[5];
-    char stringdata13[16];
-    char stringdata14[12];
-    char stringdata15[15];
-    char stringdata16[17];
-    char stringdata17[23];
-    char stringdata18[13];
-    char stringdata19[5];
-    char stringdata20[7];
+    char stringdata13[12];
+    char stringdata14[15];
+    char stringdata15[17];
+    char stringdata16[23];
+    char stringdata17[13];
+    char stringdata18[5];
+    char stringdata19[7];
+    char stringdata20[10];
     char stringdata21[10];
-    char stringdata22[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -107,16 +105,15 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(109, 7),  // "SaveCSV"
         QT_MOC_LITERAL(117, 13),  // "onFileChanged"
         QT_MOC_LITERAL(131, 4),  // "path"
-        QT_MOC_LITERAL(136, 15),  // "onFilterChanged"
-        QT_MOC_LITERAL(152, 11),  // "applyFilter"
-        QT_MOC_LITERAL(164, 14),  // "openHelpWindow"
-        QT_MOC_LITERAL(179, 16),  // "onSortBoxChanged"
-        QT_MOC_LITERAL(196, 22),  // "onHeaderSectionClicked"
-        QT_MOC_LITERAL(219, 12),  // "logicalIndex"
-        QT_MOC_LITERAL(232, 4),  // "sort"
-        QT_MOC_LITERAL(237, 6),  // "column"
-        QT_MOC_LITERAL(244, 9),  // "ascending"
-        QT_MOC_LITERAL(254, 9)   // "ReloadCSV"
+        QT_MOC_LITERAL(136, 11),  // "applyFilter"
+        QT_MOC_LITERAL(148, 14),  // "openHelpWindow"
+        QT_MOC_LITERAL(163, 16),  // "onSortBoxChanged"
+        QT_MOC_LITERAL(180, 22),  // "onHeaderSectionClicked"
+        QT_MOC_LITERAL(203, 12),  // "logicalIndex"
+        QT_MOC_LITERAL(216, 4),  // "sort"
+        QT_MOC_LITERAL(221, 6),  // "column"
+        QT_MOC_LITERAL(228, 9),  // "ascending"
+        QT_MOC_LITERAL(238, 9)   // "ReloadCSV"
     },
     "MainWindow",
     "on_tableView_doubleClicked",
@@ -131,7 +128,6 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "SaveCSV",
     "onFileChanged",
     "path",
-    "onFilterChanged",
     "applyFilter",
     "openHelpWindow",
     "onSortBoxChanged",
@@ -152,7 +148,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -160,20 +156,19 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   98,    2, 0x08,    1 /* Private */,
-       5,    1,  101,    2, 0x08,    3 /* Private */,
-       7,    0,  104,    2, 0x08,    5 /* Private */,
-       8,    0,  105,    2, 0x08,    6 /* Private */,
-       9,    0,  106,    2, 0x08,    7 /* Private */,
-      10,    0,  107,    2, 0x08,    8 /* Private */,
-      11,    1,  108,    2, 0x08,    9 /* Private */,
-      13,    0,  111,    2, 0x08,   11 /* Private */,
-      14,    0,  112,    2, 0x08,   12 /* Private */,
-      15,    0,  113,    2, 0x08,   13 /* Private */,
-      16,    1,  114,    2, 0x08,   14 /* Private */,
-      17,    1,  117,    2, 0x08,   16 /* Private */,
-      19,    2,  120,    2, 0x08,   18 /* Private */,
-      22,    0,  125,    2, 0x0a,   21 /* Public */,
+       1,    1,   92,    2, 0x08,    1 /* Private */,
+       5,    1,   95,    2, 0x08,    3 /* Private */,
+       7,    0,   98,    2, 0x08,    5 /* Private */,
+       8,    0,   99,    2, 0x08,    6 /* Private */,
+       9,    0,  100,    2, 0x08,    7 /* Private */,
+      10,    0,  101,    2, 0x08,    8 /* Private */,
+      11,    1,  102,    2, 0x08,    9 /* Private */,
+      13,    0,  105,    2, 0x08,   11 /* Private */,
+      14,    0,  106,    2, 0x08,   12 /* Private */,
+      15,    1,  107,    2, 0x08,   13 /* Private */,
+      16,    1,  110,    2, 0x08,   15 /* Private */,
+      18,    2,  113,    2, 0x08,   17 /* Private */,
+      21,    0,  118,    2, 0x0a,   20 /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -185,10 +180,9 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void, QMetaType::QString,   12,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    4,
-    QMetaType::Void, QMetaType::Int,   18,
-    QMetaType::Void, QMetaType::Int, QMetaType::Bool,   20,   21,
+    QMetaType::Void, QMetaType::Int,   17,
+    QMetaType::Void, QMetaType::Int, QMetaType::Bool,   19,   20,
     QMetaType::Void,
 
        0        // eod
@@ -220,8 +214,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'onFileChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'onFilterChanged'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'applyFilter'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'openHelpWindow'
@@ -255,13 +247,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->EditRow(); break;
         case 5: _t->SaveCSV(); break;
         case 6: _t->onFileChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 7: _t->onFilterChanged(); break;
-        case 8: _t->applyFilter(); break;
-        case 9: _t->openHelpWindow(); break;
-        case 10: _t->onSortBoxChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 11: _t->onHeaderSectionClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 12: _t->sort((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
-        case 13: _t->ReloadCSV(); break;
+        case 7: _t->applyFilter(); break;
+        case 8: _t->openHelpWindow(); break;
+        case 9: _t->onSortBoxChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 10: _t->onHeaderSectionClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 11: _t->sort((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
+        case 12: _t->ReloadCSV(); break;
         default: ;
         }
     }
@@ -286,13 +277,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 13)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 13;
     }
     return _id;
 }
