@@ -1,5 +1,6 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "rowadddialog.h"
 #include "roweditdialog.h"
 #include "helpwindow.h"
 #include "filterdialog.h"
@@ -78,31 +79,39 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 
 
 void MainWindow::AddRow() {
-    QItemSelectionModel *select = ui->tableView->selectionModel();
-    int selectedRow = m_model.rowCount(); // default to end of list
+    RowAddDialog dialog(this);
 
-    if(select->hasSelection()) { // if a row is selected
-        selectedRow = select->selectedRows().first().row() + 1; // get selected row
-    }
+    // Open the dialog and check if the user clicked OK
+    if(dialog.exec() == QDialog::Accepted) {
+        QStringList rowData = dialog.rowData();
+        QItemSelectionModel *select = ui->tableView->selectionModel();
+        int selectedRow = m_model.rowCount(); // default to end of list
 
-    if(m_model.insertRow(selectedRow, QModelIndex())) {
-        for(int column = 0; column < m_model.columnCount(); column++) {
-            QModelIndex index = m_model.index(selectedRow, column);
-            if (column == 0) {
-                m_model.setData(index, "City, State");
-            } else {
-                m_model.setData(index, 0);
+        if(select->hasSelection()) { // if a row is selected
+            selectedRow = select->selectedRows().first().row() + 1; // get selected row
+        }
+
+        if(m_model.insertRow(selectedRow, QModelIndex())) {
+            for(int column = 0; column < m_model.columnCount(); column++) {
+                QModelIndex index = m_model.index(selectedRow, column);
+                m_model.setData(index, rowData.at(column));
             }
         }
     }
 }
 
 
+
 void MainWindow::RemoveRow() {
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
     if(select->hasSelection()) { //check if has selection
-        m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
+        QMessageBox::StandardButton reply;
+        reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
+                                      QMessageBox::Yes|QMessageBox::No);
+        if (reply == QMessageBox::Yes) {
+            m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
+        }
     }
 }
 
@@ -210,7 +219,6 @@ void MainWindow::onSortBoxChanged(int index) {
         ui->tableView->setModel(m_proxyModel);
     }
 }
-
 
 
 void MainWindow::sort(int column, bool ascending) {

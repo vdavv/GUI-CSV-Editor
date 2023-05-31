@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp" "CMakeFiles/healthServices.dir/helpwindow.cpp.o" "gcc" "CMakeFiles/healthServices.dir/helpwindow.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp" "CMakeFiles/healthServices.dir/main.cpp.o" "gcc" "CMakeFiles/healthServices.dir/main.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp" "CMakeFiles/healthServices.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/healthServices.dir/mainwindow.cpp.o.d"
+  "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp" "CMakeFiles/healthServices.dir/rowadddialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/rowadddialog.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp" "CMakeFiles/healthServices.dir/roweditdialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/roweditdialog.cpp.o.d"
   )
 

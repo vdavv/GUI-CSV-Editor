@@ -125,10 +125,24 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/healthServices.dir/csvmodel.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.cpp -o CMakeFiles/healthServices.dir/csvmodel.cpp.s
 
+CMakeFiles/healthServices.dir/rowadddialog.cpp.o: CMakeFiles/healthServices.dir/flags.make
+CMakeFiles/healthServices.dir/rowadddialog.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp
+CMakeFiles/healthServices.dir/rowadddialog.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/healthServices.dir/rowadddialog.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/rowadddialog.cpp.o -MF CMakeFiles/healthServices.dir/rowadddialog.cpp.o.d -o CMakeFiles/healthServices.dir/rowadddialog.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp
+
+CMakeFiles/healthServices.dir/rowadddialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/healthServices.dir/rowadddialog.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp > CMakeFiles/healthServices.dir/rowadddialog.cpp.i
+
+CMakeFiles/healthServices.dir/rowadddialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/healthServices.dir/rowadddialog.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp -o CMakeFiles/healthServices.dir/rowadddialog.cpp.s
+
 CMakeFiles/healthServices.dir/roweditdialog.cpp.o: CMakeFiles/healthServices.dir/flags.make
 CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp
 CMakeFiles/healthServices.dir/roweditdialog.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/healthServices.dir/roweditdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/healthServices.dir/roweditdialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/roweditdialog.cpp.o -MF CMakeFiles/healthServices.dir/roweditdialog.cpp.o.d -o CMakeFiles/healthServices.dir/roweditdialog.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp
 
 CMakeFiles/healthServices.dir/roweditdialog.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.s: cmake_force
 CMakeFiles/healthServices.dir/helpwindow.cpp.o: CMakeFiles/healthServices.dir/flags.make
 CMakeFiles/healthServices.dir/helpwindow.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp
 CMakeFiles/healthServices.dir/helpwindow.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/healthServices.dir/helpwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/healthServices.dir/helpwindow.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/helpwindow.cpp.o -MF CMakeFiles/healthServices.dir/helpwindow.cpp.o.d -o CMakeFiles/healthServices.dir/helpwindow.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp
 
 CMakeFiles/healthServices.dir/helpwindow.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.s: cmake_force
 CMakeFiles/healthServices.dir/filterdialog.cpp.o: CMakeFiles/healthServices.dir/flags.make
 CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp
 CMakeFiles/healthServices.dir/filterdialog.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/healthServices.dir/filterdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/healthServices.dir/filterdialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/filterdialog.cpp.o -MF CMakeFiles/healthServices.dir/filterdialog.cpp.o.d -o CMakeFiles/healthServices.dir/filterdialog.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp
 
 CMakeFiles/healthServices.dir/filterdialog.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.s: cmake_force
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: CMakeFiles/healthServices.dir/flags.make
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o -MF CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o.d -o CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp
 
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.i: cmake_force
@@ -187,6 +201,7 @@ healthServices_OBJECTS = \
 "CMakeFiles/healthServices.dir/main.cpp.o" \
 "CMakeFiles/healthServices.dir/mainwindow.cpp.o" \
 "CMakeFiles/healthServices.dir/csvmodel.cpp.o" \
+"CMakeFiles/healthServices.dir/rowadddialog.cpp.o" \
 "CMakeFiles/healthServices.dir/roweditdialog.cpp.o" \
 "CMakeFiles/healthServices.dir/helpwindow.cpp.o" \
 "CMakeFiles/healthServices.dir/filterdialog.cpp.o" \
@@ -199,6 +214,7 @@ healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/main.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/mainwindow.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/csvmodel.cpp.o
+healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/rowadddialog.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/roweditdialog.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/helpwindow.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/filterdialog.cpp.o
@@ -208,7 +224,7 @@ healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtWidgets.fr
 healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable healthServices.app/Contents/MacOS/healthServices"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable healthServices.app/Contents/MacOS/healthServices"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/healthServices.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

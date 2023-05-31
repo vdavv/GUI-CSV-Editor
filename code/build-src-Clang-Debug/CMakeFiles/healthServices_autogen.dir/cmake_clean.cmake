@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "healthServices_autogen/include/ui_filterdialog.h"
   "healthServices_autogen/include/ui_helpwindow.h"
   "healthServices_autogen/include/ui_mainwindow.h"
+  "healthServices_autogen/include/ui_rowadddialog.h"
   "healthServices_autogen/include/ui_roweditdialog.h"
   "healthServices_autogen/mocs_compilation.cpp"
 )

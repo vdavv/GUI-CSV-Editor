@@ -45,7 +45,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 41,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -69,13 +69,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 73,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 63,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
@@ -297,7 +297,9 @@
 				6,
 				8,
 				11,
-				14
+				14,
+				17,
+				20
 			]
 		}
 	],
@@ -413,7 +415,9 @@
 				6,
 				8,
 				11,
-				14
+				14,
+				17,
+				20
 			]
 		},
 		{
@@ -426,9 +430,12 @@
 				10,
 				13,
 				16,
-				17,
-				18,
-				19
+				19,
+				21,
+				22,
+				23,
+				24,
+				25
 			]
 		},
 		{
@@ -438,7 +445,8 @@
 				4,
 				9,
 				12,
-				15
+				15,
+				18
 			]
 		}
 	],
@@ -483,6 +491,22 @@
 			"compileGroupIndex" : 0,
 			"path" : "csvmodel.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "rowadddialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "rowadddialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "rowadddialog.ui",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
@@ -533,9 +557,26 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "csvfiltermodel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "csvfiltermodel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_rowadddialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{

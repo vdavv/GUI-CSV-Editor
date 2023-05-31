@@ -14,9 +14,7 @@ public:
     explicit RowEditDialog(QWidget *parent = nullptr);
     ~RowEditDialog();
     void setRowData(const QStringList &rowData);
-    // void setData(const QStringList &data);
     QStringList rowData() const;
-    // QStringList getData();
 
 private:
     QList<QLineEdit*> m_lineEdits;

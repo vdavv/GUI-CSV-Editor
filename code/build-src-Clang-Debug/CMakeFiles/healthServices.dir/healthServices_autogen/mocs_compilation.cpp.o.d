@@ -578,9 +578,9 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/roweditdialog.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/rowadddialog.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_rowadddialog.h \
   /opt/homebrew/include/QtWidgets/QAbstractButton \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /opt/homebrew/include/QtWidgets/QDialogButtonBox \
@@ -600,4 +600,7 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtWidgets/QLineEdit \
   /opt/homebrew/include/QtWidgets/QSpacerItem \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/QVBoxLayout
+  /opt/homebrew/include/QtWidgets/QVBoxLayout \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/../../../src/roweditdialog.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h

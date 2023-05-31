@@ -24,6 +24,10 @@ set(PROJECT_SOURCES
         csvmodel.h
         csvmodel.cpp
 
+        rowadddialog.h
+        rowadddialog.cpp
+        rowadddialog.ui
+
         roweditdialog.h
         roweditdialog.cpp
         roweditdialog.ui

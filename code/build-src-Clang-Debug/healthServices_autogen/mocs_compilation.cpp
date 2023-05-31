@@ -4,4 +4,5 @@
 #include "EWIEGA46WW/moc_filterdialog.cpp"
 #include "EWIEGA46WW/moc_helpwindow.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_rowadddialog.cpp"
 #include "EWIEGA46WW/moc_roweditdialog.cpp"

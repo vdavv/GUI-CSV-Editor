@@ -355,6 +355,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+rowadddialog.o: rowadddialog.cpp.o
+.PHONY : rowadddialog.o
+
+# target to build an object file
+rowadddialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/rowadddialog.cpp.o
+.PHONY : rowadddialog.cpp.o
+
+rowadddialog.i: rowadddialog.cpp.i
+.PHONY : rowadddialog.i
+
+# target to preprocess a source file
+rowadddialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/rowadddialog.cpp.i
+.PHONY : rowadddialog.cpp.i
+
+rowadddialog.s: rowadddialog.cpp.s
+.PHONY : rowadddialog.s
+
+# target to generate assembly for a file
+rowadddialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/rowadddialog.cpp.s
+.PHONY : rowadddialog.cpp.s
+
 roweditdialog.o: roweditdialog.cpp.o
 .PHONY : roweditdialog.o
 
@@ -414,6 +438,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... rowadddialog.o"
+	@echo "... rowadddialog.i"
+	@echo "... rowadddialog.s"
 	@echo "... roweditdialog.o"
 	@echo "... roweditdialog.i"
 	@echo "... roweditdialog.s"

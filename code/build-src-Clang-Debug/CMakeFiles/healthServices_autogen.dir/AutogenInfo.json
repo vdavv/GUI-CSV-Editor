@@ -371,6 +371,12 @@
 			null
 		],
 		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h",
+			"MU",
+			"EWIEGA46WW/moc_rowadddialog.cpp",
+			null
+		],
+		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h",
 			"MU",
 			"EWIEGA46WW/moc_roweditdialog.cpp",
@@ -463,6 +469,11 @@
 		],
 		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp",
 			"MU",
 			null
 		],

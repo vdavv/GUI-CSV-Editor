@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/healthServices.dir/main.cpp.o.d"
   "CMakeFiles/healthServices.dir/mainwindow.cpp.o"
   "CMakeFiles/healthServices.dir/mainwindow.cpp.o.d"
+  "CMakeFiles/healthServices.dir/rowadddialog.cpp.o"
+  "CMakeFiles/healthServices.dir/rowadddialog.cpp.o.d"
   "CMakeFiles/healthServices.dir/roweditdialog.cpp.o"
   "CMakeFiles/healthServices.dir/roweditdialog.cpp.o.d"
   "healthServices.app/Contents/MacOS/healthServices"
