@@ -26,6 +26,7 @@ public:
 
     QStringList getRowData(int row) const;
     QStringList getHeaderData() const;
+    QVariant convertStringToNumber(const QVariant& str) const;
 
     QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 

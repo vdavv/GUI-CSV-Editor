@@ -2231,9 +2231,6 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o
  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h
  /opt/homebrew/include/QtWidgets/QDialogButtonBox
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h
  /opt/homebrew/include/QtWidgets/QGridLayout
  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h
  /opt/homebrew/include/QtWidgets/qlayout.h
@@ -2250,6 +2247,9 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o
  /opt/homebrew/include/QtWidgets/QSpacerItem
  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h
  /opt/homebrew/include/QtWidgets/QVBoxLayout
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h
 
 CMakeFiles/healthServices.dir/helpwindow.cpp.o
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp
@@ -3971,13 +3971,13 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o
  /opt/homebrew/include/QtWidgets/QDialog
  /opt/homebrew/include/QtWidgets/QDialogButtonBox
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h
  /opt/homebrew/include/QtWidgets/QLabel
  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h
  /opt/homebrew/include/QtGui/qpicture.h
  /opt/homebrew/include/QtCore/qiodevice.h
  /opt/homebrew/include/QtWidgets/QLineEdit
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_helpwindow.h
  /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView
@@ -4541,16 +4541,32 @@ CMakeFiles/healthServices.dir/rowadddialog.cpp.o
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h
  /opt/homebrew/include/QtWidgets/QDialogButtonBox
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h
- /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog
- /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit
- /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h
+ /opt/homebrew/include/QtWidgets/QGridLayout
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h
+ /opt/homebrew/include/QtWidgets/qlayout.h
+ /opt/homebrew/include/QtWidgets/qlayoutitem.h
+ /opt/homebrew/include/QtWidgets/qboxlayout.h
+ /opt/homebrew/include/QtWidgets/qgridlayout.h
+ /opt/homebrew/include/QtWidgets/QHBoxLayout
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h
+ /opt/homebrew/include/QtWidgets/QLabel
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h
  /opt/homebrew/include/QtWidgets/qframe.h
- /opt/homebrew/include/QtGui/qtextcursor.h
+ /opt/homebrew/include/QtGui/qpicture.h
+ /opt/homebrew/include/QtCore/qiodevice.h
  /opt/homebrew/include/QtGui/qtextdocument.h
  /opt/homebrew/include/QtCore/qurl.h
+ /opt/homebrew/include/QtWidgets/QLineEdit
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h
+ /opt/homebrew/include/QtGui/qtextcursor.h
  /opt/homebrew/include/QtGui/qtextformat.h
  /opt/homebrew/include/QtGui/qpen.h
  /opt/homebrew/include/QtGui/qtextoption.h
+ /opt/homebrew/include/QtWidgets/QSpacerItem
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h
+ /opt/homebrew/include/QtWidgets/QVBoxLayout
+ /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog
+ /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit
  /opt/homebrew/lib/QtCore.framework/Headers/QStringList
  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h
 

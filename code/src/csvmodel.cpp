@@ -122,12 +122,36 @@ QVariant CSVModel::data(const QModelIndex &index, int role) const {
 }
 
 
+QVariant CSVModel::convertStringToNumber(const QVariant& str) const {
+    bool ok = false;
+
+    // First, try to convert to an int
+    int intValue = str.toInt(&ok);
+    if (ok) {
+        return QVariant(intValue);
+    }
+
+    // If that fails, try to convert to a double
+    double doubleValue = str.toDouble(&ok);
+    if (ok) {
+        return QVariant(doubleValue);
+    }
+
+    // If all else fails, return 0
+    return QVariant(0);
+}
+
+
+
 bool CSVModel::setData(const QModelIndex &index, const QVariant &value, int role) {
     if (!index.isValid() || role != Qt::EditRole) {
         return false;
     }
 
-    m_data[index.row()][index.column()] = value.toString();
+    if (index.column() != 0)
+        m_data[index.row()][index.column()] = convertStringToNumber(value).toString();
+    else
+        m_data[index.row()][index.column()] = value.toString();
     emit dataChanged(index, index, {role});
 
     return true;
