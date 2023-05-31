@@ -15,6 +15,13 @@ void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>> &filter
 }
 
 
+QString CSVFilterModel::extractState(const QString& cityState) const {
+    QStringList parts = cityState.split(',');
+    if (parts.size() > 1) {
+        return parts[1].trimmed(); // Return the second part, trimmed of whitespace
+    }
+    return QString(); // Return an empty string if there is no comma
+}
 
 
 bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
@@ -24,8 +31,8 @@ bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_
         return false;
 
     if (!m_stateFilter.isEmpty()) {
-        auto stateIndex = sourceModel->index(source_row, 1, source_parent);
-        if (sourceModel->data(stateIndex).toString() != m_stateFilter)
+        auto stateIndex = sourceModel->index(source_row, 0, source_parent);
+        if (extractState(sourceModel->data(stateIndex).toString()) != m_stateFilter)
             return false;
     }
 
@@ -53,7 +60,7 @@ void CSVFilterModel::refreshFilter()
 
 void CSVFilterModel::setStateFilter(const QString &state)
 {
-    qDebug() << "Setting state filter to" << state;
+    // qDebug() << "Setting state filter to" << state;
 
     m_stateFilter = state;
     // invalidateFilter();

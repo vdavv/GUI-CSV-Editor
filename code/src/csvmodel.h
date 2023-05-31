@@ -3,6 +3,7 @@
 
 #include <QAbstractTableModel>
 #include <QStringList>
+#include <QString>
 
 class CSVModel : public QAbstractTableModel
 {

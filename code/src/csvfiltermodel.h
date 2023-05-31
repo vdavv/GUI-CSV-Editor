@@ -15,6 +15,7 @@ public:
     void setFilterMap(const QMap<int, QPair<double, double>> &filterMap);
 
     void refreshFilter();
+    QString extractState(const QString& cityState) const;
 
 protected:
     bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;

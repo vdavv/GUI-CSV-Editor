@@ -26,6 +26,7 @@ signals:
 
 private slots:
     void on_filterApplyButton_clicked();
+    void on_filterResetButton_clicked();
 
 private:
     Ui::FilterDialog *ui;

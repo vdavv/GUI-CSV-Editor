@@ -486,6 +486,8 @@ CMakeFiles/healthServices.dir/main.cpp.o: \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \

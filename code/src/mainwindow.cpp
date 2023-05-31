@@ -16,10 +16,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->setupUi(this);
     // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
+
+
     if (!m_model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) {
         QMessageBox::critical(this, "Error", "Failed to load CSV file.");
         return;
     }
+
+
     m_watcher.addPath(MainWindow::FILEPATH);
     connect(&m_watcher, &QFileSystemWatcher::fileChanged, this, &MainWindow::onFileChanged);
     ui->tableView->setModel(&m_model);
@@ -42,9 +46,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(m_filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
 
 
-
     // Connect sectionClicked signal of the vertical header to handleRowHeaderClicked slot
     connect(ui->tableView->verticalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::handleRowHeaderClicked);
+
 
     // Connect your buttons with the slots
     connect(ui->addRowButton, &QPushButton::clicked, this, &MainWindow::AddRow);
@@ -59,8 +63,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
     connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
-
-
 }
 
 bool MainWindow::eventFilter(QObject *watched, QEvent *event)
@@ -186,14 +188,12 @@ void MainWindow::openFilterDialog() {
 
 void MainWindow::applyFilter()
 {
-    qDebug() << "Applying filter";
-    ui->tableView->setModel(m_filterModel);
-
     QString stateFilter = m_filterDialog->getStateFilter();
     m_filterModel->setStateFilter(stateFilter);
     QMap<int, QPair<double, double>> filterMap = m_filterDialog->getFilterMap();
 
     m_filterModel->setFilterMap(filterMap);
+    ui->tableView->setModel(m_filterModel);
     m_filterModel->refreshFilter();
 }
 
