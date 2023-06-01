@@ -36,9 +36,9 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="drawButton">
+         <widget class="QPushButton" name="reloadButton">
           <property name="text">
-           <string>Draw</string>
+           <string>Load</string>
           </property>
          </widget>
         </item>
@@ -63,9 +63,9 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="reloadButton">
+         <widget class="QPushButton" name="logoButton">
           <property name="text">
-           <string>Load</string>
+           <string>Logo</string>
           </property>
          </widget>
         </item>

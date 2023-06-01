@@ -35,10 +35,10 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *undoButton;
-    QPushButton *drawButton;
+    QPushButton *reloadButton;
     QSpacerItem *horizontalSpacer_2;
     QPushButton *saveButton;
-    QPushButton *reloadButton;
+    QPushButton *logoButton;
     QPushButton *helpButton;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout_3;
@@ -77,10 +77,10 @@ public:
 
         horizontalLayout_2->addWidget(undoButton);
 
-        drawButton = new QPushButton(centralwidget);
-        drawButton->setObjectName("drawButton");
+        reloadButton = new QPushButton(centralwidget);
+        reloadButton->setObjectName("reloadButton");
 
-        horizontalLayout_2->addWidget(drawButton);
+        horizontalLayout_2->addWidget(reloadButton);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -91,10 +91,10 @@ public:
 
         horizontalLayout_2->addWidget(saveButton);
 
-        reloadButton = new QPushButton(centralwidget);
-        reloadButton->setObjectName("reloadButton");
+        logoButton = new QPushButton(centralwidget);
+        logoButton->setObjectName("logoButton");
 
-        horizontalLayout_2->addWidget(reloadButton);
+        horizontalLayout_2->addWidget(logoButton);
 
         helpButton = new QPushButton(centralwidget);
         helpButton->setObjectName("helpButton");
@@ -196,9 +196,9 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CSVEditor", nullptr));
         undoButton->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
-        drawButton->setText(QCoreApplication::translate("MainWindow", "Draw", nullptr));
-        saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         reloadButton->setText(QCoreApplication::translate("MainWindow", "Load", nullptr));
+        saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+        logoButton->setText(QCoreApplication::translate("MainWindow", "Logo", nullptr));
         helpButton->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         orderButton->setText(QString());
         sortBox->setItemText(0, QCoreApplication::translate("MainWindow", "Not Sorted", nullptr));

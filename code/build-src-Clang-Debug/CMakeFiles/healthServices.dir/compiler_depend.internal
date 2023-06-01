@@ -1572,7 +1572,7 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o
 
 CMakeFiles/healthServices.dir/editrowcommand.cpp.o
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp
- /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/EditRowCommand.h
+ /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h
  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand
  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h
  /opt/homebrew/include/QtGui/qtguiglobal.h

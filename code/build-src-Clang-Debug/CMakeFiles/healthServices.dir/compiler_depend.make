@@ -1568,7 +1568,7 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /opt/homebrew/lib/QtCore.framework/Headers/qtextstream.h
 
 CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/EditRowCommand.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
   /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
   /opt/homebrew/include/QtGui/qtguiglobal.h \
@@ -7374,8 +7374,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/advance.h:
-
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/EditRowCommand.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/data.h:
 
