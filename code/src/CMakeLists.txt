@@ -63,6 +63,8 @@ set(PROJECT_SOURCES
         logowindow.ui
 )
 
+add_definitions(-DCSV_FILE_PATH=\"${CMAKE_CURRENT_SOURCE_DIR}/MetroHealth83Original.csv\")
+
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(healthServices
         MANUAL_FINALIZATION

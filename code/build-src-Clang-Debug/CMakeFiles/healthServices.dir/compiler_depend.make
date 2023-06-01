@@ -5376,7 +5376,16 @@ CMakeFiles/healthServices.dir/logowindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/include/QtGui/qpen.h
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QPainterPath \
+  /opt/homebrew/lib/QtGui.framework/Headers/qpainterpath.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient \
+  /opt/homebrew/lib/QtGui.framework/Headers/qbrush.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QFont \
+  /opt/homebrew/lib/QtGui.framework/Headers/qfont.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator \
+  /opt/homebrew/lib/QtCore.framework/Headers/qrandom.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random
 
 CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
@@ -8293,6 +8302,12 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp:
 
+/opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qfont.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient:
+
 /opt/homebrew/include/QtGui/qvector2d.h:
 
 /opt/homebrew/lib/QtGui.framework/Headers/QPainter:
@@ -8503,6 +8518,8 @@ healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
 
 /opt/homebrew/include/QtWidgets/qabstractspinbox.h:
 
+/opt/homebrew/lib/QtCore.framework/Headers/qrandom.h:
+
 /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h:
 
 /opt/homebrew/include/QtWidgets/QTableView:
@@ -8622,6 +8639,8 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 /opt/homebrew/include/QtCore/qlocale.h:
 
 /opt/homebrew/include/QtCore/qmetatype.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qbrush.h:
 
 /opt/homebrew/include/QtCore/qscopedpointer.h:
 
@@ -8908,6 +8927,8 @@ healthServices_autogen/include/ui_mainwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/integer_sequence.h:
 
 /opt/homebrew/include/QtCore/qcompare_impl.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QFont:
 
 /opt/homebrew/include/QtCore/qflags.h:
 
@@ -9247,6 +9268,8 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random:
+
 /opt/homebrew/include/QtCore/qutf8stringview.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h:
@@ -9308,6 +9331,8 @@ healthServices_autogen/include/ui_roweditdialog.h:
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp:
 
 /opt/homebrew/include/QtCore/qconfig.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QPainterPath:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdexcept:
 
@@ -9614,6 +9639,8 @@ healthServices_autogen/include/ui_helpwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tuple:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qpainterpath.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ucontext.h:
 

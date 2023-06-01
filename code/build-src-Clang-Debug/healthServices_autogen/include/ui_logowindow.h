@@ -23,7 +23,7 @@ public:
     {
         if (LogoWindow->objectName().isEmpty())
             LogoWindow->setObjectName("LogoWindow");
-        LogoWindow->resize(400, 300);
+        LogoWindow->resize(800, 600);
 
         retranslateUi(LogoWindow);
 

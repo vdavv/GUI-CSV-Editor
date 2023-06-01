@@ -1,3 +1,4 @@
+#define CSV_FILE_PATH "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/MetroHealth83Original.csv"
 #define QT_CORE_LIB 1
 #define QT_GUI_LIB 1
 #define QT_WIDGETS_LIB 1

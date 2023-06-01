@@ -14,7 +14,7 @@
 
 
 const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
-const QString MainWindow::FILEPATH = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83Original.csv";
+const QString MainWindow::FILEPATH = CSV_FILE_PATH;
 
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), m_undoStack(new QUndoStack(this)), m_delegate(new CSVItemDelegate(&m_model, m_undoStack, this)) {
@@ -53,7 +53,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 
     // Creating LogoWindow
-    m_logoWindow = new LogoWindow(this);
+    // m_logoWindow = new LogoWindow(this);
     connect(ui->logoButton, &QPushButton::clicked, this, &MainWindow::on_logoButton_clicked);
 
 
@@ -204,6 +204,8 @@ void MainWindow::on_undoButton_clicked()
 void MainWindow::on_logoButton_clicked()
 {
     // Show the logo window
+    m_logoWindow = new LogoWindow(this);
+    m_logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
     m_logoWindow->show();
 }
 
@@ -265,7 +267,6 @@ void MainWindow::sort(int column, bool ascending) {
 }
 
 
-
 void MainWindow::onHeaderSectionClicked(int logicalIndex) {
     bool reverseOrder = false;
     if (logicalIndex == m_lastClickedSection) {
@@ -283,6 +284,5 @@ MainWindow::~MainWindow() {
     delete m_proxyModel;
     delete m_filterDialog;
     delete m_filterModel;
-    delete m_logoWindow;
     delete ui;
 }
