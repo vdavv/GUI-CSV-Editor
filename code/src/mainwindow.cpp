@@ -5,6 +5,7 @@
 #include "helpwindow.h"
 #include "filterdialog.h"
 #include "addrowcommand.h"
+#include "removerowcommand.h"
 #include <QTableView>
 #include <QMessageBox>
 #include <QMouseEvent>
@@ -113,7 +114,9 @@ void MainWindow::RemoveRow() {
         reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes) {
-            m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
+            // m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
+            int row = select->selectedRows().first().row();
+            m_undoStack->push(new RemoveRowCommand(&m_model, row));
         }
     }
 }
