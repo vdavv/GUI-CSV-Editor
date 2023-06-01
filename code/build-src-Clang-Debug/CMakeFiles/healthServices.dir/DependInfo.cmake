@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp" "CMakeFiles/healthServices.dir/addrowcommand.cpp.o" "gcc" "CMakeFiles/healthServices.dir/addrowcommand.cpp.o.d"
+  "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.cpp" "CMakeFiles/healthServices.dir/celleditcommand.cpp.o" "gcc" "CMakeFiles/healthServices.dir/celleditcommand.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp" "CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o" "gcc" "CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o.d"
+  "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.cpp" "CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o" "gcc" "CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.cpp" "CMakeFiles/healthServices.dir/csvmodel.cpp.o" "gcc" "CMakeFiles/healthServices.dir/csvmodel.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp" "CMakeFiles/healthServices.dir/editrowcommand.cpp.o" "gcc" "CMakeFiles/healthServices.dir/editrowcommand.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp" "CMakeFiles/healthServices.dir/filterdialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/filterdialog.cpp.o.d"

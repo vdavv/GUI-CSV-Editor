@@ -51,6 +51,12 @@ set(PROJECT_SOURCES
 
         editrowcommand.h
         editrowcommand.cpp
+
+        celleditcommand.h
+        celleditcommand.cpp
+
+        csvitemdelegate.h
+        csvitemdelegate.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

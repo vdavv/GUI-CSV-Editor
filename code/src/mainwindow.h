@@ -2,13 +2,15 @@
 #define MAINWINDOW_H
 
 #include "csvmodel.h"
-#include "csvfiltermodel.h"
-#include "filterdialog.h"
 #include <QMainWindow>
 #include <QFileSystemWatcher>
 #include <QList>
 #include <QSortFilterProxyModel>
 #include <QUndoStack>
+#include "csvfiltermodel.h"
+#include "filterdialog.h"
+#include "csvitemdelegate.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,7 +32,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_tableView_doubleClicked(const QModelIndex &index);
+    // void on_tableView_doubleClicked(const QModelIndex &index);
     void on_undoButton_clicked();
     void handleRowHeaderClicked(int row);
 
@@ -61,6 +63,7 @@ private:
     CSVFilterModel *m_filterModel;
     FilterDialog *m_filterDialog;
     QUndoStack *m_undoStack;
+    CSVItemDelegate *m_delegate;
 
 
 };

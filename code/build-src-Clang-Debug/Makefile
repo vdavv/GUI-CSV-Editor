@@ -211,6 +211,30 @@ addrowcommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/addrowcommand.cpp.s
 .PHONY : addrowcommand.cpp.s
 
+celleditcommand.o: celleditcommand.cpp.o
+.PHONY : celleditcommand.o
+
+# target to build an object file
+celleditcommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/celleditcommand.cpp.o
+.PHONY : celleditcommand.cpp.o
+
+celleditcommand.i: celleditcommand.cpp.i
+.PHONY : celleditcommand.i
+
+# target to preprocess a source file
+celleditcommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/celleditcommand.cpp.i
+.PHONY : celleditcommand.cpp.i
+
+celleditcommand.s: celleditcommand.cpp.s
+.PHONY : celleditcommand.s
+
+# target to generate assembly for a file
+celleditcommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/celleditcommand.cpp.s
+.PHONY : celleditcommand.cpp.s
+
 csvfiltermodel.o: csvfiltermodel.cpp.o
 .PHONY : csvfiltermodel.o
 
@@ -234,6 +258,30 @@ csvfiltermodel.s: csvfiltermodel.cpp.s
 csvfiltermodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/csvfiltermodel.cpp.s
 .PHONY : csvfiltermodel.cpp.s
+
+csvitemdelegate.o: csvitemdelegate.cpp.o
+.PHONY : csvitemdelegate.o
+
+# target to build an object file
+csvitemdelegate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o
+.PHONY : csvitemdelegate.cpp.o
+
+csvitemdelegate.i: csvitemdelegate.cpp.i
+.PHONY : csvitemdelegate.i
+
+# target to preprocess a source file
+csvitemdelegate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/csvitemdelegate.cpp.i
+.PHONY : csvitemdelegate.cpp.i
+
+csvitemdelegate.s: csvitemdelegate.cpp.s
+.PHONY : csvitemdelegate.s
+
+# target to generate assembly for a file
+csvitemdelegate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/csvitemdelegate.cpp.s
+.PHONY : csvitemdelegate.cpp.s
 
 csvmodel.o: csvmodel.cpp.o
 .PHONY : csvmodel.o
@@ -492,9 +540,15 @@ help:
 	@echo "... addrowcommand.o"
 	@echo "... addrowcommand.i"
 	@echo "... addrowcommand.s"
+	@echo "... celleditcommand.o"
+	@echo "... celleditcommand.i"
+	@echo "... celleditcommand.s"
 	@echo "... csvfiltermodel.o"
 	@echo "... csvfiltermodel.i"
 	@echo "... csvfiltermodel.s"
+	@echo "... csvitemdelegate.o"
+	@echo "... csvitemdelegate.i"
+	@echo "... csvitemdelegate.s"
 	@echo "... csvmodel.o"
 	@echo "... csvmodel.i"
 	@echo "... csvmodel.s"

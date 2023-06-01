@@ -16,10 +16,11 @@ const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 const QString MainWindow::FILEPATH = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83Original.csv";
 
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), m_undoStack(new QUndoStack(this)) {
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), m_undoStack(new QUndoStack(this)), m_delegate(new CSVItemDelegate(&m_model, m_undoStack, this)) {
     ui->setupUi(this);
     // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
+    ui->tableView->setItemDelegate(m_delegate);
 
 
     if (!m_model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) {
@@ -182,10 +183,10 @@ void MainWindow::handleRowHeaderClicked(int row) {
 }
 
 
-void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
-{
-    ui->tableView->edit(index);
-}
+//void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
+//{
+//    ui->tableView->edit(index);
+//}
 
 
 void MainWindow::on_undoButton_clicked() {
