@@ -1,14 +1,15 @@
 ﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QTableView>
+#include <QMessageBox>
+#include <QMouseEvent>
 #include "rowadddialog.h"
 #include "roweditdialog.h"
 #include "helpwindow.h"
 #include "filterdialog.h"
 #include "addrowcommand.h"
 #include "removerowcommand.h"
-#include <QTableView>
-#include <QMessageBox>
-#include <QMouseEvent>
+#include "editrowcommand.h"
 
 
 const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
@@ -137,19 +138,21 @@ void MainWindow::EditRow() {
         int row = select->selectedRows().first().row();
 
         // Getting current data of the row
-        QStringList rowData = m_model.getRowData(row);
+        QStringList oldData = m_model.getRowData(row);
 
         // Create and setup dialog
         RowEditDialog dialog(this);
-        dialog.setRowData(rowData); // use setRowData instead of setData
+        dialog.setRowData(oldData); // use setRowData instead of setData
 
         // If Ok is pressed then apply changes to the model
         if (dialog.exec() == QDialog::Accepted) {
             QStringList newData = dialog.rowData(); // use rowData instead of getData
-            for (int i = 0; i < newData.size(); ++i) {
-                QModelIndex index = m_model.index(row, i);
-                m_model.setData(index, newData[i]);
-            }
+            auto* command = new EditRowCommand(&m_model, row, oldData, newData);
+            m_undoStack->push(command);
+//            for (int i = 0; i < newData.size(); ++i) {
+//                QModelIndex index = m_model.index(row, i);
+//                m_model.setData(index, newData[i]);
+//            }
         }
     }
 }

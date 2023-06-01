@@ -259,6 +259,30 @@ csvmodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/csvmodel.cpp.s
 .PHONY : csvmodel.cpp.s
 
+editrowcommand.o: editrowcommand.cpp.o
+.PHONY : editrowcommand.o
+
+# target to build an object file
+editrowcommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/editrowcommand.cpp.o
+.PHONY : editrowcommand.cpp.o
+
+editrowcommand.i: editrowcommand.cpp.i
+.PHONY : editrowcommand.i
+
+# target to preprocess a source file
+editrowcommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/editrowcommand.cpp.i
+.PHONY : editrowcommand.cpp.i
+
+editrowcommand.s: editrowcommand.cpp.s
+.PHONY : editrowcommand.s
+
+# target to generate assembly for a file
+editrowcommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/editrowcommand.cpp.s
+.PHONY : editrowcommand.cpp.s
+
 filterdialog.o: filterdialog.cpp.o
 .PHONY : filterdialog.o
 
@@ -474,6 +498,9 @@ help:
 	@echo "... csvmodel.o"
 	@echo "... csvmodel.i"
 	@echo "... csvmodel.s"
+	@echo "... editrowcommand.o"
+	@echo "... editrowcommand.i"
+	@echo "... editrowcommand.s"
 	@echo "... filterdialog.o"
 	@echo "... filterdialog.i"
 	@echo "... filterdialog.s"

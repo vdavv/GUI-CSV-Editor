@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o.d"
   "CMakeFiles/healthServices.dir/csvmodel.cpp.o"
   "CMakeFiles/healthServices.dir/csvmodel.cpp.o.d"
+  "CMakeFiles/healthServices.dir/editrowcommand.cpp.o"
+  "CMakeFiles/healthServices.dir/editrowcommand.cpp.o.d"
   "CMakeFiles/healthServices.dir/filterdialog.cpp.o"
   "CMakeFiles/healthServices.dir/filterdialog.cpp.o.d"
   "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o"

@@ -2705,6 +2705,7 @@
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h
  mmc:Q_OBJECT
  mdp:/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h
@@ -3154,3 +3155,4 @@
  mdp:/opt/homebrew/Cellar/qt/6.5.0/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
  uic:ui_helpwindow.h
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h

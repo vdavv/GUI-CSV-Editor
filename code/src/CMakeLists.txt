@@ -48,6 +48,9 @@ set(PROJECT_SOURCES
 
         removerowcommand.h
         removerowcommand.cpp
+
+        editrowcommand.h
+        editrowcommand.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
