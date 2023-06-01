@@ -389,6 +389,12 @@
 			null
 		],
 		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h",
+			"MU",
+			"EWIEGA46WW/moc_logowindow.cpp",
+			null
+		],
+		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -509,6 +515,11 @@
 		],
 		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.cpp",
 			"MU",
 			null
 		],

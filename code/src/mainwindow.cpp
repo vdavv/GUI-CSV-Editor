@@ -10,6 +10,7 @@
 #include "addrowcommand.h"
 #include "removerowcommand.h"
 #include "editrowcommand.h"
+#include "logowindow.h"
 
 
 const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
@@ -49,6 +50,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // Creating FilterDialog
     m_filterDialog = new FilterDialog(this);
     connect(m_filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
+
+
+    // Creating LogoWindow
+    m_logoWindow = new LogoWindow(this);
+    connect(ui->logoButton, &QPushButton::clicked, this, &MainWindow::on_logoButton_clicked);
 
 
     // Connect sectionClicked signal of the vertical header to handleRowHeaderClicked slot
@@ -189,8 +195,16 @@ void MainWindow::handleRowHeaderClicked(int row) {
 //}
 
 
-void MainWindow::on_undoButton_clicked() {
+void MainWindow::on_undoButton_clicked()
+{
     m_undoStack->undo();
+}
+
+
+void MainWindow::on_logoButton_clicked()
+{
+    // Show the logo window
+    m_logoWindow->show();
 }
 
 
@@ -269,5 +283,6 @@ MainWindow::~MainWindow() {
     delete m_proxyModel;
     delete m_filterDialog;
     delete m_filterModel;
+    delete m_logoWindow;
     delete ui;
 }

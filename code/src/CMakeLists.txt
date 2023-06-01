@@ -57,6 +57,10 @@ set(PROJECT_SOURCES
 
         csvitemdelegate.h
         csvitemdelegate.cpp
+
+        logowindow.h
+        logowindow.cpp
+        logowindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -403,6 +403,30 @@ helpwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/helpwindow.cpp.s
 .PHONY : helpwindow.cpp.s
 
+logowindow.o: logowindow.cpp.o
+.PHONY : logowindow.o
+
+# target to build an object file
+logowindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/logowindow.cpp.o
+.PHONY : logowindow.cpp.o
+
+logowindow.i: logowindow.cpp.i
+.PHONY : logowindow.i
+
+# target to preprocess a source file
+logowindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/logowindow.cpp.i
+.PHONY : logowindow.cpp.i
+
+logowindow.s: logowindow.cpp.s
+.PHONY : logowindow.s
+
+# target to generate assembly for a file
+logowindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/logowindow.cpp.s
+.PHONY : logowindow.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -564,6 +588,9 @@ help:
 	@echo "... helpwindow.o"
 	@echo "... helpwindow.i"
 	@echo "... helpwindow.s"
+	@echo "... logowindow.o"
+	@echo "... logowindow.i"
+	@echo "... logowindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

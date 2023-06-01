@@ -10,6 +10,7 @@
 #include "csvfiltermodel.h"
 #include "filterdialog.h"
 #include "csvitemdelegate.h"
+#include "logowindow.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -34,6 +35,7 @@ public:
 private slots:
     // void on_tableView_doubleClicked(const QModelIndex &index);
     void on_undoButton_clicked();
+    void on_logoButton_clicked();
     void handleRowHeaderClicked(int row);
 
     void AddRow();
@@ -62,6 +64,7 @@ private:
     int m_lastClickedSection = -1;
     CSVFilterModel *m_filterModel;
     FilterDialog *m_filterDialog;
+    LogoWindow *m_logoWindow;
     QUndoStack *m_undoStack;
     CSVItemDelegate *m_delegate;
 
