@@ -11,7 +11,7 @@ void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>> &filter
 {
     if (isUpdatingFilter)
         return;
-    m_filterMap = filterMap;
+    modelFilterMap = filterMap;
 }
 
 
@@ -30,13 +30,13 @@ bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_
     if (!sourceModel)
         return false;
 
-    if (!m_stateFilter.isEmpty()) {
+    if (!modelStateFilter.isEmpty()) {
         auto stateIndex = sourceModel->index(source_row, 0, source_parent);
-        if (extractState(sourceModel->data(stateIndex).toString()) != m_stateFilter)
+        if (extractState(sourceModel->data(stateIndex).toString()) != modelStateFilter)
             return false;
     }
 
-    for (auto it = m_filterMap.begin(); it != m_filterMap.end(); ++it) {
+    for (auto it = modelFilterMap.begin(); it != modelFilterMap.end(); ++it) {
         int column = it.key();
         double min = it.value().first;
         double max = it.value().second;
@@ -62,7 +62,7 @@ void CSVFilterModel::setStateFilter(const QString &state)
 {
     // qDebug() << "Setting state filter to" << state;
 
-    m_stateFilter = state;
+    modelStateFilter = state;
     // invalidateFilter();
 }
 

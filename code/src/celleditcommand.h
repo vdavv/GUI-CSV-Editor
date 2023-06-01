@@ -12,10 +12,10 @@ public:
     void redo() override;
 
 private:
-    CSVModel* m_model;
-    QModelIndex m_index;
-    QVariant m_oldValue;
-    QVariant m_newValue;
+    CSVModel* model;
+    QModelIndex index;
+    QVariant oldValue;
+    QVariant newValue;
 };
 
 #endif // CELLEDITCOMMAND_H

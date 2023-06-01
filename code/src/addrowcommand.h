@@ -14,9 +14,9 @@ public:
     void redo() override;
 
 private:
-    CSVModel* m_model;
-    QStringList m_rowData;
-    int m_row;
+    CSVModel* model;
+    QStringList rowData;
+    int row;
 };
 
 #endif // ADDROWCOMMAND_H

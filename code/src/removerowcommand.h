@@ -12,8 +12,8 @@ public:
     void redo() override;
 
 private:
-    CSVModel* m_model;
-    int m_row;
+    CSVModel* model;
+    int row;
     QList<QVariant> m_rowData;
 };
 

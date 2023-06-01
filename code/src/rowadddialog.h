@@ -17,7 +17,7 @@ public:
     QStringList rowData() const;
 
 private:
-    QList<QLineEdit*> m_lineEdits;
+    QList<QLineEdit*> lineEdits;
     Ui::RowAddDialog *ui;
 };
 

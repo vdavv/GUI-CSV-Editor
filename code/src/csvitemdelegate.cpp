@@ -1,18 +1,19 @@
 #include "csvitemdelegate.h"
+#include "celleditcommand.h"
 
-CSVItemDelegate::CSVItemDelegate(CSVModel *model, QUndoStack *undoStack, QObject *parent)
-    : QStyledItemDelegate(parent), m_model(model), m_undoStack(undoStack)
+CSVItemDelegate::CSVItemDelegate(CSVModel *modelSource, QUndoStack *undoStackSource, QObject *parent)
+    : QStyledItemDelegate(parent), model(modelSource), undoStack(undoStackSource)
 {
 }
 
-void CSVItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const
+void CSVItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *modelSource, const QModelIndex &index) const
 {
-    QVariant oldValue = model->data(index);
-    QStyledItemDelegate::setModelData(editor, model, index);
-    QVariant newValue = model->data(index);
+    QVariant oldValue = modelSource->data(index);
+    QStyledItemDelegate::setModelData(editor, modelSource, index);
+    QVariant newValue = modelSource->data(index);
 
     if (oldValue != newValue) {
-        auto* command = new CellEditCommand(m_model, index, oldValue, newValue);
-        m_undoStack->push(command);
+        auto* command = new CellEditCommand(model, index, oldValue, newValue);
+        undoStack->push(command);
     }
 }

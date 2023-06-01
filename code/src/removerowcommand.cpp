@@ -1,22 +1,22 @@
 #include "removerowcommand.h"
 
-RemoveRowCommand::RemoveRowCommand(CSVModel* model, int row)
-    : m_model(model), m_row(row)
+RemoveRowCommand::RemoveRowCommand(CSVModel* modelSource, int rowSource)
+    : model(modelSource), row(rowSource)
 {
-    for (int column = 0; column < m_model->columnCount(); ++column) {
-        m_rowData << m_model->data(m_model->index(row, column));
+    for (int column = 0; column < model->columnCount(); ++column) {
+        m_rowData << model->data(model->index(rowSource, column));
     }
 }
 
 void RemoveRowCommand::undo()
 {
-    m_model->insertRow(m_row, QModelIndex());
+    model->insertRow(row, QModelIndex());
     for (int column = 0; column < m_rowData.size(); ++column) {
-        m_model->setData(m_model->index(m_row, column), m_rowData.at(column));
+        model->setData(model->index(row, column), m_rowData.at(column));
     }
 }
 
 void RemoveRowCommand::redo()
 {
-    m_model->removeRow(m_row, QModelIndex());
+    model->removeRow(row, QModelIndex());
 }

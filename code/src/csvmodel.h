@@ -33,8 +33,8 @@ public:
 
 
 private:
-    QList<QStringList> m_data;
-    QStringList m_headerData;
+    QList<QStringList> modelData;
+    QStringList modelHeaderData;
 };
 
 #endif // CSVMODEL_H

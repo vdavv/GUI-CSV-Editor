@@ -21,8 +21,8 @@ protected:
     bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;
 
 private:
-    QString m_stateFilter;
-    QMap<int, QPair<double, double>> m_filterMap;
+    QString modelStateFilter;
+    QMap<int, QPair<double, double>> modelFilterMap;
     bool isUpdatingFilter;
 };
 

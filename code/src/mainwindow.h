@@ -58,14 +58,14 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
-    CSVModel m_model;
-    QFileSystemWatcher m_watcher;
-    QSortFilterProxyModel *m_proxyModel;
-    int m_lastClickedSection = -1;
-    CSVFilterModel *m_filterModel;
-    FilterDialog *m_filterDialog;
-    LogoWindow *m_logoWindow;
-    QUndoStack *m_undoStack;
+    CSVModel model;
+    QFileSystemWatcher watcher;
+    QSortFilterProxyModel *proxyModel;
+    int lastClickedSection = -1;
+    CSVFilterModel *filterModel;
+    FilterDialog *filterDialog;
+    LogoWindow *logoWindow;
+    QUndoStack *undoStack;
     CSVItemDelegate *m_delegate;
 
 

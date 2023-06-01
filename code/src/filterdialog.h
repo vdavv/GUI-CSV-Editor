@@ -30,9 +30,9 @@ private slots:
 
 private:
     Ui::FilterDialog *ui;
-    QString m_stateFilter;
-    QMap<int, QPair<double, double>> m_filterMap;
-    QDoubleValidator m_doubleValidator;
+    QString stateFilter;
+    QMap<int, QPair<double, double>> filterMap;
+    QDoubleValidator doubleValidator;
 };
 
 #endif // FILTERDIALOG_H

@@ -1,20 +1,20 @@
 #include "editrowcommand.h"
 
-EditRowCommand::EditRowCommand(CSVModel* model, int row, const QStringList& oldData, const QStringList& newData)
-    : m_model(model), m_row(row), m_oldData(oldData), m_newData(newData)
+EditRowCommand::EditRowCommand(CSVModel* modelSource, int rowSource, const QStringList& oldDataSource, const QStringList& newDataSource)
+    : model(modelSource), row(rowSource), oldData(oldDataSource), newData(newDataSource)
 {
 }
 
 void EditRowCommand::undo()
 {
-    for (int column = 0; column < m_oldData.size(); ++column) {
-        m_model->setData(m_model->index(m_row, column), m_oldData.at(column));
+    for (int column = 0; column < oldData.size(); ++column) {
+        model->setData(model->index(row, column), oldData.at(column));
     }
 }
 
 void EditRowCommand::redo()
 {
-    for (int column = 0; column < m_newData.size(); ++column) {
-        m_model->setData(m_model->index(m_row, column), m_newData.at(column));
+    for (int column = 0; column < newData.size(); ++column) {
+        model->setData(model->index(row, column), newData.at(column));
     }
 }

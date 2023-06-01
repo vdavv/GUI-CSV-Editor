@@ -9,7 +9,7 @@ FilterDialog::FilterDialog(QWidget *parent) :
     ui->setupUi(this);
 
     // Initialize double validator
-    m_doubleValidator.setNotation(QDoubleValidator::StandardNotation);
+    doubleValidator.setNotation(QDoubleValidator::StandardNotation);
 }
 
 FilterDialog::~FilterDialog()
@@ -19,18 +19,18 @@ FilterDialog::~FilterDialog()
 
 QString FilterDialog::getStateFilter() const
 {
-    return m_stateFilter;
+    return stateFilter;
 }
 
 QMap<int, QPair<double, double>> FilterDialog::getFilterMap() const
 {
-    return m_filterMap;
+    return filterMap;
 }
 
 
 void FilterDialog::on_filterApplyButton_clicked()
 {
-    m_stateFilter = ui->stateChoiceLineEdit->text();
+    stateFilter = ui->stateChoiceLineEdit->text();
 
     // Collect all the filters from the min/max line edits
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
@@ -48,7 +48,7 @@ void FilterDialog::on_filterApplyButton_clicked()
             double min = minStr.isEmpty() ? -std::numeric_limits<double>::infinity() : minStr.toDouble();
             double max = maxStr.isEmpty() ? std::numeric_limits<double>::infinity() : maxStr.toDouble();
 
-            m_filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
+            filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
         }
     }
 
@@ -59,7 +59,7 @@ void FilterDialog::on_filterApplyButton_clicked()
 
 void FilterDialog::on_filterResetButton_clicked()
 {
-    m_stateFilter = "";
+    stateFilter = "";
     ui->stateChoiceLineEdit->clear();
 
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
@@ -75,7 +75,7 @@ void FilterDialog::on_filterResetButton_clicked()
             double min = minStr.isEmpty() ? -std::numeric_limits<double>::infinity() : minStr.toDouble();
             double max = maxStr.isEmpty() ? std::numeric_limits<double>::infinity() : maxStr.toDouble();
 
-            m_filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
+            filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
         }
     }
 

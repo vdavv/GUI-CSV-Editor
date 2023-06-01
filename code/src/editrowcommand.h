@@ -7,15 +7,15 @@
 class EditRowCommand : public QUndoCommand
 {
 public:
-    EditRowCommand(CSVModel* model, int row, const QStringList& oldData, const QStringList& newData);
+    EditRowCommand(CSVModel* modelSource, int row, const QStringList& oldDataSource, const QStringList& newDataSource);
     void undo() override;
     void redo() override;
 
 private:
-    CSVModel* m_model;
-    int m_row;
-    QStringList m_oldData;
-    QStringList m_newData;
+    CSVModel* model;
+    int row;
+    QStringList oldData;
+    QStringList newData;
 };
 
 #endif // EDITROWCOMMAND_H
