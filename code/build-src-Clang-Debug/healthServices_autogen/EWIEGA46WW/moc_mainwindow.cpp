@@ -44,6 +44,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "",
     "QModelIndex",
     "index",
+    "on_undoButton_clicked",
     "handleRowHeaderClicked",
     "row",
     "AddRow",
@@ -64,29 +65,30 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[44];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[27];
     char stringdata2[1];
     char stringdata3[12];
     char stringdata4[6];
-    char stringdata5[23];
-    char stringdata6[4];
-    char stringdata7[7];
-    char stringdata8[10];
-    char stringdata9[8];
+    char stringdata5[22];
+    char stringdata6[23];
+    char stringdata7[4];
+    char stringdata8[7];
+    char stringdata9[10];
     char stringdata10[8];
-    char stringdata11[14];
-    char stringdata12[5];
-    char stringdata13[12];
-    char stringdata14[15];
-    char stringdata15[17];
-    char stringdata16[23];
-    char stringdata17[13];
-    char stringdata18[5];
-    char stringdata19[7];
-    char stringdata20[10];
+    char stringdata11[8];
+    char stringdata12[14];
+    char stringdata13[5];
+    char stringdata14[12];
+    char stringdata15[15];
+    char stringdata16[17];
+    char stringdata17[23];
+    char stringdata18[13];
+    char stringdata19[5];
+    char stringdata20[7];
     char stringdata21[10];
+    char stringdata22[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -97,29 +99,31 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(38, 0),  // ""
         QT_MOC_LITERAL(39, 11),  // "QModelIndex"
         QT_MOC_LITERAL(51, 5),  // "index"
-        QT_MOC_LITERAL(57, 22),  // "handleRowHeaderClicked"
-        QT_MOC_LITERAL(80, 3),  // "row"
-        QT_MOC_LITERAL(84, 6),  // "AddRow"
-        QT_MOC_LITERAL(91, 9),  // "RemoveRow"
-        QT_MOC_LITERAL(101, 7),  // "EditRow"
-        QT_MOC_LITERAL(109, 7),  // "SaveCSV"
-        QT_MOC_LITERAL(117, 13),  // "onFileChanged"
-        QT_MOC_LITERAL(131, 4),  // "path"
-        QT_MOC_LITERAL(136, 11),  // "applyFilter"
-        QT_MOC_LITERAL(148, 14),  // "openHelpWindow"
-        QT_MOC_LITERAL(163, 16),  // "onSortBoxChanged"
-        QT_MOC_LITERAL(180, 22),  // "onHeaderSectionClicked"
-        QT_MOC_LITERAL(203, 12),  // "logicalIndex"
-        QT_MOC_LITERAL(216, 4),  // "sort"
-        QT_MOC_LITERAL(221, 6),  // "column"
-        QT_MOC_LITERAL(228, 9),  // "ascending"
-        QT_MOC_LITERAL(238, 9)   // "ReloadCSV"
+        QT_MOC_LITERAL(57, 21),  // "on_undoButton_clicked"
+        QT_MOC_LITERAL(79, 22),  // "handleRowHeaderClicked"
+        QT_MOC_LITERAL(102, 3),  // "row"
+        QT_MOC_LITERAL(106, 6),  // "AddRow"
+        QT_MOC_LITERAL(113, 9),  // "RemoveRow"
+        QT_MOC_LITERAL(123, 7),  // "EditRow"
+        QT_MOC_LITERAL(131, 7),  // "SaveCSV"
+        QT_MOC_LITERAL(139, 13),  // "onFileChanged"
+        QT_MOC_LITERAL(153, 4),  // "path"
+        QT_MOC_LITERAL(158, 11),  // "applyFilter"
+        QT_MOC_LITERAL(170, 14),  // "openHelpWindow"
+        QT_MOC_LITERAL(185, 16),  // "onSortBoxChanged"
+        QT_MOC_LITERAL(202, 22),  // "onHeaderSectionClicked"
+        QT_MOC_LITERAL(225, 12),  // "logicalIndex"
+        QT_MOC_LITERAL(238, 4),  // "sort"
+        QT_MOC_LITERAL(243, 6),  // "column"
+        QT_MOC_LITERAL(250, 9),  // "ascending"
+        QT_MOC_LITERAL(260, 9)   // "ReloadCSV"
     },
     "MainWindow",
     "on_tableView_doubleClicked",
     "",
     "QModelIndex",
     "index",
+    "on_undoButton_clicked",
     "handleRowHeaderClicked",
     "row",
     "AddRow",
@@ -148,7 +152,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -156,33 +160,35 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   92,    2, 0x08,    1 /* Private */,
-       5,    1,   95,    2, 0x08,    3 /* Private */,
-       7,    0,   98,    2, 0x08,    5 /* Private */,
-       8,    0,   99,    2, 0x08,    6 /* Private */,
-       9,    0,  100,    2, 0x08,    7 /* Private */,
-      10,    0,  101,    2, 0x08,    8 /* Private */,
-      11,    1,  102,    2, 0x08,    9 /* Private */,
-      13,    0,  105,    2, 0x08,   11 /* Private */,
-      14,    0,  106,    2, 0x08,   12 /* Private */,
-      15,    1,  107,    2, 0x08,   13 /* Private */,
-      16,    1,  110,    2, 0x08,   15 /* Private */,
-      18,    2,  113,    2, 0x08,   17 /* Private */,
-      21,    0,  118,    2, 0x0a,   20 /* Public */,
+       1,    1,   98,    2, 0x08,    1 /* Private */,
+       5,    0,  101,    2, 0x08,    3 /* Private */,
+       6,    1,  102,    2, 0x08,    4 /* Private */,
+       8,    0,  105,    2, 0x08,    6 /* Private */,
+       9,    0,  106,    2, 0x08,    7 /* Private */,
+      10,    0,  107,    2, 0x08,    8 /* Private */,
+      11,    0,  108,    2, 0x08,    9 /* Private */,
+      12,    1,  109,    2, 0x08,   10 /* Private */,
+      14,    0,  112,    2, 0x08,   12 /* Private */,
+      15,    0,  113,    2, 0x08,   13 /* Private */,
+      16,    1,  114,    2, 0x08,   14 /* Private */,
+      17,    1,  117,    2, 0x08,   16 /* Private */,
+      19,    2,  120,    2, 0x08,   18 /* Private */,
+      22,    0,  125,    2, 0x0a,   21 /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    7,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void, QMetaType::QString,   13,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    4,
-    QMetaType::Void, QMetaType::Int,   17,
-    QMetaType::Void, QMetaType::Int, QMetaType::Bool,   19,   20,
+    QMetaType::Void, QMetaType::Int,   18,
+    QMetaType::Void, QMetaType::Int, QMetaType::Bool,   20,   21,
     QMetaType::Void,
 
        0        // eod
@@ -200,6 +206,8 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_tableView_doubleClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>,
+        // method 'on_undoButton_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleRowHeaderClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -241,18 +249,19 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->on_tableView_doubleClicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
-        case 1: _t->handleRowHeaderClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 2: _t->AddRow(); break;
-        case 3: _t->RemoveRow(); break;
-        case 4: _t->EditRow(); break;
-        case 5: _t->SaveCSV(); break;
-        case 6: _t->onFileChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 7: _t->applyFilter(); break;
-        case 8: _t->openHelpWindow(); break;
-        case 9: _t->onSortBoxChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 10: _t->onHeaderSectionClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 11: _t->sort((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
-        case 12: _t->ReloadCSV(); break;
+        case 1: _t->on_undoButton_clicked(); break;
+        case 2: _t->handleRowHeaderClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->AddRow(); break;
+        case 4: _t->RemoveRow(); break;
+        case 5: _t->EditRow(); break;
+        case 6: _t->SaveCSV(); break;
+        case 7: _t->onFileChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 8: _t->applyFilter(); break;
+        case 9: _t->openHelpWindow(); break;
+        case 10: _t->onSortBoxChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 11: _t->onHeaderSectionClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 12: _t->sort((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
+        case 13: _t->ReloadCSV(); break;
         default: ;
         }
     }
@@ -277,13 +286,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 14;
     }
     return _id;
 }

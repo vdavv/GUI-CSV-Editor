@@ -35,7 +35,7 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *undoButton;
-    QPushButton *redoButton;
+    QPushButton *drawButton;
     QSpacerItem *horizontalSpacer_2;
     QPushButton *saveButton;
     QPushButton *reloadButton;
@@ -77,10 +77,10 @@ public:
 
         horizontalLayout_2->addWidget(undoButton);
 
-        redoButton = new QPushButton(centralwidget);
-        redoButton->setObjectName("redoButton");
+        drawButton = new QPushButton(centralwidget);
+        drawButton->setObjectName("drawButton");
 
-        horizontalLayout_2->addWidget(redoButton);
+        horizontalLayout_2->addWidget(drawButton);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -196,7 +196,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CSVEditor", nullptr));
         undoButton->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
-        redoButton->setText(QCoreApplication::translate("MainWindow", "Redo", nullptr));
+        drawButton->setText(QCoreApplication::translate("MainWindow", "Draw", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         reloadButton->setText(QCoreApplication::translate("MainWindow", "Load", nullptr));
         helpButton->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));

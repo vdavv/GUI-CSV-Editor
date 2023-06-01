@@ -74,7 +74,7 @@ bool CSVModel::saveCSV(const QString &filepath) {
     for (const QString &headerCell : m_headerData) {
         adjustedHeader << "\"" + headerCell + "\"";
     }
-    stream << adjustedHeader.join(",") << "\n";
+    stream << adjustedHeader.join(",") << "\n";//столб краш????
 
     for (const QStringList &row : m_data) {
         QStringList adjustedRow;
@@ -128,7 +128,7 @@ QVariant CSVModel::convertStringToNumber(const QVariant& str) const {
     // First, try to convert to an int
     int intValue = str.toInt(&ok);
     if (ok) {
-        return QVariant(intValue);
+        return QVariant(intValue); // а кутэ краш????
     }
 
     // If that fails, try to convert to a double

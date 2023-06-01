@@ -8,6 +8,7 @@
 #include <QFileSystemWatcher>
 #include <QList>
 #include <QSortFilterProxyModel>
+#include <QUndoStack>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +31,7 @@ public:
 
 private slots:
     void on_tableView_doubleClicked(const QModelIndex &index);
+    void on_undoButton_clicked();
     void handleRowHeaderClicked(int row);
 
     void AddRow();
@@ -58,6 +60,7 @@ private:
     int m_lastClickedSection = -1;
     CSVFilterModel *m_filterModel;
     FilterDialog *m_filterDialog;
+    QUndoStack *m_undoStack;
 
 
 };

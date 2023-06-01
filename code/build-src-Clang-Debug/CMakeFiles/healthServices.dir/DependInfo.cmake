@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp" "CMakeFiles/healthServices.dir/addrowcommand.cpp.o" "gcc" "CMakeFiles/healthServices.dir/addrowcommand.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp" "CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o" "gcc" "CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.cpp" "CMakeFiles/healthServices.dir/csvmodel.cpp.o" "gcc" "CMakeFiles/healthServices.dir/csvmodel.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp" "CMakeFiles/healthServices.dir/filterdialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/filterdialog.cpp.o.d"
@@ -15,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp" "CMakeFiles/healthServices.dir/helpwindow.cpp.o" "gcc" "CMakeFiles/healthServices.dir/helpwindow.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp" "CMakeFiles/healthServices.dir/main.cpp.o" "gcc" "CMakeFiles/healthServices.dir/main.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp" "CMakeFiles/healthServices.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/healthServices.dir/mainwindow.cpp.o.d"
+  "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp" "CMakeFiles/healthServices.dir/removerowcommand.cpp.o" "gcc" "CMakeFiles/healthServices.dir/removerowcommand.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp" "CMakeFiles/healthServices.dir/rowadddialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/rowadddialog.cpp.o.d"
   "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp" "CMakeFiles/healthServices.dir/roweditdialog.cpp.o" "gcc" "CMakeFiles/healthServices.dir/roweditdialog.cpp.o.d"
   )

@@ -195,6 +195,34 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/healthServices.dir/csvfiltermodel.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp -o CMakeFiles/healthServices.dir/csvfiltermodel.cpp.s
 
+CMakeFiles/healthServices.dir/addrowcommand.cpp.o: CMakeFiles/healthServices.dir/flags.make
+CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp
+CMakeFiles/healthServices.dir/addrowcommand.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/healthServices.dir/addrowcommand.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/addrowcommand.cpp.o -MF CMakeFiles/healthServices.dir/addrowcommand.cpp.o.d -o CMakeFiles/healthServices.dir/addrowcommand.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp
+
+CMakeFiles/healthServices.dir/addrowcommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/healthServices.dir/addrowcommand.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp > CMakeFiles/healthServices.dir/addrowcommand.cpp.i
+
+CMakeFiles/healthServices.dir/addrowcommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/healthServices.dir/addrowcommand.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp -o CMakeFiles/healthServices.dir/addrowcommand.cpp.s
+
+CMakeFiles/healthServices.dir/removerowcommand.cpp.o: CMakeFiles/healthServices.dir/flags.make
+CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp
+CMakeFiles/healthServices.dir/removerowcommand.cpp.o: CMakeFiles/healthServices.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/healthServices.dir/removerowcommand.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/healthServices.dir/removerowcommand.cpp.o -MF CMakeFiles/healthServices.dir/removerowcommand.cpp.o.d -o CMakeFiles/healthServices.dir/removerowcommand.cpp.o -c /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp
+
+CMakeFiles/healthServices.dir/removerowcommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/healthServices.dir/removerowcommand.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp > CMakeFiles/healthServices.dir/removerowcommand.cpp.i
+
+CMakeFiles/healthServices.dir/removerowcommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/healthServices.dir/removerowcommand.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp -o CMakeFiles/healthServices.dir/removerowcommand.cpp.s
+
 # Object files for target healthServices
 healthServices_OBJECTS = \
 "CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o" \
@@ -205,7 +233,9 @@ healthServices_OBJECTS = \
 "CMakeFiles/healthServices.dir/roweditdialog.cpp.o" \
 "CMakeFiles/healthServices.dir/helpwindow.cpp.o" \
 "CMakeFiles/healthServices.dir/filterdialog.cpp.o" \
-"CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o"
+"CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o" \
+"CMakeFiles/healthServices.dir/addrowcommand.cpp.o" \
+"CMakeFiles/healthServices.dir/removerowcommand.cpp.o"
 
 # External object files for target healthServices
 healthServices_EXTERNAL_OBJECTS =
@@ -219,12 +249,14 @@ healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/helpwindow.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/filterdialog.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o
+healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/addrowcommand.cpp.o
+healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/removerowcommand.cpp.o
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/build.make
 healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 healthServices.app/Contents/MacOS/healthServices: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 healthServices.app/Contents/MacOS/healthServices: CMakeFiles/healthServices.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable healthServices.app/Contents/MacOS/healthServices"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable healthServices.app/Contents/MacOS/healthServices"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/healthServices.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

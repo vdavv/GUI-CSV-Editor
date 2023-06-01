@@ -36,9 +36,9 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="redoButton">
+         <widget class="QPushButton" name="drawButton">
           <property name="text">
-           <string>Redo</string>
+           <string>Draw</string>
           </property>
          </widget>
         </item>

@@ -42,6 +42,12 @@ set(PROJECT_SOURCES
 
         csvfiltermodel.h
         csvfiltermodel.cpp
+
+        addrowcommand.h
+        addrowcommand.cpp
+
+        removerowcommand.h
+        removerowcommand.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

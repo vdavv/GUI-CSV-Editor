@@ -4,6 +4,7 @@
 #include "roweditdialog.h"
 #include "helpwindow.h"
 #include "filterdialog.h"
+#include "addrowcommand.h"
 #include <QTableView>
 #include <QMessageBox>
 #include <QMouseEvent>
@@ -13,7 +14,7 @@ const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 const QString MainWindow::FILEPATH = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83Original.csv";
 
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), m_undoStack(new QUndoStack(this)) {
     ui->setupUi(this);
     // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
@@ -64,6 +65,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
     connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
+    // connect(ui->undoButton, &QPushButton::clicked, m_undoStack, &QUndoStack::undo);
 }
 
 bool MainWindow::eventFilter(QObject *watched, QEvent *event)
@@ -94,12 +96,13 @@ void MainWindow::AddRow() {
         if(m_model.insertRow(selectedRow, QModelIndex())) {
             for(int column = 0; column < m_model.columnCount(); column++) {
                 QModelIndex index = m_model.index(selectedRow, column);
-                m_model.setData(index, rowData.at(column));
+                // m_model.setData(index, rowData.at(column));
             }
         }
+        AddRowCommand *command = new AddRowCommand(&m_model, rowData, selectedRow);
+        m_undoStack->push(command);
     }
 }
-
 
 
 void MainWindow::RemoveRow() {
@@ -176,6 +179,11 @@ void MainWindow::handleRowHeaderClicked(int row) {
 void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 {
     ui->tableView->edit(index);
+}
+
+
+void MainWindow::on_undoButton_clicked() {
+    m_undoStack->undo();
 }
 
 

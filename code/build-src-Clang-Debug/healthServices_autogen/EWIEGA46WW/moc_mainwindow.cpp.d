@@ -431,6 +431,7 @@
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/QDoubleValidator \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/QUndoStack \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -459,6 +460,7 @@
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
+  /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qundostack.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qvalidator.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /opt/homebrew/Cellar/qt/6.5.0/lib/QtWidgets.framework/Versions/A/Headers/QDialog \

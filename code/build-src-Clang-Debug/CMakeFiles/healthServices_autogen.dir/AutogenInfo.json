@@ -341,6 +341,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.h",
+			"MU",
+			"EWIEGA46WW/moc_addrowcommand.cpp",
+			null
+		],
+		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h",
 			"MU",
 			"EWIEGA46WW/moc_csvfiltermodel.cpp",
@@ -368,6 +374,12 @@
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h",
+			"MU",
+			"EWIEGA46WW/moc_removerowcommand.cpp",
 			null
 		],
 		[
@@ -443,6 +455,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp",
 			"MU",
 			null
@@ -469,6 +486,11 @@
 		],
 		[
 			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp",
 			"MU",
 			null
 		],

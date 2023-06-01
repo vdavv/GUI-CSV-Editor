@@ -187,6 +187,30 @@ healthServices_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices_autogen.dir/build.make CMakeFiles/healthServices_autogen.dir/build
 .PHONY : healthServices_autogen/fast
 
+addrowcommand.o: addrowcommand.cpp.o
+.PHONY : addrowcommand.o
+
+# target to build an object file
+addrowcommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/addrowcommand.cpp.o
+.PHONY : addrowcommand.cpp.o
+
+addrowcommand.i: addrowcommand.cpp.i
+.PHONY : addrowcommand.i
+
+# target to preprocess a source file
+addrowcommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/addrowcommand.cpp.i
+.PHONY : addrowcommand.cpp.i
+
+addrowcommand.s: addrowcommand.cpp.s
+.PHONY : addrowcommand.s
+
+# target to generate assembly for a file
+addrowcommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/addrowcommand.cpp.s
+.PHONY : addrowcommand.cpp.s
+
 csvfiltermodel.o: csvfiltermodel.cpp.o
 .PHONY : csvfiltermodel.o
 
@@ -355,6 +379,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+removerowcommand.o: removerowcommand.cpp.o
+.PHONY : removerowcommand.o
+
+# target to build an object file
+removerowcommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/removerowcommand.cpp.o
+.PHONY : removerowcommand.cpp.o
+
+removerowcommand.i: removerowcommand.cpp.i
+.PHONY : removerowcommand.i
+
+# target to preprocess a source file
+removerowcommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/removerowcommand.cpp.i
+.PHONY : removerowcommand.cpp.i
+
+removerowcommand.s: removerowcommand.cpp.s
+.PHONY : removerowcommand.s
+
+# target to generate assembly for a file
+removerowcommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/healthServices.dir/build.make CMakeFiles/healthServices.dir/removerowcommand.cpp.s
+.PHONY : removerowcommand.cpp.s
+
 rowadddialog.o: rowadddialog.cpp.o
 .PHONY : rowadddialog.o
 
@@ -417,6 +465,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... healthServices_autogen"
 	@echo "... healthServices"
+	@echo "... addrowcommand.o"
+	@echo "... addrowcommand.i"
+	@echo "... addrowcommand.s"
 	@echo "... csvfiltermodel.o"
 	@echo "... csvfiltermodel.i"
 	@echo "... csvfiltermodel.s"
@@ -438,6 +489,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... removerowcommand.o"
+	@echo "... removerowcommand.i"
+	@echo "... removerowcommand.s"
 	@echo "... rowadddialog.o"
 	@echo "... rowadddialog.i"
 	@echo "... rowadddialog.s"
