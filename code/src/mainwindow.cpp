@@ -189,12 +189,6 @@ void MainWindow::handleRowHeaderClicked(int row) {
 }
 
 
-//void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
-//{
-//    ui->tableView->edit(index);
-//}
-
-
 void MainWindow::on_undoButton_clicked()
 {
     m_undoStack->undo();
