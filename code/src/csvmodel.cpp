@@ -11,58 +11,77 @@ QVector<int> modelColumnIndices;
 QStringList modelHeaderData;
 
 
-bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns) {
+bool CSVModel::loadCSV(const QString &filepath, const QVector<int> &columns)
+{
     QFile file(filepath);
-    if (!file.open(QIODevice::ReadOnly)) {
+    if (!file.open(QIODevice::ReadOnly))
+    {
         qDebug() << "Failed to open file" << filepath;
         return false;
     }
     modelColumnIndices = columns;
     QTextStream stream(&file);
     bool firstRow = true;
-    while (!stream.atEnd()) {
+    while (!stream.atEnd())
+    {
         QRegularExpression re("(\"[^\"]*\"|[^,]*),?");
         QRegularExpressionMatchIterator it = re.globalMatch(stream.readLine());
         QStringList row;
-        while(it.hasNext()) {
+        while(it.hasNext())
+        {
             QRegularExpressionMatch match = it.next();
             QString cell = match.captured(1);
             cell.remove('"');
             row.append(cell);
         }
         QStringList selectedColumns;
-        for (int column : columns) {
-            if (column < row.size()) {
+        for (int column : columns)
+        {
+            if (column < row.size())
+            {
                 selectedColumns.append(row[column]);
             }
         }
-        if (firstRow) {  // This is header row
+
+        if (firstRow) // This is header row
+        {
             modelHeaderData = selectedColumns;
             firstRow = false;
-        } else {
+        }
+
+        else
+        {
             modelData.append(selectedColumns);
         }
     }
+
     return true;
 }
 
 
-QVariant CSVModel::headerData(int section, Qt::Orientation orientation, int role) const {
+QVariant CSVModel::headerData(int section, Qt::Orientation orientation, int role) const
+{
     if (role != Qt::DisplayRole)
         return QVariant();
 
-    if (orientation == Qt::Horizontal && section < modelHeaderData.size()) {
+    if (orientation == Qt::Horizontal && section < modelHeaderData.size())
+    {
         return modelHeaderData[section];
-    } else {
+    }
+
+    else
+    {
         return QAbstractTableModel::headerData(section, orientation, role);
     }
 }
 
 
 
-bool CSVModel::saveCSV(const QString &filepath) {
+bool CSVModel::saveCSV(const QString &filepath)
+{
     QFile file(filepath);
-    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
         qDebug() << "Failed to open file for writing" << filepath;
         return false;
     }
@@ -71,16 +90,20 @@ bool CSVModel::saveCSV(const QString &filepath) {
 
     // Save the header data first
     QStringList adjustedHeader;
-    for (const QString &headerCell : modelHeaderData) {
+    for (const QString &headerCell : modelHeaderData)
+    {
         adjustedHeader << "\"" + headerCell + "\"";
     }
-    stream << adjustedHeader.join(",") << "\n";//столб краш????
+    stream << adjustedHeader.join(",") << "\n"; //столб краш????
 
-    for (const QStringList &row : modelData) {
+    for (const QStringList &row : modelData)
+    {
         QStringList adjustedRow;
         bool firstCellQuoted = true;
-        for (const QString &cell : row) {
-            if (firstCellQuoted){
+        for (const QString &cell : row)
+        {
+            if (firstCellQuoted)
+            {
                 firstCellQuoted = false;
                 adjustedRow << "\"" + cell + "\"";
                 continue;
@@ -95,26 +118,37 @@ bool CSVModel::saveCSV(const QString &filepath) {
 
 
 
-int CSVModel::rowCount(const QModelIndex &parent) const {
+int CSVModel::rowCount(const QModelIndex &parent) const
+{
     Q_UNUSED(parent)
     return modelData.size();
 }
 
-int CSVModel::columnCount(const QModelIndex &parent) const {
+
+int CSVModel::columnCount(const QModelIndex &parent) const
+{
     Q_UNUSED(parent)
-    if (modelData.isEmpty()) {
+    if (modelData.isEmpty())
+    {
         return 0;
-    } else {
+    }
+
+    else
+    {
         return modelData.first().size();
     }
 }
 
-QVariant CSVModel::data(const QModelIndex &index, int role) const {
-    if (!index.isValid() || (role != Qt::DisplayRole && role != Qt::EditRole)) {
+
+QVariant CSVModel::data(const QModelIndex &index, int role) const
+{
+    if (!index.isValid() || (role != Qt::DisplayRole && role != Qt::EditRole))
+    {
         return QVariant();
     }
 
-    if (index.row() >= modelData.size() || index.row() < 0) {
+    if (index.row() >= modelData.size() || index.row() < 0)
+    {
         return QVariant();
     }
 
@@ -143,8 +177,10 @@ QVariant CSVModel::convertStringToNumber(const QVariant& str) const {
 
 
 
-bool CSVModel::setData(const QModelIndex &index, const QVariant &value, int role) {
-    if (!index.isValid() || role != Qt::EditRole) {
+bool CSVModel::setData(const QModelIndex &index, const QVariant &value, int role)
+{
+    if (!index.isValid() || role != Qt::EditRole)
+    {
         return false;
     }
 
@@ -158,7 +194,8 @@ bool CSVModel::setData(const QModelIndex &index, const QVariant &value, int role
 }
 
 
-Qt::ItemFlags CSVModel::flags(const QModelIndex &index) const {
+Qt::ItemFlags CSVModel::flags(const QModelIndex &index) const
+{
     if (!index.isValid())
         return Qt::NoItemFlags;
 
@@ -166,21 +203,25 @@ Qt::ItemFlags CSVModel::flags(const QModelIndex &index) const {
 }
 
 
-QStringList CSVModel::getRowData(int row) const {
-    if (row >= 0 && row < modelData.size()) {
+QStringList CSVModel::getRowData(int row) const
+{
+    if (row >= 0 && row < modelData.size())
+    {
         return modelData.at(row);
     }
     return QStringList();
 }
 
 
-QStringList CSVModel::getHeaderData() const {
+QStringList CSVModel::getHeaderData() const
+{
     // assuming m_data[0] contains the header row
     return modelHeaderData;
 }
 
 
-bool CSVModel::removeRow(int row, const QModelIndex &parent) {
+bool CSVModel::removeRow(int row, const QModelIndex &parent)
+{
     Q_UNUSED(parent)
     if (row < 0 || row >= modelData.size())
         return false;
@@ -192,14 +233,20 @@ bool CSVModel::removeRow(int row, const QModelIndex &parent) {
 }
 
 
-bool CSVModel::insertRow(int row, const QModelIndex &parent) {
+bool CSVModel::insertRow(int row, const QModelIndex &parent)
+{
     beginInsertRows(parent, row, row);
 
     QStringList newRow;
-    for(int i = 0; i < columnCount(); i++) {
-        if(i == 0) {
+    for(int i = 0; i < columnCount(); i++)
+    {
+        if(i == 0)
+        {
             newRow.append("city, state");
-        } else {
+        }
+
+        else
+        {
             newRow.append("0");
         }
     }
@@ -210,7 +257,8 @@ bool CSVModel::insertRow(int row, const QModelIndex &parent) {
 }
 
 
-void CSVModel::clear() {
+void CSVModel::clear()
+{
     beginRemoveRows(QModelIndex(), 0, rowCount());
     modelData.clear();
     endRemoveRows();

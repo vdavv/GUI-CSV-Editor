@@ -40,7 +40,8 @@ void LogoWindow::paintEvent(QPaintEvent * /* event */)
         qreal startY = QRandomGenerator::global()->bounded(static_cast<qreal>(height()));
         path.moveTo(startX, startY);
 
-        for (int j = 0; j < 5; ++j) { // 5 segments per worm
+        for (int j = 0; j < 5; ++j) // 5 segments per worm
+        {
             qreal ctrl1X = QRandomGenerator::global()->bounded(static_cast<qreal>(width()));
             qreal ctrl1Y = QRandomGenerator::global()->bounded(static_cast<qreal>(height()));
             qreal ctrl2X = QRandomGenerator::global()->bounded(static_cast<qreal>(width()));

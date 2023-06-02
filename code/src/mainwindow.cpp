@@ -24,7 +24,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->tableView->setItemDelegate(m_delegate);
 
 
-    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) {
+    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS))
+    {
         QMessageBox::critical(this, "Error", "Failed to load CSV file.");
         return;
     }
@@ -79,7 +80,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 {
-    if (watched == ui->tableView->verticalHeader() && event->type() == QEvent::MouseButtonPress) {
+    if (watched == ui->tableView->verticalHeader() && event->type() == QEvent::MouseButtonPress)
+    {
         QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
         int row = ui->tableView->verticalHeader()->logicalIndexAt(mouseEvent->pos());
         handleRowHeaderClicked(row);
@@ -89,16 +91,19 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
 }
 
 
-void MainWindow::AddRow() {
+void MainWindow::AddRow()
+{
     RowAddDialog dialog(this);
 
     // Open the dialog and check if the user clicked OK
-    if(dialog.exec() == QDialog::Accepted) {
+    if(dialog.exec() == QDialog::Accepted)
+    {
         QStringList rowData = dialog.rowData();
         QItemSelectionModel *select = ui->tableView->selectionModel();
         int selectedRow = model.rowCount(); // default to end of list
 
-        if(select->hasSelection()) { // if a row is selected
+        if(select->hasSelection()) // if a row is selected
+        {
             selectedRow = select->selectedRows().first().row() + 1; // get selected row
         }
 
@@ -108,14 +113,17 @@ void MainWindow::AddRow() {
 }
 
 
-void MainWindow::RemoveRow() {
+void MainWindow::RemoveRow()
+{
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
-    if(select->hasSelection()) { //check if has selection
+    if(select->hasSelection()) //check if has selection
+    {
         QMessageBox::StandardButton reply;
         reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
                                       QMessageBox::Yes|QMessageBox::No);
-        if (reply == QMessageBox::Yes) {
+        if (reply == QMessageBox::Yes)
+        {
             // m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
             int row = select->selectedRows().first().row();
             undoStack->push(new RemoveRowCommand(&model, row));
@@ -124,17 +132,21 @@ void MainWindow::RemoveRow() {
 }
 
 
-void MainWindow::SaveCSV() {
-    if (!model.saveCSV(MainWindow::FILEPATH)) {
+void MainWindow::SaveCSV()
+{
+    if (!model.saveCSV(MainWindow::FILEPATH))
+    {
         QMessageBox::critical(this, "Error", "Failed to save CSV file.");
     }
 }
 
 
-void MainWindow::EditRow() {
+void MainWindow::EditRow()
+{
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
-    if(select->hasSelection()) { //check if has selection
+    if(select->hasSelection()) //check if has selection
+    {
         // Getting the selected row number
         int row = select->selectedRows().first().row();
 
@@ -146,7 +158,8 @@ void MainWindow::EditRow() {
         dialog.setRowData(oldData); // use setRowData instead of setData
 
         // If Ok is pressed then apply changes to the model
-        if (dialog.exec() == QDialog::Accepted) {
+        if (dialog.exec() == QDialog::Accepted)
+        {
             QStringList newData = dialog.rowData(); // use rowData instead of getData
             auto* command = new EditRowCommand(&model, row, oldData, newData);
             undoStack->push(command);
@@ -155,10 +168,12 @@ void MainWindow::EditRow() {
 }
 
 
-void MainWindow::ReloadCSV() {
+void MainWindow::ReloadCSV()
+{
     proxyModel->setSourceModel(nullptr); // Temporarily unset the source model
     model.clear(); // Clears the current data of the model
-    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) { // Load the CSV file again
+    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) // Load the CSV file again
+    {
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
     proxyModel->setSourceModel(&model); // Reset the source model to the loaded data
@@ -166,12 +181,14 @@ void MainWindow::ReloadCSV() {
 }
 
 
-void MainWindow::handleRowHeaderClicked(int row) {
+void MainWindow::handleRowHeaderClicked(int row)
+{
     QStringList rowData = model.getRowData(row);
     QStringList headerData = model.getHeaderData();
 
     QString info;
-    for (int i = 0; i < rowData.size() && i < headerData.size(); i++) {
+    for (int i = 0; i < rowData.size() && i < headerData.size(); i++)
+    {
         info += QString("%1: %2").arg(headerData[i]).arg(rowData[i]) + "\n";
     }
 
@@ -194,18 +211,21 @@ void MainWindow::on_logoButton_clicked()
 }
 
 
-void MainWindow::onFileChanged(const QString &path) {
+void MainWindow::onFileChanged(const QString &path)
+{
     model.loadCSV(path, MainWindow::CSVCOLUMNS);
 }
 
 
-void MainWindow::openHelpWindow() {
+void MainWindow::openHelpWindow()
+{
     HelpWindow* helpWindow = new HelpWindow(this);
     helpWindow->show();
 }
 
 
-void MainWindow::openFilterDialog() {
+void MainWindow::openFilterDialog()
+{
     filterDialog->show();
 }
 
@@ -222,13 +242,17 @@ void MainWindow::applyFilter()
 }
 
 
-void MainWindow::onSortBoxChanged(int index) {
-    if (index == 0) {  // Not Sorted
+void MainWindow::onSortBoxChanged(int index)
+{
+    if (index == 0) // Not Sorted
+    {
         delete proxyModel;
         proxyModel = new QSortFilterProxyModel(this);
         proxyModel->setSourceModel(&model);
         ui->tableView->setModel(proxyModel);
-    } else {
+    }
+    else
+    {
         bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
         proxyModel->sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
         ui->tableView->setModel(proxyModel);
@@ -236,13 +260,17 @@ void MainWindow::onSortBoxChanged(int index) {
 }
 
 
-void MainWindow::sort(int column, bool ascending) {
+void MainWindow::sort(int column, bool ascending)
+{
     // Map column to CSV model index
     column = MainWindow::CSVCOLUMNS[column - 1];
 
-    if (column < 0) { // Not Sorted selected
+    if (column < 0) // Not Sorted selected
+    {
         proxyModel->invalidate(); // Invalidate the current sorting
-    } else {
+    }
+    else
+    {
         proxyModel->setDynamicSortFilter(true); // Enable sorting
         proxyModel->setSortRole(Qt::DisplayRole);
         proxyModel->setSortCaseSensitivity(Qt::CaseInsensitive);
@@ -251,9 +279,11 @@ void MainWindow::sort(int column, bool ascending) {
 }
 
 
-void MainWindow::onHeaderSectionClicked(int logicalIndex) {
+void MainWindow::onHeaderSectionClicked(int logicalIndex)
+{
     bool reverseOrder = false;
-    if (logicalIndex == lastClickedSection) {
+    if (logicalIndex == lastClickedSection)
+    {
         // If the same section is clicked twice, reverse the order
         reverseOrder = !ui->orderButton->isChecked();
         ui->orderButton->setChecked(reverseOrder);
@@ -264,7 +294,8 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex) {
 }
 
 
-MainWindow::~MainWindow() {
+MainWindow::~MainWindow()
+{
     delete proxyModel;
     delete filterDialog;
     delete filterModel;

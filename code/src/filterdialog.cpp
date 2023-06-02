@@ -12,15 +12,18 @@ FilterDialog::FilterDialog(QWidget *parent) :
     doubleValidator.setNotation(QDoubleValidator::StandardNotation);
 }
 
+
 FilterDialog::~FilterDialog()
 {
     delete ui;
 }
 
+
 QString FilterDialog::getStateFilter() const
 {
     return stateFilter;
 }
+
 
 QMap<int, QPair<double, double>> FilterDialog::getFilterMap() const
 {
@@ -34,11 +37,13 @@ void FilterDialog::on_filterApplyButton_clicked()
 
     // Collect all the filters from the min/max line edits
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
-    for (int i = 0; i < columnNames.size(); ++i) {
+    for (int i = 0; i < columnNames.size(); ++i)
+    {
         QLineEdit *minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
         QLineEdit *maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
 
-        if (minEdit && maxEdit) {
+        if (minEdit && maxEdit)
+        {
             QString minStr = minEdit->text();
             QString maxStr = maxEdit->text();
             if (!minStr.toDouble())
@@ -63,11 +68,13 @@ void FilterDialog::on_filterResetButton_clicked()
     ui->stateChoiceLineEdit->clear();
 
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
-    for (int i = 0; i < columnNames.size(); ++i) {
+    for (int i = 0; i < columnNames.size(); ++i)
+    {
         QLineEdit *minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
         QLineEdit *maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
 
-        if (minEdit && maxEdit) {
+        if (minEdit && maxEdit)
+        {
             minEdit->clear();
             maxEdit->clear();
             QString minStr = minEdit->text();

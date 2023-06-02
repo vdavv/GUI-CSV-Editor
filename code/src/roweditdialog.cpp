@@ -8,10 +8,12 @@ RowEditDialog::RowEditDialog(QWidget *parent) :
     ui->setupUi(this);
 }
 
+
 RowEditDialog::~RowEditDialog()
 {
     delete ui;
 }
+
 
 void RowEditDialog::setRowData(const QStringList &rowData)
 {
@@ -29,6 +31,7 @@ void RowEditDialog::setRowData(const QStringList &rowData)
     ui->lineEdit_8->setText(rowData[7]);
     ui->lineEdit_9->setText(rowData[8]);
 }
+
 
 QStringList RowEditDialog::rowData() const
 {
