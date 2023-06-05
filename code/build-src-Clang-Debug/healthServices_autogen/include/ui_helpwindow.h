@@ -36,7 +36,7 @@ public:
     {
         if (HelpWindow->objectName().isEmpty())
             HelpWindow->setObjectName("HelpWindow");
-        HelpWindow->resize(800, 775);
+        HelpWindow->resize(800, 800);
         gridLayout = new QGridLayout(HelpWindow);
         gridLayout->setObjectName("gridLayout");
         verticalLayout = new QVBoxLayout();
@@ -95,31 +95,32 @@ public:
                         "ndent:0; text-indent:0px;\"><span style=\" font-family:'.AppleSystemUIFont','serif'; font-size:24pt; font-weight:700;\">Functionality</span> </p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'.AppleSystemUIFont','serif'; font-weight:700;\">\302\240</span> </p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'.AppleSystemUIFont','serif'; font-size:18pt;\">Basic:</span><span style=\" font-size:18pt;\"> </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240</span>Add row via \342\200\234Add\342\200\235 button. </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-le"
-                        "ft:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Edit row via \342\200\234Edit\342\200\235 button. </p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Add row via \342\200\234Add\342\200\235 button. </p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-l"
+                        "eft:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Edit row via \342\200\234Edit\342\200\235 button. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Delete row via \342\200\234Delete\342\200\235 button. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Save the current table to the original file via \342\200\234Save\342\200\235 button. </p>\n"
-"<p style=\" margin-top:12px"
-                        "; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Load data from the original file losing the data in the table. </p>\n"
+"<p style=\" margin-top:12p"
+                        "x; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Load data from the original file losing the data in the table. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Display the app logo via \342\200\234Logo\342\200\235 button. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Edit any cell by double-clicking on it. </p>\n"
-"<p style=\" margin-t"
-                        "op:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>View the info of any row by clicking on its number to the left of the table. </p>\n"
+"<p style=\" margin-"
+                        "top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>View the info of any row by clicking on its number to the left of the table. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\302\240 \302\240 </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Advanced: </span>\302\240 </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Sort data by choosing the parameter in combo box by defaul"
-                        "t stating \342\200\234Not Sorted\342\200\235. </p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Undo add, edit or delete action by clicking &quot;Undo&qu"
+                        "ot; button.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Sort data by choosing the parameter in combo box by default stating \342\200\234Not Sorted\342\200\235. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Reverse the sort order by clicking small radio button to the left of the combo box. </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Sort by clicking on the column header </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240"
-                        " </span>Reverse the sort order by double-clicking on the same column header </p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\""
+                        ">\302\240\302\240\302\240\302\240 </span>Sort by clicking on the column header </p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Reverse the sort order by double-clicking on the same column header </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol';\">\302\267</span><span style=\" font-family:'Times New Roman'; font-size:7pt;\">\302\240\302\240\302\240\302\240 </span>Filter the data based on any parameter via pressing on the \342\200\234Filter\342\200\235 button. </p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\302\240 </p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px"
+                        "; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:700;\">Author</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margi"
-                        "n-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Authored by DSBA222-1 student</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Authored by DSBA222-1 student</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:700;\"> Pankin Aleksei</span></p></body></html>", nullptr));
         logoButtonHelp->setText(QCoreApplication::translate("HelpWindow", "Logo", nullptr));
         okButtonHelp->setText(QCoreApplication::translate("HelpWindow", "OK", nullptr));
