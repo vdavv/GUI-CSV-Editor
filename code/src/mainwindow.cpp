@@ -198,11 +198,26 @@ void MainWindow::on_undoButton_clicked()
 
 void MainWindow::on_logoButton_clicked()
 {
-    // Show the logo window
-    logoWindow = new LogoWindow(this);
-    logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
-    logoWindow->show();
+    // Check if logoWindow is not null (i.e., it's already open)
+    if(logoWindow)
+    {
+        logoWindow->raise(); // If logoWindow is already open, bring it to the front
+        logoWindow->activateWindow();
+    }
+    else // If logoWindow is null, create a new LogoWindow
+    {
+        logoWindow = new LogoWindow(this);
+        logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
+
+        // Connect the logoWindow's destroyed signal to a lambda that sets logoWindow back to nullptr when the window is closed
+        QObject::connect(logoWindow, &QObject::destroyed, [this]() {
+            this->logoWindow = nullptr;
+        });
+
+        logoWindow->show();
+    }
 }
+
 
 
 void MainWindow::onFileChanged(const QString &path)

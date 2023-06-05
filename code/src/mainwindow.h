@@ -64,7 +64,7 @@ private:
     int lastClickedSection = -1;
     CSVFilterModel *filterModel;
     FilterDialog *filterDialog;
-    LogoWindow *logoWindow;
+    LogoWindow *logoWindow = nullptr;
     QUndoStack *undoStack;
     CSVItemDelegate *m_delegate;
 
