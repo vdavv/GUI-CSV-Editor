@@ -124,7 +124,7 @@ void MainWindow::RemoveRow()
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes)
         {
-            // m_model.removeRow(select->selectedRows().first().row(), QModelIndex());
+            // model.removeRow(select->selectedRows().first().row(), QModelIndex());
             int row = select->selectedRows().first().row();
             undoStack->push(new RemoveRowCommand(&model, row));
         }
