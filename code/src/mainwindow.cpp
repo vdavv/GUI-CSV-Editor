@@ -72,18 +72,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // connect(ui->undoButton, &QPushButton::clicked, m_undoStack, &QUndoStack::undo);
 }
 
-bool MainWindow::eventFilter(QObject *watched, QEvent *event)
-{
-    if (watched == ui->tableView->verticalHeader() && event->type() == QEvent::MouseButtonPress)
-    {
-        QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
-        int row = ui->tableView->verticalHeader()->logicalIndexAt(mouseEvent->pos());
-        handleRowHeaderClicked(row);
-        return true;
-    }
-    return QMainWindow::eventFilter(watched, event);
-}
-
 
 void MainWindow::AddRow()
 {
@@ -175,18 +163,24 @@ void MainWindow::ReloadCSV()
 }
 
 
-void MainWindow::handleRowHeaderClicked(int row)
+void MainWindow::handleRowHeaderClicked(int logicalIndex)
 {
-    QStringList rowData = model.getRowData(row);
-    QStringList headerData = model.getHeaderData();
+    QModelIndex proxyIndex = filterModel->index(logicalIndex, 0);
+    QModelIndex sourceIndex = filterModel->mapToSource(proxyIndex);
+    if (sourceIndex.isValid()) {
+        // int row = proxyIndex.row(); // this is the visual index
+        int row = sourceIndex.row();
+        QStringList rowData = model.getRowData(row);
+        QStringList headerData = model.getHeaderData();
 
-    QString info;
-    for (int i = 0; i < rowData.size() && i < headerData.size(); i++)
-    {
-        info += QString("%1: %2").arg(headerData[i]).arg(rowData[i]) + "\n";
+        QString info;
+        for (int i = 0; i < rowData.size() && i < headerData.size(); i++)
+        {
+            info += QString("%1: %2").arg(headerData[i]).arg(rowData[i]) + "\n";
+        }
+
+        QMessageBox::information(this, "Row Data", info);
     }
-
-    QMessageBox::information(this, "Row Data", info);
 }
 
 

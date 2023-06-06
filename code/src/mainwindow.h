@@ -28,12 +28,10 @@ public:
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    bool eventFilter(QObject *watched, QEvent *event) override;
     void openFilterDialog();
     ~MainWindow();
 
 private slots:
-    // void on_tableView_doubleClicked(const QModelIndex &index);
     void on_undoButton_clicked();
     void on_logoButton_clicked();
     void handleRowHeaderClicked(int row);
