@@ -1495,6 +1495,8 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel
  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h
  /opt/homebrew/include/QtGui/qtguiglobal.h
@@ -2070,6 +2072,8 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h
  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand
 
@@ -4188,6 +4192,8 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
  /opt/homebrew/include/QtCore/qtmochelpers.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h
@@ -5993,6 +5999,8 @@ CMakeFiles/healthServices.dir/main.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h
  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h
@@ -6579,6 +6587,8 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h
  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog
  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h
