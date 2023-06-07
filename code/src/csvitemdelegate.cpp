@@ -1,8 +1,8 @@
 #include "csvitemdelegate.h"
 #include "celleditcommand.h"
 
-CSVItemDelegate::CSVItemDelegate(CSVModel *modelSource, QUndoStack *undoStackSource, QObject *parent)
-    : QStyledItemDelegate(parent), model(modelSource), undoStack(undoStackSource)
+CSVItemDelegate::CSVItemDelegate(CSVModel *modelSource,CSVFilterModel *filterModelSource, QUndoStack *undoStackSource, QObject *parent)
+    : QStyledItemDelegate(parent), model(modelSource), filterModel(filterModelSource), undoStack(undoStackSource)
 {
 }
 
@@ -13,7 +13,7 @@ void CSVItemDelegate::setModelData(QWidget *editor, QAbstractItemModel *modelSou
     QVariant newValue = modelSource->data(index);
 
     if (oldValue != newValue) {
-        auto* command = new CellEditCommand(model, index, oldValue, newValue);
+        auto* command = new CellEditCommand(model, filterModel, index, oldValue, newValue);
         undoStack->push(command);
     }
 }

@@ -4,6 +4,7 @@
 #include <QSortFilterProxyModel>
 #include <QMap>
 #include <QPair>
+#include <QVector>
 
 class CSVFilterModel : public QSortFilterProxyModel
 {

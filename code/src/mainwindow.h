@@ -60,11 +60,11 @@ private:
     QFileSystemWatcher watcher;
     QSortFilterProxyModel *proxyModel;
     int lastClickedSection = -1;
-    CSVFilterModel *filterModel;
+    CSVFilterModel filterModel;
     FilterDialog *filterDialog;
     LogoWindow *logoWindow = nullptr;
     QUndoStack *undoStack;
-    CSVItemDelegate *m_delegate;
+    CSVItemDelegate *delegate;
 
 
 };

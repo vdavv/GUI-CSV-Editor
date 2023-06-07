@@ -17,11 +17,11 @@ const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 const QString MainWindow::FILEPATH = CSV_FILE_PATH;
 
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), undoStack(new QUndoStack(this)), m_delegate(new CSVItemDelegate(&model, undoStack, this)) {
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), undoStack(new QUndoStack(this)), delegate(new CSVItemDelegate(&model, &filterModel, undoStack, this)) {
     ui->setupUi(this);
     // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
-    ui->tableView->setItemDelegate(m_delegate);
+    ui->tableView->setItemDelegate(delegate);
 
 
     if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS))
@@ -38,8 +38,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 
     // Creating FilterSortModel
-    filterModel = new CSVFilterModel(this);
-    filterModel->setSourceModel(&model);
+    // filterModel = new CSVFilterModel(this);
+    filterModel.setSourceModel(&model);
 
 
     // Creating FilterDialog
@@ -86,7 +86,9 @@ void MainWindow::AddRow()
 
         if(select->hasSelection()) // if a row is selected
         {
-            selectedRow = select->selectedRows().first().row() + 1; // get selected row
+            QModelIndex proxyIndex = select->selectedRows().first();
+            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
+            selectedRow = sourceIndex.row() + 1; // get selected row
         }
 
         AddRowCommand *command = new AddRowCommand(&model, rowData, selectedRow);
@@ -97,6 +99,7 @@ void MainWindow::AddRow()
 
 void MainWindow::RemoveRow()
 {
+    //TODO: Misdelete when filtered or sorted
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
     if(select->hasSelection()) //check if has selection
@@ -106,8 +109,10 @@ void MainWindow::RemoveRow()
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes)
         {
-            // model.removeRow(select->selectedRows().first().row(), QModelIndex());
-            int row = select->selectedRows().first().row();
+            QModelIndex proxyIndex = select->selectedRows().first();
+            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
+
+            int row = sourceIndex.row();
             undoStack->push(new RemoveRowCommand(&model, row));
         }
     }
@@ -130,7 +135,10 @@ void MainWindow::EditRow()
     if(select->hasSelection()) //check if has selection
     {
         // Getting the selected row number
-        int row = select->selectedRows().first().row();
+        QModelIndex proxyIndex = select->selectedRows().first();
+        QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
+
+        int row = sourceIndex.row();
 
         // Getting current data of the row
         QStringList oldData = model.getRowData(row);
@@ -152,21 +160,21 @@ void MainWindow::EditRow()
 
 void MainWindow::ReloadCSV()
 {
-    filterModel->setSourceModel(nullptr); // Temporarily unset the source model
+    filterModel.setSourceModel(nullptr); // Temporarily unset the source model
     model.clear(); // Clears the current data of the model
     if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) // Load the CSV file again
     {
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
-    filterModel->setSourceModel(&model); // Reset the source model to the loaded data
+    filterModel.setSourceModel(&model); // Reset the source model to the loaded data
     undoStack->clear(); // Clear the undo stack
 }
 
 
 void MainWindow::handleRowHeaderClicked(int logicalIndex)
 {
-    QModelIndex proxyIndex = filterModel->index(logicalIndex, 0);
-    QModelIndex sourceIndex = filterModel->mapToSource(proxyIndex);
+    QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
+    QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
     if (sourceIndex.isValid()) {
         // int row = proxyIndex.row(); // this is the visual index
         int row = sourceIndex.row();
@@ -236,12 +244,12 @@ void MainWindow::openFilterDialog()
 void MainWindow::applyFilter()
 {
     QString stateFilter = filterDialog->getStateFilter();
-    filterModel->setStateFilter(stateFilter);
+    filterModel.setStateFilter(stateFilter);
     QMap<int, QPair<double, double>> filterMap = filterDialog->getFilterMap();
 
-    filterModel->setFilterMap(filterMap);
-    ui->tableView->setModel(filterModel);
-    filterModel->refreshFilter();
+    filterModel.setFilterMap(filterMap);
+    ui->tableView->setModel(&filterModel);
+    filterModel.refreshFilter();
 }
 
 
@@ -249,17 +257,18 @@ void MainWindow::onSortBoxChanged(int index)
 {
     if (index == 0) // Not Sorted
     {
-        delete filterModel;
-        filterModel = new CSVFilterModel(this);
-        filterModel->setSourceModel(&model);
-        applyFilter();
-        ui->tableView->setModel(filterModel);
+        filterModel.sort(-1);
+        // delete filterModel;
+        // filterModel = new CSVFilterModel(this);
+//        filterModel.setSourceModel(&model);
+//        applyFilter();
+//        ui->tableView->setModel(&filterModel);
     }
     else
     {
         bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
-        filterModel->sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
-        ui->tableView->setModel(filterModel);
+        filterModel.sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
+        ui->tableView->setModel(&filterModel);
     }
 }
 
@@ -271,14 +280,14 @@ void MainWindow::sort(int column, bool ascending)
 
     if (column < 0) // Not Sorted selected
     {
-        filterModel->invalidate(); // Invalidate the current sorting
+        filterModel.invalidate(); // Invalidate the current sorting
     }
     else
     {
-        filterModel->setDynamicSortFilter(true); // Enable sorting
-        filterModel->setSortRole(Qt::DisplayRole);
-        filterModel->setSortCaseSensitivity(Qt::CaseInsensitive);
-        filterModel->sort(column, ascending ? Qt::AscendingOrder : Qt::DescendingOrder);
+        filterModel.setDynamicSortFilter(true); // Enable sorting
+        filterModel.setSortRole(Qt::DisplayRole);
+        filterModel.setSortCaseSensitivity(Qt::CaseInsensitive);
+        filterModel.sort(column, ascending ? Qt::AscendingOrder : Qt::DescendingOrder);
     }
 }
 
@@ -292,7 +301,7 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex)
         reverseOrder = !ui->orderButton->isChecked();
         ui->orderButton->setChecked(reverseOrder);
     }
-    ui->tableView->setModel(filterModel);
+    ui->tableView->setModel(&filterModel);
     lastClickedSection = logicalIndex;
     ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
 }
@@ -301,6 +310,6 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex)
 MainWindow::~MainWindow()
 {
     delete filterDialog;
-    delete filterModel;
+    // delete filterModel;
     delete ui;
 }
