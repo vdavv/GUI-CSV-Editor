@@ -52,6 +52,14 @@ bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_
 }
 
 
+bool CSVFilterModel::lessThan(const QModelIndex &left, const QModelIndex &right) const
+{
+    if (left.column() != 0 && right.column() != 0)
+        return left.data().toFloat() <= right.data().toFloat();
+    return QSortFilterProxyModel::lessThan(left, right);
+}
+
+
 void CSVFilterModel::refreshFilter()
 {
     invalidateFilter();
