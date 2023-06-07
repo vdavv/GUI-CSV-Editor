@@ -258,11 +258,6 @@ void MainWindow::onSortBoxChanged(int index)
     if (index == 0) // Not Sorted
     {
         filterModel.sort(-1);
-        // delete filterModel;
-        // filterModel = new CSVFilterModel(this);
-//        filterModel.setSourceModel(&model);
-//        applyFilter();
-//        ui->tableView->setModel(&filterModel);
     }
     else
     {

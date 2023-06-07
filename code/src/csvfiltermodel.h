@@ -9,6 +9,7 @@
 class CSVFilterModel : public QSortFilterProxyModel
 {
     Q_OBJECT
+
 public:
     explicit CSVFilterModel(QObject *parent = nullptr);
 

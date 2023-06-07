@@ -10,6 +10,7 @@ HelpWindow::HelpWindow(QWidget *parent) :
 
     connect(ui->okButtonHelp, &QPushButton::clicked, this, &HelpWindow::on_okButtonHelp_clicked);
     connect(ui->logoButtonHelp, &QPushButton::clicked, this, &HelpWindow::on_logoButtonHelp_clicked);
+    connect(ui->languageHelpBox, SIGNAL(currentIndexChanged(int)), this, SLOT(onLanguageBoxChanged(int)));
 }
 
 
@@ -28,7 +29,8 @@ void HelpWindow::on_okButtonHelp_clicked()
 void HelpWindow::on_logoButtonHelp_clicked()
 {
     // Check if the logoWindow is already open
-    if(logoWindow == nullptr) {
+    if(logoWindow == nullptr)
+    {
         logoWindow = new LogoWindow(this);
         logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
         logoWindow->show();
@@ -40,3 +42,22 @@ void HelpWindow::on_logoButtonHelp_clicked()
     }
 }
 
+
+void HelpWindow::onLanguageBoxChanged(int index)
+{
+    switch(index)
+    {
+        // TODO: implement functions for changing UI in each windows
+        case 0:
+            // call functions for all windows to change text of
+            // UI elements to English
+            return;
+        case 1:
+            // call functions for all windows to change text of
+            // UI elements to Russian
+            return;
+        default:
+            // Do nothing
+            break;
+    }
+}

@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
@@ -29,6 +30,7 @@ public:
     QTextBrowser *textBrowser;
     QHBoxLayout *horizontalLayout;
     QPushButton *logoButtonHelp;
+    QComboBox *languageHelpBox;
     QSpacerItem *horizontalSpacer;
     QPushButton *okButtonHelp;
 
@@ -52,6 +54,13 @@ public:
         logoButtonHelp->setObjectName("logoButtonHelp");
 
         horizontalLayout->addWidget(logoButtonHelp);
+
+        languageHelpBox = new QComboBox(HelpWindow);
+        languageHelpBox->addItem(QString());
+        languageHelpBox->addItem(QString());
+        languageHelpBox->setObjectName("languageHelpBox");
+
+        horizontalLayout->addWidget(languageHelpBox);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -123,6 +132,9 @@ public:
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Authored by DSBA222-1 student</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:700;\"> Pankin Aleksei</span></p></body></html>", nullptr));
         logoButtonHelp->setText(QCoreApplication::translate("HelpWindow", "Logo", nullptr));
+        languageHelpBox->setItemText(0, QCoreApplication::translate("HelpWindow", "English", nullptr));
+        languageHelpBox->setItemText(1, QCoreApplication::translate("HelpWindow", "\320\240\321\203\321\201\321\201\320\272\320\270\320\271", nullptr));
+
         okButtonHelp->setText(QCoreApplication::translate("HelpWindow", "OK", nullptr));
     } // retranslateUi
 

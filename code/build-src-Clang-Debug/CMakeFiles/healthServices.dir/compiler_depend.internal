@@ -1002,6 +1002,8 @@ CMakeFiles/healthServices.dir/celleditcommand.cpp.o
  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h
  /opt/homebrew/lib/QtCore.framework/Headers/QPair
  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h
+ /opt/homebrew/lib/QtCore.framework/Headers/QVector
+ /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o
  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp
@@ -4286,6 +4288,8 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o
  /opt/homebrew/include/QtGui/qguiapplication.h
  /opt/homebrew/include/QtGui/qinputmethod.h
  /opt/homebrew/include/QtGui/qguiapplication_platform.h
+ /opt/homebrew/include/QtWidgets/QComboBox
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h
  /opt/homebrew/include/QtWidgets/QDialog
  /opt/homebrew/include/QtWidgets/QGridLayout
  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h
@@ -4868,6 +4872,21 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o
  /opt/homebrew/include/QtGui/qinputmethod.h
  /opt/homebrew/include/QtCore/qlocale.h
  /opt/homebrew/include/QtGui/qguiapplication_platform.h
+ /opt/homebrew/include/QtWidgets/QComboBox
+ /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h
+ /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h
+ /opt/homebrew/include/QtWidgets/qstyleoption.h
+ /opt/homebrew/include/QtWidgets/qabstractspinbox.h
+ /opt/homebrew/include/QtGui/qvalidator.h
+ /opt/homebrew/include/QtCore/qregularexpression.h
+ /opt/homebrew/include/QtWidgets/qslider.h
+ /opt/homebrew/include/QtWidgets/qabstractslider.h
+ /opt/homebrew/include/QtWidgets/qstyle.h
+ /opt/homebrew/include/QtWidgets/qtabbar.h
+ /opt/homebrew/include/QtWidgets/qtabwidget.h
+ /opt/homebrew/include/QtWidgets/qrubberband.h
+ /opt/homebrew/include/QtWidgets/qframe.h
+ /opt/homebrew/include/QtCore/qabstractitemmodel.h
  /opt/homebrew/include/QtWidgets/QDialog
  /opt/homebrew/include/QtWidgets/QGridLayout
  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h
@@ -4886,7 +4905,6 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o
  /opt/homebrew/lib/QtWidgets.framework/Headers/qtextbrowser.h
  /opt/homebrew/include/QtWidgets/qtextedit.h
  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h
- /opt/homebrew/include/QtWidgets/qframe.h
  /opt/homebrew/include/QtGui/qtextdocument.h
  /opt/homebrew/include/QtCore/qurl.h
  /opt/homebrew/include/QtGui/qtextoption.h
@@ -6650,9 +6668,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o
  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h
  /opt/homebrew/include/QtCore/qitemselectionmodel.h
  /opt/homebrew/include/QtWidgets/QMainWindow
- /opt/homebrew/include/QtWidgets/QMenuBar
- /opt/homebrew/lib/QtWidgets.framework/Headers/qmenubar.h
- /opt/homebrew/include/QtWidgets/qmenu.h
  /opt/homebrew/include/QtWidgets/QPushButton
  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h
  /opt/homebrew/include/QtWidgets/qabstractbutton.h
@@ -6660,8 +6675,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o
  /opt/homebrew/lib/QtWidgets.framework/Headers/qradiobutton.h
  /opt/homebrew/include/QtWidgets/QSpacerItem
  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h
- /opt/homebrew/include/QtWidgets/QStatusBar
- /opt/homebrew/lib/QtWidgets.framework/Headers/qstatusbar.h
  /opt/homebrew/include/QtWidgets/QTableView
  /opt/homebrew/lib/QtWidgets.framework/Headers/qtableview.h
  /opt/homebrew/include/QtWidgets/QVBoxLayout
