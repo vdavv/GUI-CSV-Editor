@@ -5,6 +5,7 @@ EditRowCommand::EditRowCommand(CSVModel* modelSource, int rowSource, const QStri
 {
 }
 
+
 void EditRowCommand::undo()
 {
     for (int column = 0; column < oldData.size(); ++column)
@@ -12,6 +13,7 @@ void EditRowCommand::undo()
         model->setData(model->index(row, column), oldData.at(column));
     }
 }
+
 
 void EditRowCommand::redo()
 {

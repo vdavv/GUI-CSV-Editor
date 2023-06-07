@@ -14,6 +14,7 @@ LogoWindow::LogoWindow(QWidget *parent) :
     // You can add the logo in the .ui file or set it here programmatically
 }
 
+
 LogoWindow::~LogoWindow()
 {
     delete ui;

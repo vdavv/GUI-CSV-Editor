@@ -8,6 +8,7 @@ RemoveRowCommand::RemoveRowCommand(CSVModel* modelSource, int rowSource)
     }
 }
 
+
 void RemoveRowCommand::undo()
 {
     model->insertRow(row, QModelIndex());
@@ -15,6 +16,7 @@ void RemoveRowCommand::undo()
         model->setData(model->index(row, column), m_rowData.at(column));
     }
 }
+
 
 void RemoveRowCommand::redo()
 {
