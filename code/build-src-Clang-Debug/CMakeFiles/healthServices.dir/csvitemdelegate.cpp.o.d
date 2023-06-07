@@ -548,5 +548,7 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPair \
   /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand
