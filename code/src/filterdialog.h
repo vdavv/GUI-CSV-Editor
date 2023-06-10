@@ -21,6 +21,9 @@ public:
     QString getStateFilter() const;
     QMap<int, QPair<double, double>> getFilterMap() const;
 
+public slots:
+    void translateUi(int lang);
+
 signals:
     void filterChanged();
 

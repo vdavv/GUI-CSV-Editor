@@ -13,7 +13,7 @@ class LogoWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit LogoWindow(QWidget *parent = nullptr);
+    explicit LogoWindow(QWidget *parent = nullptr, int lang = 0);
     ~LogoWindow();
     void paintEvent(QPaintEvent * /* event */);
 

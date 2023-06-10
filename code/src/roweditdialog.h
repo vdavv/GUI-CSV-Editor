@@ -11,7 +11,7 @@ class RowEditDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit RowEditDialog(QWidget *parent = nullptr);
+    explicit RowEditDialog(QWidget *parent = nullptr, int lang = 0);
     ~RowEditDialog();
     void setRowData(const QStringList &rowData);
     QStringList rowData() const;

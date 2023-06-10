@@ -31,6 +31,23 @@ QMap<int, QPair<double, double>> FilterDialog::getFilterMap() const
 }
 
 
+void FilterDialog::translateUi(int lang)
+{
+    switch(lang){
+    case 1:
+        ui->filterApplyButton->setText("Применить");
+        ui->filterResetButton->setText("Сбросить");
+        setWindowTitle("Фильтрация");
+        return;
+    default:
+        ui->filterApplyButton->setText("Apply");
+        ui->filterResetButton->setText("Reset");
+        setWindowTitle("Filter");
+        return;
+    }
+}
+
+
 void FilterDialog::on_filterApplyButton_clicked()
 {
     stateFilter = ui->stateChoiceLineEdit->text();

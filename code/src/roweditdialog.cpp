@@ -1,11 +1,28 @@
 #include "roweditdialog.h"
+#include "QtWidgets/qpushbutton.h"
 #include "ui_roweditdialog.h"
 
-RowEditDialog::RowEditDialog(QWidget *parent) :
+RowEditDialog::RowEditDialog(QWidget *parent, int lang) :
     QDialog(parent),
     ui(new Ui::RowEditDialog)
 {
     ui->setupUi(this);
+    QDialogButtonBox* buttonBox = ui->buttonBox;
+    QPushButton* cancelButton = buttonBox->button(QDialogButtonBox::Cancel);
+    switch(lang)
+    {
+    case 1:
+        if (cancelButton)
+            cancelButton->setText("Отменить");
+        setWindowTitle("Редактировать");
+        break;
+
+    default:
+        if (cancelButton)
+            cancelButton->setText("Cancel");
+        break;
+    }
+    this->update();
 }
 
 

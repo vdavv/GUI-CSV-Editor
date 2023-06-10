@@ -6,12 +6,20 @@
 #include <QFont>
 #include <QRandomGenerator>
 
-LogoWindow::LogoWindow(QWidget *parent) :
+LogoWindow::LogoWindow(QWidget *parent, int lang) :
     QDialog(parent),
     ui(new Ui::LogoWindow)
 {
     ui->setupUi(this);
-    // You can add the logo in the .ui file or set it here programmatically
+
+    switch(lang){
+    case 1:
+        setWindowTitle("Логотип");
+        break;
+    default:
+        setWindowTitle("Logo");
+        break;
+    }
 }
 
 

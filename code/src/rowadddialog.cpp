@@ -1,11 +1,28 @@
 #include "rowadddialog.h"
+#include "QtWidgets/qpushbutton.h"
 #include "ui_rowadddialog.h"
 
-RowAddDialog::RowAddDialog(QWidget *parent) :
+RowAddDialog::RowAddDialog(QWidget *parent, int lang) :
     QDialog(parent),
     ui(new Ui::RowAddDialog)
 {
     ui->setupUi(this);
+    QDialogButtonBox* buttonBox = ui->buttonBox;
+    QPushButton* cancelButton = buttonBox->button(QDialogButtonBox::Cancel);
+    switch(lang)
+    {
+    case 1:
+        if (cancelButton)
+            cancelButton->setText("Отменить");
+        setWindowTitle("Добавить");
+        break;
+
+    default:
+        if (cancelButton)
+            cancelButton->setText("Cancel");
+        break;
+    }
+    this->update();
 
     // Add line edits to list for easier management
     lineEdits = {ui->lineEdit_1, ui->lineEdit_2, ui->lineEdit_3, ui->lineEdit_4, ui->lineEdit_5,
