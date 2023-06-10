@@ -47,6 +47,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
 
 
+    // Creating HelpWindow
+    helpWindow = new HelpWindow(this);
+    connect(helpWindow, &HelpWindow::languageChanged, this, &MainWindow::translateUi);
+
+
     // Creating LogoWindow
     // logoWindow = new LogoWindow(this);
     connect(ui->logoButton, &QPushButton::clicked, this, &MainWindow::on_logoButton_clicked);
@@ -70,6 +75,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
     connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
     // connect(ui->undoButton, &QPushButton::clicked, m_undoStack, &QUndoStack::undo);
+
+    // Connect helpwindow translate box with translate functions
+
 }
 
 
@@ -86,7 +94,8 @@ void MainWindow::AddRow()
 
         if(select->hasSelection()) // if a row is selected
         {
-            QModelIndex proxyIndex = select->selectedRows().first();
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
             QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
             selectedRow = sourceIndex.row() + 1; // get selected row
         }
@@ -109,7 +118,8 @@ void MainWindow::RemoveRow()
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes)
         {
-            QModelIndex proxyIndex = select->selectedRows().first();
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
             QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
 
             int row = sourceIndex.row();
@@ -135,7 +145,8 @@ void MainWindow::EditRow()
     if(select->hasSelection()) //check if has selection
     {
         // Getting the selected row number
-        QModelIndex proxyIndex = select->selectedRows().first();
+        int logicalIndex = select->selectedRows().first().row();
+        QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
         QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
 
         int row = sourceIndex.row();
@@ -230,7 +241,6 @@ void MainWindow::onFileChanged(const QString &path)
 
 void MainWindow::openHelpWindow()
 {
-    HelpWindow* helpWindow = new HelpWindow(this);
     helpWindow->show();
 }
 
@@ -299,6 +309,38 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex)
     ui->tableView->setModel(&filterModel);
     lastClickedSection = logicalIndex;
     ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
+}
+
+
+void MainWindow::translateUi(int lang)
+{
+    switch(lang)
+    {
+    case 1:
+        ui->undoButton->setText("Назад");
+        ui->reloadButton->setText("Обновить");
+        ui->saveButton->setText("Сохранить");
+        ui->logoButton->setText("Лого");
+        ui->helpButton->setText("Помощь");
+        ui->sortBox->setItemText(0, "Нет Сортировки");
+        ui->filterButton->setText("Фильтры");
+        ui->editRowButton->setText("Редактировать");
+        ui->addRowButton->setText("Добавить");
+        ui->removeRowButton->setText("Удалить");
+        return;
+    default:
+        ui->undoButton->setText("Undo");
+        ui->reloadButton->setText("Load");
+        ui->saveButton->setText("Save");
+        ui->logoButton->setText("Logo");
+        ui->helpButton->setText("Help");
+        ui->sortBox->setItemText(0, "Not Sorted");
+        ui->filterButton->setText("Filter");
+        ui->editRowButton->setText("Edit");
+        ui->addRowButton->setText("Add");
+        ui->removeRowButton->setText("Delete");
+        return;
+    }
 }
 
 

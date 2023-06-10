@@ -11,6 +11,7 @@
 #include "filterdialog.h"
 #include "csvitemdelegate.h"
 #include "logowindow.h"
+#include "helpwindow.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -53,6 +54,7 @@ private slots:
 
 public slots:
     void ReloadCSV();
+    void translateUi(int lang);
 
 private:
     Ui::MainWindow *ui;
@@ -62,6 +64,7 @@ private:
     int lastClickedSection = -1;
     CSVFilterModel filterModel;
     FilterDialog *filterDialog;
+    HelpWindow *helpWindow;
     LogoWindow *logoWindow = nullptr;
     QUndoStack *undoStack;
     CSVItemDelegate *delegate;

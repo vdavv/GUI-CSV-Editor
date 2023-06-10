@@ -45,19 +45,7 @@ void HelpWindow::on_logoButtonHelp_clicked()
 
 void HelpWindow::onLanguageBoxChanged(int index)
 {
-    switch(index)
-    {
-        // TODO: implement functions for changing UI in each windows
-        case 0:
-            // call functions for all windows to change text of
-            // UI elements to English
-            return;
-        case 1:
-            // call functions for all windows to change text of
-            // UI elements to Russian
-            return;
-        default:
-            // Do nothing
-            break;
-    }
+    // index 0 = English (default)
+    // index 1 = Russian (optional)
+    emit languageChanged(index);
 }

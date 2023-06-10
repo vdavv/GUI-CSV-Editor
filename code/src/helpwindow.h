@@ -18,6 +18,10 @@ public:
     ~HelpWindow();
 
 
+signals:
+    void languageChanged(int index);
+
+
 private slots:
     void on_okButtonHelp_clicked();
     void on_logoButtonHelp_clicked();
