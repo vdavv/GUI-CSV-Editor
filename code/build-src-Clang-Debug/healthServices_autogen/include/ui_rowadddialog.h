@@ -247,7 +247,7 @@ public:
 
     void retranslateUi(QDialog *RowAddDialog)
     {
-        RowAddDialog->setWindowTitle(QCoreApplication::translate("RowAddDialog", "Dialog", nullptr));
+        RowAddDialog->setWindowTitle(QCoreApplication::translate("RowAddDialog", "Add", nullptr));
         label->setText(QCoreApplication::translate("RowAddDialog", "City:", nullptr));
         label_2->setText(QCoreApplication::translate("RowAddDialog", "RateMDs:", nullptr));
         label_3->setText(QCoreApplication::translate("RowAddDialog", "NumHospitals:", nullptr));

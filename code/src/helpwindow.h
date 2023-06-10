@@ -15,12 +15,22 @@ class HelpWindow : public QDialog
 
 public:
     explicit HelpWindow(QWidget *parent = nullptr);
+    int lang = 0;
     ~HelpWindow();
+
+
+public slots:
+    void translateUi(int lang);
+
+
+signals:
+    void languageChanged(int index);
 
 
 private slots:
     void on_okButtonHelp_clicked();
     void on_logoButtonHelp_clicked();
+    void onLanguageBoxChanged(int index);
 
 
 private:

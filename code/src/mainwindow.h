@@ -11,6 +11,7 @@
 #include "filterdialog.h"
 #include "csvitemdelegate.h"
 #include "logowindow.h"
+#include "helpwindow.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -25,6 +26,7 @@ class MainWindow : public QMainWindow
 public:
     static const QVector<int> CSVCOLUMNS; // = {0,1,2,3,4,5,6,7,8,9};
     static const QString FILEPATH; // = "/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/data/MetroHealth83.csv";
+    int lang = 0;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
@@ -53,6 +55,7 @@ private slots:
 
 public slots:
     void ReloadCSV();
+    void translateUi(int lang);
 
 private:
     Ui::MainWindow *ui;
@@ -62,6 +65,7 @@ private:
     int lastClickedSection = -1;
     CSVFilterModel filterModel;
     FilterDialog *filterDialog;
+    HelpWindow *helpWindow;
     LogoWindow *logoWindow = nullptr;
     QUndoStack *undoStack;
     CSVItemDelegate *delegate;

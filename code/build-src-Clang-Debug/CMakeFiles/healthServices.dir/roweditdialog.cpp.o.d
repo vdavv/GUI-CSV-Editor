@@ -562,4 +562,6 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/include/QtWidgets/qpushbutton.h \
+  /opt/homebrew/include/QtWidgets/qabstractbutton.h

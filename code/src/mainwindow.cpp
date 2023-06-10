@@ -47,6 +47,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(filterDialog, &FilterDialog::filterChanged, this, &MainWindow::applyFilter);
 
 
+    // Creating HelpWindow
+    helpWindow = new HelpWindow(this);
+    connect(helpWindow, &HelpWindow::languageChanged, this, &MainWindow::translateUi);
+    connect(helpWindow, &HelpWindow::languageChanged, filterDialog, &FilterDialog::translateUi);
+
+
     // Creating LogoWindow
     // logoWindow = new LogoWindow(this);
     connect(ui->logoButton, &QPushButton::clicked, this, &MainWindow::on_logoButton_clicked);
@@ -70,12 +76,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
     connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
     // connect(ui->undoButton, &QPushButton::clicked, m_undoStack, &QUndoStack::undo);
+
+    // Connect helpwindow translate box with translate functions
+
 }
 
 
 void MainWindow::AddRow()
 {
-    RowAddDialog dialog(this);
+    RowAddDialog dialog(this, lang);
 
     // Open the dialog and check if the user clicked OK
     if(dialog.exec() == QDialog::Accepted)
@@ -106,8 +115,18 @@ void MainWindow::RemoveRow()
     if(select->hasSelection()) //check if has selection
     {
         QMessageBox::StandardButton reply;
-        reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
-                                      QMessageBox::Yes|QMessageBox::No);
+
+        switch(lang){
+        case 1:
+            reply = QMessageBox::question(this, "Подтверждение", "Вы уверены, что хотите удалить эту строку?",
+                                          QMessageBox::Yes|QMessageBox::No);
+            break;
+        default:
+            reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
+                                          QMessageBox::Yes|QMessageBox::No);
+            break;
+        }
+
         if (reply == QMessageBox::Yes)
         {
             int logicalIndex = select->selectedRows().first().row();
@@ -147,7 +166,7 @@ void MainWindow::EditRow()
         QStringList oldData = model.getRowData(row);
 
         // Create and setup dialog
-        RowEditDialog dialog(this);
+        RowEditDialog dialog(this, lang);
         dialog.setRowData(oldData); // use setRowData instead of setData
 
         // If Ok is pressed then apply changes to the model
@@ -211,7 +230,7 @@ void MainWindow::on_logoButton_clicked()
     }
     else // If logoWindow is null, create a new LogoWindow
     {
-        logoWindow = new LogoWindow(this);
+        logoWindow = new LogoWindow(this, lang);
         logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
 
         // Connect the logoWindow's destroyed signal to a lambda that sets logoWindow back to nullptr when the window is closed
@@ -233,7 +252,6 @@ void MainWindow::onFileChanged(const QString &path)
 
 void MainWindow::openHelpWindow()
 {
-    HelpWindow* helpWindow = new HelpWindow(this);
     helpWindow->show();
 }
 
@@ -261,11 +279,6 @@ void MainWindow::onSortBoxChanged(int index)
     if (index == 0) // Not Sorted
     {
         filterModel.sort(-1);
-        // delete filterModel;
-        // filterModel = new CSVFilterModel(this);
-//        filterModel.setSourceModel(&model);
-//        applyFilter();
-//        ui->tableView->setModel(&filterModel);
     }
     else
     {
@@ -307,6 +320,40 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex)
     ui->tableView->setModel(&filterModel);
     lastClickedSection = logicalIndex;
     ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
+}
+
+
+void MainWindow::translateUi(int lang)
+{
+    switch(lang)
+    {
+    case 1:
+        MainWindow::lang = 1;
+        ui->undoButton->setText("Назад");
+        ui->reloadButton->setText("Обновить");
+        ui->saveButton->setText("Сохранить");
+        ui->logoButton->setText("Лого");
+        ui->helpButton->setText("Помощь");
+        ui->sortBox->setItemText(0, "Не Отсортировано");
+        ui->filterButton->setText("Фильтры");
+        ui->editRowButton->setText("Редактировать");
+        ui->addRowButton->setText("Добавить");
+        ui->removeRowButton->setText("Удалить");
+        return;
+    default:
+        MainWindow::lang = 0;
+        ui->undoButton->setText("Undo");
+        ui->reloadButton->setText("Load");
+        ui->saveButton->setText("Save");
+        ui->logoButton->setText("Logo");
+        ui->helpButton->setText("Help");
+        ui->sortBox->setItemText(0, "Not Sorted");
+        ui->filterButton->setText("Filter");
+        ui->editRowButton->setText("Edit");
+        ui->addRowButton->setText("Add");
+        ui->removeRowButton->setText("Delete");
+        return;
+    }
 }
 
 

@@ -11,7 +11,7 @@ class RowAddDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit RowAddDialog(QWidget *parent = nullptr);
+    explicit RowAddDialog(QWidget *parent = nullptr, int lang = 0);
     ~RowAddDialog();
     void setRowData(const QStringList &rowData);
     QStringList rowData() const;
