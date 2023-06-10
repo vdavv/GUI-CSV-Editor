@@ -14,7 +14,7 @@ public:
 private:
     CSVModel* model;
     int row;
-    QList<QVariant> m_rowData;
+    QList<QVariant> mRowData;
 };
 
 #endif // REMOVEROWCOMMAND_H

@@ -6,10 +6,12 @@ AddRowCommand::AddRowCommand(CSVModel* modelSource, const QStringList &rowDataSo
     setText(QObject::tr("Add Row"));
 }
 
+
 void AddRowCommand::undo()
 {
     model->removeRow(row, QModelIndex());
 }
+
 
 void AddRowCommand::redo()
 {

@@ -79,7 +79,7 @@ li.checked::marker { content: "\2612"; }
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Добавьте строку с помощью кнопки “Добавить”. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Отредактируйте строку с помощью кнопки “Редактировать”. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Удалите строку с помощью кнопки “Удалить”. </p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Сохраните текущую таблицу в исходный файл с помощью кнопки “Сохранить”. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Сохраните текущую таблицу в файл с помощью кнопки “Сохранить”. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Загрузите данные из исходного файла с помощью кнопки "Обновить" </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Отобразите логотип приложения с помощью кнопки “Лого”. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Отредактируйте любую ячейку, дважды щелкнув по ней. </p>
@@ -96,7 +96,7 @@ li.checked::marker { content: "\2612"; }
 <p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;">Автор</span></p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt;">Создал студент DSBA222-1</span></p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;"> Панкин Алексей</span></p></body></html>)");
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;"> *Студент1613*</span></p></body></html>)");
         return;
 
 
@@ -122,7 +122,7 @@ li.checked::marker { content: "\2612"; }
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Add row via “Add” button. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Edit row via “Edit” button. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Delete row via “Delete” button. </p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Save the current table to the original file via “Save” button. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Save the current table to the file via “Save” button. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Load data from the original file losing the data in the table. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Display the app logo via “Logo” button. </p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Symbol';">·</span><span style=" font-family:'Times New Roman'; font-size:7pt;">     </span>Edit any cell by double-clicking on it. </p>
@@ -139,7 +139,7 @@ li.checked::marker { content: "\2612"; }
 <p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;">Author</span></p>
 <p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt;">Authored by DSBA222-1 student</span></p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;"> Pankin Aleksei</span></p></body></html>)");
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:24pt; font-weight:700;"> *Student1613*</span></p></body></html>)");
         return;
     }
 }

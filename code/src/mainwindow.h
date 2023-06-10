@@ -61,7 +61,6 @@ private:
     Ui::MainWindow *ui;
     CSVModel model;
     QFileSystemWatcher watcher;
-    QSortFilterProxyModel *proxyModel;
     int lastClickedSection = -1;
     CSVFilterModel filterModel;
     FilterDialog *filterDialog;

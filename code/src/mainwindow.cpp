@@ -42,6 +42,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // Creating FilterSortModel
     // filterModel = new CSVFilterModel(this);
     filterModel.setSourceModel(&model);
+    ui->tableView->setModel(&filterModel);
 
 
     // Creating FilterDialog
@@ -81,64 +82,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     // Connect helpwindow translate box with translate functions
 
-}
-
-
-void MainWindow::AddRow()
-{
-    RowAddDialog dialog(this, lang);
-
-    // Open the dialog and check if the user clicked OK
-    if(dialog.exec() == QDialog::Accepted)
-    {
-        QStringList rowData = dialog.rowData();
-        QItemSelectionModel *select = ui->tableView->selectionModel();
-        int selectedRow = model.rowCount(); // default to end of list
-
-        if(select->hasSelection()) // if a row is selected
-        {
-            int logicalIndex = select->selectedRows().first().row();
-            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
-            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
-            selectedRow = sourceIndex.row() + 1; // get selected row
-        }
-
-        AddRowCommand *command = new AddRowCommand(&model, rowData, selectedRow);
-        undoStack->push(command);
-    }
-}
-
-
-void MainWindow::RemoveRow()
-{
-    //TODO: Misdelete when filtered or sorted
-    QItemSelectionModel *select = ui->tableView->selectionModel();
-
-    if(select->hasSelection()) //check if has selection
-    {
-        QMessageBox::StandardButton reply;
-
-        switch(lang){
-        case 1:
-            reply = QMessageBox::question(this, "Подтверждение", "Вы уверены, что хотите удалить эту строку?",
-                                          QMessageBox::Yes|QMessageBox::No);
-            break;
-        default:
-            reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
-                                          QMessageBox::Yes|QMessageBox::No);
-            break;
-        }
-
-        if (reply == QMessageBox::Yes)
-        {
-            int logicalIndex = select->selectedRows().first().row();
-            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
-            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
-
-            int row = sourceIndex.row();
-            undoStack->push(new RemoveRowCommand(&model, row));
-        }
-    }
 }
 
 
@@ -204,6 +147,64 @@ void MainWindow::SaveCSV()
 }
 
 
+void MainWindow::AddRow()
+{
+    RowAddDialog dialog(this, lang);
+
+    // Open the dialog and check if the user clicked OK
+    if(dialog.exec() == QDialog::Accepted)
+    {
+        QStringList rowData = dialog.rowData();
+        QItemSelectionModel *select = ui->tableView->selectionModel();
+        int selectedRow = model.rowCount(); // default to end of list
+
+        if(select->hasSelection()) // if a row is selected
+        {
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
+            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
+            selectedRow = sourceIndex.row() + 1; // get selected row
+        }
+
+        AddRowCommand *command = new AddRowCommand(&model, rowData, selectedRow);
+        undoStack->push(command);
+    }
+}
+
+
+void MainWindow::RemoveRow()
+{
+    //TODO: Misdelete when filtered or sorted
+    QItemSelectionModel *select = ui->tableView->selectionModel();
+
+    if(select->hasSelection()) //check if has selection
+    {
+        QMessageBox::StandardButton reply;
+
+        switch(lang){
+        case 1:
+            reply = QMessageBox::question(this, "Подтверждение", "Вы уверены, что хотите удалить эту строку?",
+                                          QMessageBox::Yes|QMessageBox::No);
+            break;
+        default:
+            reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
+                                          QMessageBox::Yes|QMessageBox::No);
+            break;
+        }
+
+        if (reply == QMessageBox::Yes)
+        {
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
+            QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
+
+            int row = sourceIndex.row();
+            undoStack->push(new RemoveRowCommand(&model, row));
+        }
+    }
+}
+
+
 void MainWindow::EditRow()
 {
     QItemSelectionModel *select = ui->tableView->selectionModel();
@@ -237,6 +238,7 @@ void MainWindow::EditRow()
 
 void MainWindow::ReloadCSV()
 {
+    undoStack->clear(); // Clear the undo stack
     filterModel.setSourceModel(nullptr); // Temporarily unset the source model
     model.clear(); // Clears the current data of the model
     if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) // Load the CSV file again
@@ -244,7 +246,6 @@ void MainWindow::ReloadCSV()
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
     filterModel.setSourceModel(&model); // Reset the source model to the loaded data
-    undoStack->clear(); // Clear the undo stack
 }
 
 
@@ -353,6 +354,7 @@ void MainWindow::sort(int column, bool ascending)
     {
         filterModel.invalidate(); // Invalidate the current sorting
     }
+
     else
     {
         filterModel.setDynamicSortFilter(true); // Enable sorting
