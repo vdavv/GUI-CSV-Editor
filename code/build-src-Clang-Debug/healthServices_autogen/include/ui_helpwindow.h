@@ -129,7 +129,7 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-"
                         "bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:700;\">Author</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Authored by DSBA222-1 student</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Authored by DSBA student</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:700;\"> *Student1613*</span></p></body></html>", nullptr));
         logoButtonHelp->setText(QCoreApplication::translate("HelpWindow", "Logo", nullptr));
         languageHelpBox->setItemText(0, QCoreApplication::translate("HelpWindow", "English", nullptr));
