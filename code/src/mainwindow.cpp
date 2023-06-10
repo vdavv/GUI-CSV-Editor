@@ -86,7 +86,8 @@ void MainWindow::AddRow()
 
         if(select->hasSelection()) // if a row is selected
         {
-            QModelIndex proxyIndex = select->selectedRows().first();
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
             QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
             selectedRow = sourceIndex.row() + 1; // get selected row
         }
@@ -109,7 +110,8 @@ void MainWindow::RemoveRow()
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes)
         {
-            QModelIndex proxyIndex = select->selectedRows().first();
+            int logicalIndex = select->selectedRows().first().row();
+            QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
             QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
 
             int row = sourceIndex.row();
@@ -135,7 +137,8 @@ void MainWindow::EditRow()
     if(select->hasSelection()) //check if has selection
     {
         // Getting the selected row number
-        QModelIndex proxyIndex = select->selectedRows().first();
+        int logicalIndex = select->selectedRows().first().row();
+        QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
         QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
 
         int row = sourceIndex.row();
