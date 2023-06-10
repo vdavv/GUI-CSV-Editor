@@ -162,9 +162,11 @@ void MainWindow::SaveCSV()
         );
 
     // if filePath is not empty, the user has not clicked Cancel
-    if (!filePath.isEmpty()) {
+    if (!filePath.isEmpty())
+    {
         QFile file(filePath);
-        if (file.open(QIODevice::WriteOnly)) {
+        if (file.open(QIODevice::WriteOnly))
+        {
             QTextStream stream(&file);
             QStringList strList;
 
@@ -175,17 +177,26 @@ void MainWindow::SaveCSV()
             stream << strList.join(",") + "\n";
 
             // write data rows
-            for (int row = 0; row < model.rowCount(); ++row) {
+            for (int row = 0; row < model.rowCount(); ++row)
+            {
                 strList.clear();
                 for (int column = 0; column < model.columnCount(); ++column)
+                {
+                    if (column != 0)
+                    {
+                        strList << model.data(model.index(row, column)).toString();
+                        continue;
+                    }
                     strList << "\"" + model.data(model.index(row, column)).toString() + "\"";
+                }
                 stream << strList.join(",") + "\n";
             }
 
             file.close();
-            // update the current file path
-            // CSV_FILE_PATH = filePath;
-        } else {
+        }
+
+        else
+        {
             // show an error message if the file couldn't be opened
             QMessageBox::critical(this, tr("Error"), tr("Could not open file for writing"));
         }
