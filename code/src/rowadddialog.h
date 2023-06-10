@@ -11,14 +11,14 @@ class RowAddDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit RowAddDialog(QWidget *parent = nullptr, int lang = 0);
+    explicit RowAddDialog(QWidget* parent = nullptr, int lang = 0);
     ~RowAddDialog();
-    void setRowData(const QStringList &rowData);
+    void setRowData(const QStringList& rowData);
     QStringList rowData() const;
 
 private:
     QList<QLineEdit*> lineEdits;
-    Ui::RowAddDialog *ui;
+    Ui::RowAddDialog* ui;
 };
 
-#endif // ROWADDDIALOG_H
+#endif// ROWADDDIALOG_H

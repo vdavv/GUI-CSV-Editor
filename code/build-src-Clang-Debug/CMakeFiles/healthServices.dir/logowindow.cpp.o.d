@@ -540,16 +540,16 @@ CMakeFiles/healthServices.dir/logowindow.cpp.o: \
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/include/QtWidgets/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QFont \
+  /opt/homebrew/lib/QtGui.framework/Headers/qfont.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient \
+  /opt/homebrew/lib/QtGui.framework/Headers/qbrush.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainterPath \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainterpath.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient \
-  /opt/homebrew/lib/QtGui.framework/Headers/qbrush.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QFont \
-  /opt/homebrew/lib/QtGui.framework/Headers/qfont.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator \
   /opt/homebrew/lib/QtCore.framework/Headers/qrandom.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random

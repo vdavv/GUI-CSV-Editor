@@ -1,14 +1,14 @@
 #ifndef ADDROWCOMMAND_H
 #define ADDROWCOMMAND_H
 
-#include <QUndoCommand>
-#include <QStringList>
 #include "csvmodel.h"
+#include <QStringList>
+#include <QUndoCommand>
 
 class AddRowCommand : public QUndoCommand
 {
 public:
-    explicit AddRowCommand(CSVModel* model, const QStringList &rowData, int row, QUndoCommand *parent = nullptr);
+    explicit AddRowCommand(CSVModel* model, const QStringList& rowData, int row, QUndoCommand* parent = nullptr);
 
     void undo() override;
     void redo() override;
@@ -19,4 +19,4 @@ private:
     int row;
 };
 
-#endif // ADDROWCOMMAND_H
+#endif// ADDROWCOMMAND_H

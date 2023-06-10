@@ -1,12 +1,9 @@
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -311,7 +308,11 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -408,18 +409,14 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
   /opt/homebrew/include/QtCore/qhashfunctions.h \
   /opt/homebrew/include/QtCore/qstring.h \
   /opt/homebrew/include/QtCore/qchar.h \
   /opt/homebrew/include/QtCore/qstringview.h \
   /opt/homebrew/include/QtCore/qbytearray.h \
   /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -441,11 +438,24 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qobject.h \
   /opt/homebrew/include/QtCore/qobjectdefs.h \
   /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
@@ -466,10 +476,6 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
   /opt/homebrew/include/QtCore/qvariant.h \
@@ -478,18 +484,12 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: \
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \

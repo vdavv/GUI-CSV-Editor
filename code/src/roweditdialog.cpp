@@ -1,15 +1,14 @@
-#include "roweditdialog.h"
 #include "QtWidgets/qpushbutton.h"
+#include "roweditdialog.h"
 #include "ui_roweditdialog.h"
 
-RowEditDialog::RowEditDialog(QWidget *parent, int lang) :
-    QDialog(parent),
+RowEditDialog::RowEditDialog(QWidget* parent, int lang) : QDialog(parent),
     ui(new Ui::RowEditDialog)
 {
     ui->setupUi(this);
     QDialogButtonBox* buttonBox = ui->buttonBox;
     QPushButton* cancelButton = buttonBox->button(QDialogButtonBox::Cancel);
-    switch(lang)
+    switch (lang)
     {
     case 1:
         if (cancelButton)
@@ -32,9 +31,10 @@ RowEditDialog::~RowEditDialog()
 }
 
 
-void RowEditDialog::setRowData(const QStringList &rowData)
+void RowEditDialog::setRowData(const QStringList& rowData)
 {
-    if (rowData.size() != 9) {
+    if (rowData.size() != 9)
+    {
         qWarning() << "Unexpected data size: " << rowData.size();
         return;
     }

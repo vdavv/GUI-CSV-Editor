@@ -1,27 +1,27 @@
-﻿#include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include <QTableView>
-#include <QMessageBox>
-#include <QMouseEvent>
-#include <QFileDialog>
-#include <QTextStream>
+﻿#include "addrowcommand.h"
+#include "editrowcommand.h"
+#include "filterdialog.h"
+#include "helpwindow.h"
+#include "logowindow.h"
+#include "mainwindow.h"
+#include "removerowcommand.h"
 #include "rowadddialog.h"
 #include "roweditdialog.h"
-#include "helpwindow.h"
-#include "filterdialog.h"
-#include "addrowcommand.h"
-#include "removerowcommand.h"
-#include "editrowcommand.h"
-#include "logowindow.h"
+#include "ui_mainwindow.h"
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMouseEvent>
+#include <QTableView>
+#include <QTextStream>
 
 
 const QVector<int> MainWindow::CSVCOLUMNS = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 const QString MainWindow::FILEPATH = CSV_FILE_PATH;
 
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), undoStack(new QUndoStack(this)), delegate(new CSVItemDelegate(&model, &filterModel, undoStack, this)) {
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow), undoStack(new QUndoStack(this)), delegate(new CSVItemDelegate(&model, &filterModel, undoStack, this))
+{
     ui->setupUi(this);
-    // Install event filter
     ui->tableView->verticalHeader()->installEventFilter(this);
     ui->tableView->setItemDelegate(delegate);
 
@@ -40,7 +40,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 
     // Creating FilterSortModel
-    // filterModel = new CSVFilterModel(this);
     filterModel.setSourceModel(&model);
     ui->tableView->setModel(&filterModel);
 
@@ -57,7 +56,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 
     // Creating LogoWindow
-    // logoWindow = new LogoWindow(this);
     connect(ui->logoButton, &QPushButton::clicked, this, &MainWindow::on_logoButton_clicked);
 
 
@@ -65,7 +63,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->tableView->verticalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::handleRowHeaderClicked);
 
 
-    // Connect your buttons with the slots
+    // Connect buttons with the slots
     connect(ui->addRowButton, &QPushButton::clicked, this, &MainWindow::AddRow);
     connect(ui->removeRowButton, &QPushButton::clicked, this, &MainWindow::RemoveRow);
     connect(ui->saveButton, &QPushButton::clicked, this, &MainWindow::SaveCSV);
@@ -78,17 +76,19 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     });
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionClicked, this, &MainWindow::onHeaderSectionClicked);
     connect(ui->filterButton, &QPushButton::clicked, this, &MainWindow::openFilterDialog);
-    // connect(ui->undoButton, &QPushButton::clicked, m_undoStack, &QUndoStack::undo);
+}
 
-    // Connect helpwindow translate box with translate functions
 
+MainWindow::~MainWindow()
+{
+    delete ui;
 }
 
 
 void MainWindow::SaveCSV()
 {
     QString dialogTitleName;
-    switch(lang)
+    switch (lang)
     {
     case 1:
         dialogTitleName = "Сохранить Файл";
@@ -100,11 +100,9 @@ void MainWindow::SaveCSV()
     QString filePath = QFileDialog::getSaveFileName(
         this,
         dialogTitleName,
-        CSV_FILE_PATH, // use your current file path
-        tr("CSV files (*.csv)")
-        );
+        CSV_FILE_PATH,
+        tr("CSV files (*.csv)"));
 
-    // if filePath is not empty, the user has not clicked Cancel
     if (!filePath.isEmpty())
     {
         QFile file(filePath);
@@ -140,7 +138,6 @@ void MainWindow::SaveCSV()
 
         else
         {
-            // show an error message if the file couldn't be opened
             QMessageBox::critical(this, tr("Error"), tr("Could not open file for writing"));
         }
     }
@@ -151,22 +148,21 @@ void MainWindow::AddRow()
 {
     RowAddDialog dialog(this, lang);
 
-    // Open the dialog and check if the user clicked OK
-    if(dialog.exec() == QDialog::Accepted)
+    if (dialog.exec() == QDialog::Accepted)
     {
         QStringList rowData = dialog.rowData();
-        QItemSelectionModel *select = ui->tableView->selectionModel();
-        int selectedRow = model.rowCount(); // default to end of list
+        QItemSelectionModel* select = ui->tableView->selectionModel();
+        int selectedRow = model.rowCount();// default to end of list
 
-        if(select->hasSelection()) // if a row is selected
+        if (select->hasSelection())// if a row is selected
         {
             int logicalIndex = select->selectedRows().first().row();
             QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
             QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
-            selectedRow = sourceIndex.row() + 1; // get selected row
+            selectedRow = sourceIndex.row() + 1;
         }
 
-        AddRowCommand *command = new AddRowCommand(&model, rowData, selectedRow);
+        AddRowCommand* command = new AddRowCommand(&model, rowData, selectedRow);
         undoStack->push(command);
     }
 }
@@ -174,21 +170,21 @@ void MainWindow::AddRow()
 
 void MainWindow::RemoveRow()
 {
-    //TODO: Misdelete when filtered or sorted
-    QItemSelectionModel *select = ui->tableView->selectionModel();
+    QItemSelectionModel* select = ui->tableView->selectionModel();
 
-    if(select->hasSelection()) //check if has selection
+    if (select->hasSelection())
     {
         QMessageBox::StandardButton reply;
 
-        switch(lang){
+        switch (lang)
+        {
         case 1:
             reply = QMessageBox::question(this, "Подтверждение", "Вы уверены, что хотите удалить эту строку?",
-                                          QMessageBox::Yes|QMessageBox::No);
+                                          QMessageBox::Yes | QMessageBox::No);
             break;
         default:
             reply = QMessageBox::question(this, "Confirmation", "Are you sure you want to delete this row?",
-                                          QMessageBox::Yes|QMessageBox::No);
+                                          QMessageBox::Yes | QMessageBox::No);
             break;
         }
 
@@ -207,28 +203,23 @@ void MainWindow::RemoveRow()
 
 void MainWindow::EditRow()
 {
-    QItemSelectionModel *select = ui->tableView->selectionModel();
+    QItemSelectionModel* select = ui->tableView->selectionModel();
 
-    if(select->hasSelection()) //check if has selection
+    if (select->hasSelection())
     {
         // Getting the selected row number
         int logicalIndex = select->selectedRows().first().row();
         QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
         QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
-
         int row = sourceIndex.row();
 
-        // Getting current data of the row
         QStringList oldData = model.getRowData(row);
-
-        // Create and setup dialog
         RowEditDialog dialog(this, lang);
-        dialog.setRowData(oldData); // use setRowData instead of setData
+        dialog.setRowData(oldData);
 
-        // If Ok is pressed then apply changes to the model
         if (dialog.exec() == QDialog::Accepted)
         {
-            QStringList newData = dialog.rowData(); // use rowData instead of getData
+            QStringList newData = dialog.rowData();
             auto* command = new EditRowCommand(&model, row, oldData, newData);
             undoStack->push(command);
         }
@@ -238,14 +229,14 @@ void MainWindow::EditRow()
 
 void MainWindow::ReloadCSV()
 {
-    undoStack->clear(); // Clear the undo stack
-    filterModel.setSourceModel(nullptr); // Temporarily unset the source model
-    model.clear(); // Clears the current data of the model
-    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS)) // Load the CSV file again
+    undoStack->clear();
+    filterModel.setSourceModel(nullptr);
+    model.clear();
+    if (!model.loadCSV(MainWindow::FILEPATH, MainWindow::CSVCOLUMNS))
     {
         QMessageBox::critical(this, "Error", "Failed to reload CSV file.");
     }
-    filterModel.setSourceModel(&model); // Reset the source model to the loaded data
+    filterModel.setSourceModel(&model);
 }
 
 
@@ -253,8 +244,8 @@ void MainWindow::handleRowHeaderClicked(int logicalIndex)
 {
     QModelIndex proxyIndex = filterModel.index(logicalIndex, 0);
     QModelIndex sourceIndex = filterModel.mapToSource(proxyIndex);
-    if (sourceIndex.isValid()) {
-        // int row = proxyIndex.row(); // this is the visual index
+    if (sourceIndex.isValid())
+    {
         int row = sourceIndex.row();
         QStringList rowData = model.getRowData(row);
         QStringList headerData = model.getHeaderData();
@@ -279,15 +270,16 @@ void MainWindow::on_undoButton_clicked()
 void MainWindow::on_logoButton_clicked()
 {
     // Check if logoWindow is not null (i.e., it's already open)
-    if(logoWindow)
+    if (logoWindow)
     {
-        logoWindow->raise(); // If logoWindow is already open, bring it to the front
+        logoWindow->raise();
         logoWindow->activateWindow();
     }
-    else // If logoWindow is null, create a new LogoWindow
+
+    else
     {
         logoWindow = new LogoWindow(this, lang);
-        logoWindow->setAttribute(Qt::WA_DeleteOnClose); // Set the attribute so that the window is deleted when it's closed
+        logoWindow->setAttribute(Qt::WA_DeleteOnClose);// Set the attribute so that the window is deleted when it's closed
 
         // Connect the logoWindow's destroyed signal to a lambda that sets logoWindow back to nullptr when the window is closed
         QObject::connect(logoWindow, &QObject::destroyed, [this]() {
@@ -299,8 +291,7 @@ void MainWindow::on_logoButton_clicked()
 }
 
 
-
-void MainWindow::onFileChanged(const QString &path)
+void MainWindow::onFileChanged(const QString& path)
 {
     model.loadCSV(path, MainWindow::CSVCOLUMNS);
 }
@@ -332,14 +323,14 @@ void MainWindow::applyFilter()
 
 void MainWindow::onSortBoxChanged(int index)
 {
-    if (index == 0) // Not Sorted
+    if (index == 0)// Not Sorted
     {
         filterModel.sort(-1);
     }
     else
     {
-        bool reverseOrder = ui->orderButton->isChecked();  // Check the state of the radio button
-        filterModel.sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);  // Pass the reverseOrder flag to sort()
+        bool reverseOrder = ui->orderButton->isChecked();                                    // Check the state of the radio button
+        filterModel.sort(index - 1, reverseOrder ? Qt::AscendingOrder : Qt::DescendingOrder);// Pass the reverseOrder flag to sort()
         ui->tableView->setModel(&filterModel);
     }
 }
@@ -350,14 +341,14 @@ void MainWindow::sort(int column, bool ascending)
     // Map column to CSV model index
     column = MainWindow::CSVCOLUMNS[column - 1];
 
-    if (column < 0) // Not Sorted selected
+    if (column < 0)// Not Sorted selected
     {
-        filterModel.invalidate(); // Invalidate the current sorting
+        filterModel.invalidate();
     }
 
     else
     {
-        filterModel.setDynamicSortFilter(true); // Enable sorting
+        filterModel.setDynamicSortFilter(true);
         filterModel.setSortRole(Qt::DisplayRole);
         filterModel.setSortCaseSensitivity(Qt::CaseInsensitive);
         filterModel.sort(column, ascending ? Qt::AscendingOrder : Qt::DescendingOrder);
@@ -376,15 +367,15 @@ void MainWindow::onHeaderSectionClicked(int logicalIndex)
     }
     ui->tableView->setModel(&filterModel);
     lastClickedSection = logicalIndex;
-    ui->sortBox->setCurrentIndex(logicalIndex + 1);  // +1 because index 0 is 'Not Sorted'
+    ui->sortBox->setCurrentIndex(logicalIndex + 1);// +1 because index 0 is 'Not Sorted'
 }
 
 
 void MainWindow::translateUi(int lang)
 {
-    switch(lang)
+    switch (lang) // 1 - Russian, 0 - English, default - English
     {
-    case 1:
+    case 1:// Russian
         MainWindow::lang = 1;
         ui->undoButton->setText("Назад");
         ui->reloadButton->setText("Обновить");
@@ -397,7 +388,7 @@ void MainWindow::translateUi(int lang)
         ui->addRowButton->setText("Добавить");
         ui->removeRowButton->setText("Удалить");
         return;
-    default:
+    default://English
         MainWindow::lang = 0;
         ui->undoButton->setText("Undo");
         ui->reloadButton->setText("Load");
@@ -411,12 +402,4 @@ void MainWindow::translateUi(int lang)
         ui->removeRowButton->setText("Delete");
         return;
     }
-}
-
-
-MainWindow::~MainWindow()
-{
-    delete filterDialog;
-    // delete filterModel;
-    delete ui;
 }

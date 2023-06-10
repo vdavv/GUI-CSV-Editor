@@ -1,18 +1,18 @@
 #include "logowindow.h"
 #include "ui_logowindow.h"
+#include <QFont>
+#include <QLinearGradient>
 #include <QPainter>
 #include <QPainterPath>
-#include <QLinearGradient>
-#include <QFont>
 #include <QRandomGenerator>
 
-LogoWindow::LogoWindow(QWidget *parent, int lang) :
-    QDialog(parent),
+LogoWindow::LogoWindow(QWidget* parent, int lang) : QDialog(parent),
     ui(new Ui::LogoWindow)
 {
     ui->setupUi(this);
 
-    switch(lang){
+    switch (lang)
+    {
     case 1:
         setWindowTitle("Логотип");
         break;
@@ -29,7 +29,7 @@ LogoWindow::~LogoWindow()
 }
 
 
-void LogoWindow::paintEvent(QPaintEvent * /* event */)
+void LogoWindow::paintEvent(QPaintEvent* /* event */)
 {
     QPainter painter(this);
 
@@ -41,7 +41,7 @@ void LogoWindow::paintEvent(QPaintEvent * /* event */)
     painter.drawRect(0, 0, width(), height());
 
     // Create the worm-like decorations in the background
-    const int numberOfWorms = 10; // Number of worms
+    const int numberOfWorms = 10;// Number of worms
     for (int i = 0; i < numberOfWorms; ++i)
     {
         QPainterPath path;
@@ -49,7 +49,7 @@ void LogoWindow::paintEvent(QPaintEvent * /* event */)
         qreal startY = QRandomGenerator::global()->bounded(static_cast<qreal>(height()));
         path.moveTo(startX, startY);
 
-        for (int j = 0; j < 5; ++j) // 5 segments per worm
+        for (int j = 0; j < 5; ++j)// 5 segments per worm
         {
             qreal ctrl1X = QRandomGenerator::global()->bounded(static_cast<qreal>(width()));
             qreal ctrl1Y = QRandomGenerator::global()->bounded(static_cast<qreal>(height()));
@@ -67,7 +67,7 @@ void LogoWindow::paintEvent(QPaintEvent * /* event */)
         painter.setPen(Qt::NoPen);
 
         QPainterPathStroker stroker;
-        stroker.setWidth(20); // Width of the worm body
+        stroker.setWidth(20);// Width of the worm body
         QPainterPath wormBodyPath = stroker.createStroke(path);
 
         painter.drawPath(wormBodyPath);
@@ -97,9 +97,7 @@ void LogoWindow::paintEvent(QPaintEvent * /* event */)
     int textWidthEditor = fmEditor.horizontalAdvance("EDITOR");
 
     int editorTextX = (width() - textWidthEditor) / 2;
-    int editorTextY = height() / 2 + textHeightCSV / 2 + fmEditor.ascent() + 2;  // 50 is the margin between CSV and EDITOR
+    int editorTextY = height() / 2 + textHeightCSV / 2 + fmEditor.ascent() + 2;// 50 is the margin between CSV and EDITOR
 
     painter.drawText(editorTextX, editorTextY, "EDITOR");
 }
-
-

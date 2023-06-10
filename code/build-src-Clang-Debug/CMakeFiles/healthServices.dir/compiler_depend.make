@@ -3,9 +3,11 @@
 
 CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -310,22 +312,7 @@ CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.local
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -422,6 +409,18 @@ CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.local
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -442,15 +441,15 @@ CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.local
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -474,12 +473,6 @@ CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.local
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
@@ -494,13 +487,21 @@ CMakeFiles/healthServices.dir/addrowcommand.cpp.o: /Users/vdav/Yandex.Disk.local
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h
 
 CMakeFiles/healthServices.dir/celleditcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -805,22 +806,11 @@ CMakeFiles/healthServices.dir/celleditcommand.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qarraydatapointer.h \
   /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -917,6 +907,14 @@ CMakeFiles/healthServices.dir/celleditcommand.cpp.o: /Users/vdav/Yandex.Disk.loc
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -937,15 +935,28 @@ CMakeFiles/healthServices.dir/celleditcommand.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
   /opt/homebrew/include/QtCore/qalgorithms.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -963,54 +974,40 @@ CMakeFiles/healthServices.dir/celleditcommand.cpp.o: /Users/vdav/Yandex.Disk.loc
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
+  /opt/homebrew/include/QtCore/qvariant.h \
+  /opt/homebrew/include/QtCore/qdebug.h \
+  /opt/homebrew/include/QtCore/qtextstream.h \
+  /opt/homebrew/include/QtCore/qstringconverter_base.h \
+  /opt/homebrew/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/include/QtCore/qmap.h \
+  /opt/homebrew/include/QtCore/qset.h \
+  /opt/homebrew/include/QtCore/qvarlengtharray.h \
+  /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qvariant.h \
-  /opt/homebrew/include/QtCore/qdebug.h \
-  /opt/homebrew/include/QtCore/qtextstream.h \
-  /opt/homebrew/include/QtCore/qstringconverter_base.h \
-  /opt/homebrew/include/QtCore/qcontiguouscache.h \
-  /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
-  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
-  /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
-  /opt/homebrew/include/QtCore/qset.h \
-  /opt/homebrew/include/QtCore/qvarlengtharray.h \
-  /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h
 
 CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -1315,7 +1312,11 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -1412,18 +1413,14 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
   /opt/homebrew/include/QtCore/qhashfunctions.h \
   /opt/homebrew/include/QtCore/qstring.h \
   /opt/homebrew/include/QtCore/qchar.h \
   /opt/homebrew/include/QtCore/qstringview.h \
   /opt/homebrew/include/QtCore/qbytearray.h \
   /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -1445,11 +1442,24 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qobject.h \
   /opt/homebrew/include/QtCore/qobjectdefs.h \
   /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
@@ -1470,10 +1480,6 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
   /opt/homebrew/include/QtCore/qvariant.h \
@@ -1482,18 +1488,12 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
@@ -1522,11 +1522,11 @@ CMakeFiles/healthServices.dir/csvfiltermodel.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtGui/qicon.h
 
 CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -1831,25 +1831,11 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qarraydatapointer.h \
   /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -1946,6 +1932,14 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -1966,15 +1960,28 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
   /opt/homebrew/include/QtCore/qalgorithms.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -1992,28 +1999,43 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/include/QtWidgets/qstyleoption.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
   /opt/homebrew/include/QtWidgets/qwidget.h \
   /opt/homebrew/include/QtGui/qwindowdefs.h \
@@ -2044,7 +2066,6 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
   /opt/homebrew/include/QtGui/qvalidator.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/include/QtWidgets/qslider.h \
   /opt/homebrew/include/QtWidgets/qabstractslider.h \
   /opt/homebrew/include/QtWidgets/qstyle.h \
@@ -2052,35 +2073,10 @@ CMakeFiles/healthServices.dir/csvitemdelegate.cpp.o: /Users/vdav/Yandex.Disk.loc
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
   /opt/homebrew/include/QtWidgets/qframe.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack
 
 CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -2385,7 +2381,17 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -2482,18 +2488,6 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -2514,26 +2508,25 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qbytearraylist.h \
-  /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qstringmatcher.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qscopedpointer.h \
+  /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
   /opt/homebrew/include/QtCore/qdatastream.h \
+  /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qiodevicebase.h \
   /opt/homebrew/include/QtCore/qfloat16.h \
   /opt/homebrew/include/QtCore/qmath.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qiterable.h \
   /opt/homebrew/include/QtCore/qmetacontainer.h \
   /opt/homebrew/include/QtCore/qcontainerinfo.h \
   /opt/homebrew/include/QtCore/qtaggedpointer.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopeguard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
@@ -2544,26 +2537,35 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/include/QtCore/qobject_impl.h \
-  /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qbytearraylist.h \
+  /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qstringmatcher.h \
   /opt/homebrew/include/QtCore/qmap.h \
   /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
+  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobject_impl.h \
+  /opt/homebrew/include/QtCore/qbindingstorage.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QFile \
   /opt/homebrew/lib/QtCore.framework/Headers/qfile.h \
   /opt/homebrew/include/QtCore/qfiledevice.h \
@@ -2625,16 +2627,16 @@ CMakeFiles/healthServices.dir/csvmodel.cpp.o: /Users/vdav/Yandex.Disk.localized/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset \
-  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
-  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QTextStream \
   /opt/homebrew/lib/QtCore.framework/Headers/qtextstream.h
 
 CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -2939,22 +2941,7 @@ CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -3051,6 +3038,18 @@ CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.loca
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -3071,15 +3070,15 @@ CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -3103,10 +3102,6 @@ CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.loca
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
@@ -3120,10 +3115,15 @@ CMakeFiles/healthServices.dir/editrowcommand.cpp.o: /Users/vdav/Yandex.Disk.loca
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h
 
 CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
@@ -3643,8 +3643,10 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.locali
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
   /opt/homebrew/include/QtWidgets/qframe.h \
@@ -3654,10 +3656,8 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.locali
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
   healthServices_autogen/include/ui_filterdialog.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -3697,12 +3697,9 @@ CMakeFiles/healthServices.dir/filterdialog.cpp.o: /Users/vdav/Yandex.Disk.locali
 CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: healthServices_autogen/mocs_compilation.cpp \
   healthServices_autogen/EWIEGA46WW/moc_csvfiltermodel.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -4007,7 +4004,11 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -4104,18 +4105,14 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
   /opt/homebrew/include/QtCore/qhashfunctions.h \
   /opt/homebrew/include/QtCore/qstring.h \
   /opt/homebrew/include/QtCore/qchar.h \
   /opt/homebrew/include/QtCore/qstringview.h \
   /opt/homebrew/include/QtCore/qbytearray.h \
   /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -4137,11 +4134,24 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qobject.h \
   /opt/homebrew/include/QtCore/qobjectdefs.h \
   /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
@@ -4162,10 +4172,6 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
   /opt/homebrew/include/QtCore/qvariant.h \
@@ -4174,23 +4180,25 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/include/QtCore/qtmochelpers.h \
   healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
@@ -4239,22 +4247,16 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
   /opt/homebrew/include/QtWidgets/qframe.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack \
   /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
   healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   healthServices_autogen/EWIEGA46WW/moc_filterdialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
   /opt/homebrew/include/QtGui/qtextcursor.h \
@@ -4263,10 +4265,13 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
   healthServices_autogen/EWIEGA46WW/moc_helpwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/include/QtGui/qpicture.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
   healthServices_autogen/include/ui_helpwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -4301,24 +4306,19 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
   /opt/homebrew/include/QtWidgets/qtextedit.h \
   /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
   /opt/homebrew/include/QtWidgets/QVBoxLayout \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtGui/qpicture.h \
-  /opt/homebrew/include/QtCore/qiodevice.h \
   healthServices_autogen/EWIEGA46WW/moc_logowindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
   healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
   /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h \
   healthServices_autogen/include/ui_rowadddialog.h \
@@ -4334,6 +4334,7 @@ CMakeFiles/healthServices.dir/healthServices_autogen/mocs_compilation.cpp.o: hea
 
 CMakeFiles/healthServices.dir/helpwindow.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
@@ -4850,6 +4851,13 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtGui/qpicture.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
   healthServices_autogen/include/ui_helpwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -4877,7 +4885,6 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/include/QtCore/qabstractitemmodel.h \
   /opt/homebrew/include/QtWidgets/QDialog \
   /opt/homebrew/include/QtWidgets/QGridLayout \
@@ -4897,18 +4904,11 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtextbrowser.h \
   /opt/homebrew/include/QtWidgets/qtextedit.h \
   /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtGui/qtextcursor.h \
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
-  /opt/homebrew/include/QtWidgets/QVBoxLayout \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtGui/qpicture.h \
-  /opt/homebrew/include/QtCore/qiodevice.h
+  /opt/homebrew/include/QtWidgets/QVBoxLayout
 
 CMakeFiles/healthServices.dir/logowindow.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
@@ -5451,27 +5451,26 @@ CMakeFiles/healthServices.dir/logowindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/include/QtWidgets/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QFont \
+  /opt/homebrew/lib/QtGui.framework/Headers/qfont.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient \
+  /opt/homebrew/lib/QtGui.framework/Headers/qbrush.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainterPath \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainterpath.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient \
-  /opt/homebrew/lib/QtGui.framework/Headers/qbrush.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QFont \
-  /opt/homebrew/lib/QtGui.framework/Headers/qfont.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator \
   /opt/homebrew/lib/QtCore.framework/Headers/qrandom.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random
 
 CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/main.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -5776,7 +5775,11 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -5873,18 +5876,14 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
   /opt/homebrew/include/QtCore/qhashfunctions.h \
   /opt/homebrew/include/QtCore/qstring.h \
   /opt/homebrew/include/QtCore/qchar.h \
   /opt/homebrew/include/QtCore/qstringview.h \
   /opt/homebrew/include/QtCore/qbytearray.h \
   /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -5906,11 +5905,24 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qobject.h \
   /opt/homebrew/include/QtCore/qobjectdefs.h \
   /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
@@ -5931,10 +5943,6 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
   /opt/homebrew/include/QtCore/qvariant.h \
@@ -5943,25 +5951,34 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtCore/qstringconverter_base.h \
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
   /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
   /opt/homebrew/include/QtGui/qtguiglobal.h \
   /opt/homebrew/include/QtGui/qtgui-config.h \
   /opt/homebrew/include/QtGui/qtguiexports.h \
   /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
+  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
   /opt/homebrew/include/QtWidgets/qwidget.h \
   /opt/homebrew/include/QtGui/qwindowdefs.h \
   /opt/homebrew/include/QtCore/qmargins.h \
@@ -5990,58 +6007,35 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/include/QtGui/qvalidator.h \
+  /opt/homebrew/include/QtWidgets/qslider.h \
+  /opt/homebrew/include/QtWidgets/qabstractslider.h \
+  /opt/homebrew/include/QtWidgets/qstyle.h \
+  /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
-  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack \
   /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/include/QtGui/qtextcursor.h \
   /opt/homebrew/include/QtGui/qtextdocument.h \
   /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qstyleoption.h \
-  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
-  /opt/homebrew/include/QtGui/qvalidator.h \
-  /opt/homebrew/include/QtWidgets/qslider.h \
-  /opt/homebrew/include/QtWidgets/qabstractslider.h \
-  /opt/homebrew/include/QtWidgets/qstyle.h \
-  /opt/homebrew/include/QtWidgets/qtabbar.h \
-  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/include/QtGui/qpicture.h \
   /opt/homebrew/include/QtCore/qiodevice.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   healthServices_autogen/include/ui_helpwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -6076,10 +6070,16 @@ CMakeFiles/healthServices.dir/main.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/
   /opt/homebrew/include/QtWidgets/qtextedit.h \
   /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
   /opt/homebrew/include/QtWidgets/QVBoxLayout \
+  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication
 
 CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
@@ -6563,16 +6563,20 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
   /opt/homebrew/include/QtGui/qtguiglobal.h \
   /opt/homebrew/include/QtGui/qtgui-config.h \
   /opt/homebrew/include/QtGui/qtguiexports.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
   /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
   /opt/homebrew/include/QtWidgets/qwidget.h \
@@ -6603,28 +6607,10 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
-  /opt/homebrew/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
-  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
   /opt/homebrew/include/QtCore/qregularexpression.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
-  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/filterdialog.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
   /opt/homebrew/include/QtWidgets/qframe.h \
@@ -6634,27 +6620,14 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QDoubleValidator \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qstyleoption.h \
-  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
-  /opt/homebrew/include/QtGui/qvalidator.h \
-  /opt/homebrew/include/QtWidgets/qslider.h \
-  /opt/homebrew/include/QtWidgets/qabstractslider.h \
-  /opt/homebrew/include/QtWidgets/qstyle.h \
-  /opt/homebrew/include/QtWidgets/qtabbar.h \
-  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/include/QtGui/qpicture.h \
   /opt/homebrew/include/QtCore/qiodevice.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
   healthServices_autogen/include/ui_helpwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -6670,6 +6643,17 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/include/QtWidgets/QComboBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
+  /opt/homebrew/include/QtGui/qvalidator.h \
+  /opt/homebrew/include/QtWidgets/qslider.h \
+  /opt/homebrew/include/QtWidgets/qabstractslider.h \
+  /opt/homebrew/include/QtWidgets/qstyle.h \
+  /opt/homebrew/include/QtWidgets/qtabbar.h \
+  /opt/homebrew/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/include/QtCore/qabstractitemmodel.h \
   /opt/homebrew/include/QtWidgets/QDialog \
   /opt/homebrew/include/QtWidgets/QGridLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
@@ -6689,6 +6673,36 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtWidgets/qtextedit.h \
   /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
   /opt/homebrew/include/QtWidgets/QVBoxLayout \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /opt/homebrew/include/QtCore/qabstractproxymodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QVector \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoStack \
+  /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h \
+  healthServices_autogen/include/ui_rowadddialog.h \
+  /opt/homebrew/include/QtWidgets/QAbstractButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /opt/homebrew/include/QtWidgets/QDialogButtonBox \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
+  /opt/homebrew/include/QtWidgets/QLabel \
+  /opt/homebrew/include/QtWidgets/QLineEdit \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h \
+  healthServices_autogen/include/ui_roweditdialog.h \
   healthServices_autogen/include/ui_mainwindow.h \
   /opt/homebrew/include/QtWidgets/QHeaderView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h \
@@ -6701,29 +6715,6 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtableview.h \
   /opt/homebrew/include/QtWidgets/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/include/QtWidgets/qdialog.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent \
-  /opt/homebrew/lib/QtGui.framework/Headers/qevent.h \
-  /opt/homebrew/include/QtCore/qpointer.h \
-  /opt/homebrew/include/QtGui/qeventpoint.h \
-  /opt/homebrew/include/QtGui/qvector2d.h \
-  /opt/homebrew/include/QtGui/qvectornd.h \
-  /opt/homebrew/include/QtGui/qpointingdevice.h \
-  /opt/homebrew/include/QtGui/qinputdevice.h \
-  /opt/homebrew/include/QtGui/qscreen.h \
-  /opt/homebrew/include/QtCore/QList \
-  /opt/homebrew/include/QtCore/QObject \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/include/QtCore/QRect \
-  /opt/homebrew/lib/QtCore.framework/Headers/qrect.h \
-  /opt/homebrew/include/QtCore/QSize \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsize.h \
-  /opt/homebrew/include/QtCore/QSizeF \
-  /opt/homebrew/include/QtGui/QTransform \
-  /opt/homebrew/lib/QtGui.framework/Headers/qtransform.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QFileDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qfiledialog.h \
   /opt/homebrew/include/QtCore/qdir.h \
@@ -6789,28 +6780,39 @@ CMakeFiles/healthServices.dir/mainwindow.cpp.o: /Users/vdav/Yandex.Disk.localize
   /opt/homebrew/include/QtCore/qfileinfo.h \
   /opt/homebrew/include/QtCore/qdatetime.h \
   /opt/homebrew/include/QtCore/qcalendar.h \
+  /opt/homebrew/include/QtWidgets/qdialog.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent \
+  /opt/homebrew/lib/QtGui.framework/Headers/qevent.h \
+  /opt/homebrew/include/QtCore/qpointer.h \
+  /opt/homebrew/include/QtGui/qeventpoint.h \
+  /opt/homebrew/include/QtGui/qvector2d.h \
+  /opt/homebrew/include/QtGui/qvectornd.h \
+  /opt/homebrew/include/QtGui/qpointingdevice.h \
+  /opt/homebrew/include/QtGui/qinputdevice.h \
+  /opt/homebrew/include/QtGui/qscreen.h \
+  /opt/homebrew/include/QtCore/QList \
+  /opt/homebrew/include/QtCore/QObject \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
+  /opt/homebrew/include/QtCore/QRect \
+  /opt/homebrew/lib/QtCore.framework/Headers/qrect.h \
+  /opt/homebrew/include/QtCore/QSize \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsize.h \
+  /opt/homebrew/include/QtCore/QSizeF \
+  /opt/homebrew/include/QtGui/QTransform \
+  /opt/homebrew/lib/QtGui.framework/Headers/qtransform.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
   /opt/homebrew/lib/QtCore.framework/Headers/QTextStream \
-  /opt/homebrew/lib/QtCore.framework/Headers/qtextstream.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h \
-  healthServices_autogen/include/ui_rowadddialog.h \
-  /opt/homebrew/include/QtWidgets/QAbstractButton \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /opt/homebrew/include/QtWidgets/QDialogButtonBox \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
-  /opt/homebrew/include/QtWidgets/QLabel \
-  /opt/homebrew/include/QtWidgets/QLineEdit \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h \
-  healthServices_autogen/include/ui_roweditdialog.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/addrowcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qtextstream.h
 
 CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -7115,22 +7117,7 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.lo
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -7227,6 +7214,18 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.lo
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -7247,15 +7246,15 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.lo
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -7279,10 +7278,6 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.lo
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
@@ -7296,10 +7291,15 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: /Users/vdav/Yandex.Disk.lo
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h
 
 CMakeFiles/healthServices.dir/rowadddialog.cpp.o: /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h \
@@ -8438,12 +8438,6 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /opt/homebrew/include/QtWidgets/qpushbutton.h:
 
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h:
-
-/opt/homebrew/include/QtCore/qcalendar.h:
-
-/opt/homebrew/include/QtCore/qdir.h:
-
 /opt/homebrew/lib/QtCore.framework/Headers/qsize.h:
 
 /opt/homebrew/include/QtCore/QSize:
@@ -8466,7 +8460,13 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /opt/homebrew/lib/QtGui.framework/Headers/QMouseEvent:
 
+/opt/homebrew/include/QtCore/qcalendar.h:
+
+/opt/homebrew/include/QtCore/qdir.h:
+
 /opt/homebrew/include/QtWidgets/QMainWindow:
+
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h:
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication:
 
@@ -8474,13 +8474,13 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: /Users/vdav/Yandex.Disk.local
 
 /opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator:
 
-/opt/homebrew/lib/QtGui.framework/Headers/qfont.h:
-
-/opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient:
-
 /opt/homebrew/include/QtGui/qvector2d.h:
 
 /opt/homebrew/lib/QtGui.framework/Headers/QPainter:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QLinearGradient:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qfont.h:
 
 healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp:
 
@@ -8492,11 +8492,11 @@ healthServices_autogen/EWIEGA46WW/moc_roweditdialog.cpp:
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/rowadddialog.h:
 
+/opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow:
+
 /opt/homebrew/lib/QtCore.framework/Headers/qlist.h:
 
 /opt/homebrew/lib/QtCore.framework/Headers/qfilesystemwatcher.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow:
 
 healthServices_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
@@ -8573,12 +8573,6 @@ healthServices_autogen/include/ui_filterdialog.h:
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QTextStream:
-
-healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qdebug.h:
-
-/opt/homebrew/lib/QtCore.framework/Headers/QDebug:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip:
 
@@ -8666,6 +8660,12 @@ healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QFile:
 
+healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qdebug.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QDebug:
+
 /opt/homebrew/include/QtWidgets/qrubberband.h:
 
 /opt/homebrew/include/QtWidgets/qtabwidget.h:
@@ -8738,12 +8738,6 @@ healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/qvector.h:
 
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h:
-
-/opt/homebrew/lib/QtCore.framework/Headers/QPair:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qmap.h:
-
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/editrowcommand.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset:
@@ -8756,9 +8750,23 @@ healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel:
 
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvitemdelegate.h:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QPair:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qmap.h:
+
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvfiltermodel.h:
 
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/celleditcommand.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qundostack.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand:
+
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h:
 
 /opt/homebrew/include/QtCore/q20memory.h:
 
@@ -8775,10 +8783,6 @@ healthServices_autogen/EWIEGA46WW/moc_csvitemdelegate.cpp:
 /opt/homebrew/include/QtCore/qstringconverter_base.h:
 
 /opt/homebrew/include/QtCore/qtextstream.h:
-
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h:
 
 /opt/homebrew/include/QtCore/qbindingstorage.h:
 
@@ -8826,9 +8830,11 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 
 /opt/homebrew/include/QtCore/qscopedpointer.h:
 
-/opt/homebrew/include/QtCore/qstringmatcher.h:
+/opt/homebrew/include/QtCore/qobjectdefs_impl.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit:
+/opt/homebrew/include/QtCore/qobjectdefs.h:
+
+/opt/homebrew/include/QtCore/qstringmatcher.h:
 
 /opt/homebrew/include/QtCore/qstringlist.h:
 
@@ -8868,6 +8874,30 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view:
 
+/opt/homebrew/include/QtCore/qarraydataops.h:
+
+/opt/homebrew/include/QtCore/qarraydatapointer.h:
+
+/opt/homebrew/include/QtCore/qpair.h:
+
+healthServices_autogen/include/ui_rowadddialog.h:
+
+/opt/homebrew/include/QtCore/qarraydata.h:
+
+/opt/homebrew/include/QtCore/qtmetamacros.h:
+
+/opt/homebrew/include/QtCore/qnamespace.h:
+
+/opt/homebrew/include/QtCore/qrefcount.h:
+
+/opt/homebrew/include/QtGui/qpolygon.h:
+
+/opt/homebrew/include/QtCore/qbytearray.h:
+
+/opt/homebrew/include/QtWidgets/QWidget:
+
+/opt/homebrew/include/QtCore/qstring.h:
+
 /opt/homebrew/lib/QtCore.framework/Headers/QMap:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
@@ -8890,27 +8920,27 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
+/opt/homebrew/include/QtWidgets/QSpacerItem:
+
+/opt/homebrew/include/QtWidgets/qstyleoption.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/set_difference.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search_n.h:
 
-/opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uid_t.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_locale.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/filesystem:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_if.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/find_if_not.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
 
@@ -8924,10 +8954,6 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
@@ -8937,6 +8963,10 @@ healthServices_autogen/EWIEGA46WW/moc_rowadddialog.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/merge.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdlib.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/sample.h:
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h:
 
@@ -8996,9 +9026,9 @@ healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits:
 
@@ -9012,44 +9042,6 @@ healthServices_autogen/EWIEGA46WW/moc_csvmodel.cpp:
 
 /opt/homebrew/include/QtCore/qcontainertools_impl.h:
 
-/opt/homebrew/include/QtCore/qarraydatapointer.h:
-
-healthServices_autogen/include/ui_rowadddialog.h:
-
-/opt/homebrew/include/QtCore/qarraydata.h:
-
-/opt/homebrew/include/QtGui/qpolygon.h:
-
-/opt/homebrew/include/QtCore/qbytearray.h:
-
-healthServices_autogen/include/ui_mainwindow.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h:
-
-/opt/homebrew/include/QtCore/qsysinfo.h:
-
-/opt/homebrew/include/QtCore/qstringview.h:
-
-/opt/homebrew/include/QtWidgets/QWidget:
-
-/opt/homebrew/include/QtCore/qstring.h:
-
-/opt/homebrew/include/QtCore/qobjectdefs_impl.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition.h:
-
-/opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional:
-
-/opt/homebrew/include/QtCore/qobject.h:
-
-/opt/homebrew/include/QtWidgets/qdialog.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
-/opt/homebrew/include/QtGui/qtgui-config.h:
-
 /opt/homebrew/include/QtCore/qalgorithms.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/syslimits.h:
@@ -9062,9 +9054,9 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h:
 
 /opt/homebrew/include/QtCore/qoverload.h:
 
@@ -9090,14 +9082,6 @@ healthServices_autogen/include/ui_mainwindow.h:
 
 /opt/homebrew/include/QtCore/qdarwinhelpers.h:
 
-/opt/homebrew/include/QtCore/qgenericatomic.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/max_element.h:
-
-/opt/homebrew/include/QtCore/qatomic_cxx11.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/__wctype.h:
 
 /opt/homebrew/include/QtCore/qbasicatomic.h:
@@ -9113,6 +9097,14 @@ healthServices_autogen/include/ui_mainwindow.h:
 /opt/homebrew/lib/QtGui.framework/Headers/QFont:
 
 /opt/homebrew/include/QtCore/qflags.h:
+
+healthServices_autogen/include/ui_mainwindow.h:
+
+/opt/homebrew/include/QtCore/qstringview.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h:
+
+/opt/homebrew/include/QtCore/qsysinfo.h:
 
 /opt/homebrew/include/QtGui/qtextoption.h:
 
@@ -9202,6 +9194,8 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_if.h:
+
 /opt/homebrew/include/QtCore/qdebug.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h:
@@ -9215,10 +9209,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_timeval.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/is_permutation.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros:
-
-/opt/homebrew/include/QtGui/qtguiexports.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/concepts.h:
 
@@ -9260,8 +9250,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
-/opt/homebrew/include/QtCore/qrefcount.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mach_port_t.h:
@@ -9275,8 +9263,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/signal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/generate.h:
-
-/opt/homebrew/include/QtCore/qnamespace.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
@@ -9376,11 +9362,15 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/max_element.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
@@ -9402,13 +9392,13 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/empty.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
+
 /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h:
-
-/opt/homebrew/lib/QtGui.framework/Headers/qundostack.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability:
 
@@ -9478,8 +9468,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/variant:
 
-/opt/homebrew/include/QtCore/qpair.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/max.h:
@@ -9522,6 +9510,12 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdbool.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_set.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_dev_t.h:
@@ -9550,6 +9544,14 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h:
 
+/opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/filesystem:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h:
 
 /opt/homebrew/include/QtGui/qpen.h:
@@ -9558,9 +9560,9 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /opt/homebrew/include/QtCore/qlogging.h:
 
-/opt/homebrew/include/QtCore/qhash.h:
-
 /opt/homebrew/include/QtCore/qbytearrayview.h:
+
+/opt/homebrew/include/QtCore/qhash.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h:
 
@@ -9568,15 +9570,9 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /opt/homebrew/include/QtCore/qglobalstatic.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uid_t.h:
-
 /opt/homebrew/include/QtWidgets/QApplication:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigaltstack.h:
-
-/opt/homebrew/include/QtCore/qarraydataops.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/find_if.h:
 
@@ -9596,6 +9592,12 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/_mcontext.h:
 
+/opt/homebrew/include/QtCore/qdatastream.h:
+
+/opt/homebrew/include/QtCore/qtconfigmacros.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/signal.h:
@@ -9608,8 +9610,6 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /opt/homebrew/include/QtCore/qassert.h:
 
-/opt/homebrew/include/QtCore/qtmetamacros.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_id_t.h:
 
 /opt/homebrew/include/QtWidgets/qframe.h:
@@ -9620,9 +9620,9 @@ healthServices_autogen/include/ui_roweditdialog.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_posix_availability.h:
 
-/opt/homebrew/lib/QtWidgets.framework/Headers/QLabel:
-
 healthServices_autogen/include/ui_helpwindow.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/QLabel:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h:
 
@@ -9642,6 +9642,10 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /opt/homebrew/include/QtCore/qtenvironmentvariables.h:
 
+/opt/homebrew/include/QtGui/qtguiexports.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
@@ -9652,25 +9656,33 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_set.h:
+/opt/homebrew/include/QtCore/qtclasshelpermacros.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
 
-/opt/homebrew/include/QtCore/qobjectdefs.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qfiledialog.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wint_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/cmp.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/__stddef_max_align_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/exception:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h:
 
@@ -9682,21 +9694,9 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdint.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iter_move.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/initializer_list:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sched.h:
-
-/opt/homebrew/include/QtWidgets/QSpacerItem:
-
-/opt/homebrew/include/QtWidgets/qstyleoption.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/set_difference.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/forward.h:
 
@@ -9716,15 +9716,15 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/ctype.h:
 
+/opt/homebrew/include/QtCore/qobject.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional:
+
+/opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctype_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/qfiledialog.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wint_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/assert.h:
 
@@ -9741,28 +9741,6 @@ healthServices_autogen/include/ui_helpwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h:
-
-/opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/stdio.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h:
-
-/opt/homebrew/include/QtCore/qcompilerdetection.h:
-
-/opt/homebrew/include/QtCore/qfiledevice.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/compare:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/fill.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/utility:
 
@@ -9782,29 +9760,35 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/pair.h:
 
+/opt/homebrew/include/QtWidgets/qdialog.h:
+
+/opt/homebrew/include/QtGui/qtgui-config.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ssize_t.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
-
-/opt/homebrew/include/QtCore/qdatastream.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
-
-/opt/homebrew/include/QtCore/qtconfigmacros.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/__decay_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
 /opt/homebrew/include/QtCore/qminmax.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h:
+
+/opt/homebrew/include/QtCore/qcompilerdetection.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/stdio.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/limits.h:
 
@@ -9840,13 +9824,7 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/back_insert_iterator.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace.h:
-
-/opt/homebrew/include/QtCore/qtclasshelpermacros.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h:
-
-/opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int64_t.h:
 
@@ -9860,25 +9838,29 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/time.h:
 
-/opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h:
+/opt/homebrew/include/QtCore/qatomic_cxx11.h:
 
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/fill.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wchar.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int8_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
+/opt/homebrew/include/QtCore/qfiledevice.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/compare:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h:
 
@@ -9889,8 +9871,6 @@ healthServices_autogen/include/ui_helpwindow.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__nullptr:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h:
 
 /opt/homebrew/include/QtCore/qconstructormacros.h:
 
@@ -9924,25 +9904,11 @@ healthServices_autogen/include/ui_helpwindow.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/resource.h:
 
-/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h:
 
-/opt/homebrew/lib/QtWidgets.framework/Headers/QDialog:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
-
-/opt/homebrew/include/QtGui/qtguiglobal.h:
-
-/opt/homebrew/include/QtWidgets/qtabbar.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/count_if.h:
-
-/opt/homebrew/include/QtCore/qglobal.h:
 
 /opt/homebrew/include/QtCore/qfileinfo.h:
 
@@ -9958,13 +9924,7 @@ healthServices_autogen/EWIEGA46WW/moc_logowindow.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/sample.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdlib.h:
-
-/opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h:
+/opt/homebrew/include/QtCore/qglobal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder1st.h:
 
@@ -9972,9 +9932,49 @@ healthServices_autogen/EWIEGA46WW/moc_logowindow.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uintptr_t.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int8_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version:
+
+/opt/homebrew/include/QtGui/qtguiglobal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
+
 /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_negate.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iter_move.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h:
+
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/mainwindow.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/QDialog:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h:
+
+/opt/homebrew/include/QtWidgets/qtabbar.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h:
+
+/Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wchar.h:
+
+/opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts:
+
+/opt/homebrew/include/QtCore/qgenericatomic.h:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QFileSystemWatcher:
 

@@ -2,13 +2,11 @@
 #include "ui_filterdialog.h"
 #include <QDebug>
 
-FilterDialog::FilterDialog(QWidget *parent) :
-    QDialog(parent),
+FilterDialog::FilterDialog(QWidget* parent) : QDialog(parent),
     ui(new Ui::FilterDialog)
 {
     ui->setupUi(this);
 
-    // Initialize double validator
     doubleValidator.setNotation(QDoubleValidator::StandardNotation);
 }
 
@@ -33,7 +31,8 @@ QMap<int, QPair<double, double>> FilterDialog::getFilterMap() const
 
 void FilterDialog::translateUi(int lang)
 {
-    switch(lang){
+    switch (lang)
+    {
     case 1:
         ui->filterApplyButton->setText("Применить");
         ui->filterResetButton->setText("Сбросить");
@@ -56,8 +55,8 @@ void FilterDialog::on_filterApplyButton_clicked()
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
     for (int i = 0; i < columnNames.size(); ++i)
     {
-        QLineEdit *minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
-        QLineEdit *maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
+        QLineEdit* minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
+        QLineEdit* maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
 
         if (minEdit && maxEdit)
         {
@@ -65,12 +64,12 @@ void FilterDialog::on_filterApplyButton_clicked()
             QString maxStr = maxEdit->text();
             if (!minStr.toDouble())
                 minEdit->clear();
-            if(!maxStr.toDouble())
+            if (!maxStr.toDouble())
                 maxEdit->clear();
             double min = minStr.isEmpty() ? -std::numeric_limits<double>::infinity() : minStr.toDouble();
             double max = maxStr.isEmpty() ? std::numeric_limits<double>::infinity() : maxStr.toDouble();
 
-            filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
+            filterMap[i + 1] = qMakePair(min, max);// i+1 because we're skipping the state column
         }
     }
 
@@ -87,8 +86,8 @@ void FilterDialog::on_filterResetButton_clicked()
     QStringList columnNames = {"ratemds", "numhospitals", "ratebeds", "nummedicare", "pctchangemedicare", "medicarerate", "numretired", "ssinum"};
     for (int i = 0; i < columnNames.size(); ++i)
     {
-        QLineEdit *minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
-        QLineEdit *maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
+        QLineEdit* minEdit = findChild<QLineEdit*>(columnNames[i] + "Min");
+        QLineEdit* maxEdit = findChild<QLineEdit*>(columnNames[i] + "Max");
 
         if (minEdit && maxEdit)
         {
@@ -99,7 +98,7 @@ void FilterDialog::on_filterResetButton_clicked()
             double min = minStr.isEmpty() ? -std::numeric_limits<double>::infinity() : minStr.toDouble();
             double max = maxStr.isEmpty() ? std::numeric_limits<double>::infinity() : maxStr.toDouble();
 
-            filterMap[i+1] = qMakePair(min, max); // i+1 because we're skipping the state column
+            filterMap[i + 1] = qMakePair(min, max);// i+1 because we're skipping the state column
         }
     }
 

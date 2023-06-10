@@ -1,8 +1,8 @@
 #ifndef REMOVEROWCOMMAND_H
 #define REMOVEROWCOMMAND_H
 
-#include <QUndoCommand>
 #include "csvmodel.h"
+#include <QUndoCommand>
 
 class RemoveRowCommand : public QUndoCommand
 {
@@ -17,4 +17,4 @@ private:
     QList<QVariant> mRowData;
 };
 
-#endif // REMOVEROWCOMMAND_H
+#endif// REMOVEROWCOMMAND_H

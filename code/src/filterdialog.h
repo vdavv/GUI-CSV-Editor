@@ -2,11 +2,12 @@
 #define FILTERDIALOG_H
 
 #include <QDialog>
-#include <QMap>
-#include <QLineEdit>
 #include <QDoubleValidator>
+#include <QLineEdit>
+#include <QMap>
 
-namespace Ui {
+namespace Ui
+{
 class FilterDialog;
 }
 
@@ -15,7 +16,7 @@ class FilterDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit FilterDialog(QWidget *parent = nullptr);
+    explicit FilterDialog(QWidget* parent = nullptr);
     ~FilterDialog();
 
     QString getStateFilter() const;
@@ -32,10 +33,10 @@ private slots:
     void on_filterResetButton_clicked();
 
 private:
-    Ui::FilterDialog *ui;
+    Ui::FilterDialog* ui;
     QString stateFilter;
     QMap<int, QPair<double, double>> filterMap;
     QDoubleValidator doubleValidator;
 };
 
-#endif // FILTERDIALOG_H
+#endif// FILTERDIALOG_H

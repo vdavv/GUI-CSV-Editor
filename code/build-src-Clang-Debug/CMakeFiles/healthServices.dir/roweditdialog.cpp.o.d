@@ -1,10 +1,8 @@
 CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.cpp \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h \
-  /opt/homebrew/include/QtCore/QVariant \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
-  /opt/homebrew/include/QtCore/qatomic.h \
+  /opt/homebrew/include/QtWidgets/qpushbutton.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -285,6 +283,7 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/include/QtCore/qlogging.h \
   /opt/homebrew/include/QtCore/qflags.h \
   /opt/homebrew/include/QtCore/qcompare_impl.h \
+  /opt/homebrew/include/QtCore/qatomic.h \
   /opt/homebrew/include/QtCore/qbasicatomic.h \
   /opt/homebrew/include/QtCore/qatomic_cxx11.h \
   /opt/homebrew/include/QtCore/qgenericatomic.h \
@@ -308,11 +307,21 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtCore/qmetatype.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h \
+  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
+  /opt/homebrew/include/QtWidgets/qabstractbutton.h \
+  /opt/homebrew/include/QtGui/qicon.h \
+  /opt/homebrew/include/QtCore/qsize.h \
   /opt/homebrew/include/QtCore/qnamespace.h \
   /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
   /opt/homebrew/include/QtCore/qarraydata.h \
   /opt/homebrew/include/QtCore/qpair.h \
   /opt/homebrew/include/QtCore/qarraydatapointer.h \
@@ -428,30 +437,44 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
   /opt/homebrew/include/QtCore/q20type_traits.h \
-  /opt/homebrew/include/QtCore/qcompare.h \
-  /opt/homebrew/include/QtCore/qdatastream.h \
-  /opt/homebrew/include/QtCore/qscopedpointer.h \
-  /opt/homebrew/include/QtCore/qiodevicebase.h \
-  /opt/homebrew/include/QtCore/qfloat16.h \
-  /opt/homebrew/include/QtCore/qmath.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
   /opt/homebrew/include/QtCore/qstringliteral.h \
   /opt/homebrew/include/QtCore/qstringalgorithms.h \
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
+  /opt/homebrew/include/QtCore/qmargins.h \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qbytearraylist.h \
+  /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtGui/qpixmap.h \
+  /opt/homebrew/include/QtGui/qpaintdevice.h \
+  /opt/homebrew/include/QtGui/qwindowdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
+  /opt/homebrew/include/QtCore/qrect.h \
+  /opt/homebrew/include/QtCore/qpoint.h \
+  /opt/homebrew/include/QtGui/qcolor.h \
+  /opt/homebrew/include/QtGui/qrgb.h \
+  /opt/homebrew/include/QtGui/qrgba64.h \
+  /opt/homebrew/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/include/QtCore/qmetatype.h \
+  /opt/homebrew/include/QtCore/qcompare.h \
+  /opt/homebrew/include/QtCore/qdatastream.h \
+  /opt/homebrew/include/QtCore/qscopedpointer.h \
+  /opt/homebrew/include/QtCore/qiodevicebase.h \
+  /opt/homebrew/include/QtCore/qfloat16.h \
+  /opt/homebrew/include/QtCore/qmath.h \
   /opt/homebrew/include/QtCore/qiterable.h \
   /opt/homebrew/include/QtCore/qmetacontainer.h \
   /opt/homebrew/include/QtCore/qcontainerinfo.h \
   /opt/homebrew/include/QtCore/qtaggedpointer.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopeguard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
@@ -462,46 +485,6 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/include/QtCore/qdebug.h \
-  /opt/homebrew/include/QtCore/qtextstream.h \
-  /opt/homebrew/include/QtCore/qstringconverter_base.h \
-  /opt/homebrew/include/QtCore/qcontiguouscache.h \
-  /opt/homebrew/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/include/QtCore/qshareddata.h \
-  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qbytearraylist.h \
-  /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qstringmatcher.h \
-  /opt/homebrew/include/QtCore/qmap.h \
-  /opt/homebrew/include/QtCore/qshareddata_impl.h \
-  /opt/homebrew/include/QtCore/qset.h \
-  /opt/homebrew/include/QtCore/qhash.h \
-  /opt/homebrew/include/QtCore/qvarlengtharray.h \
-  /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobject_impl.h \
-  /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/include/QtWidgets/QAbstractButton \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
-  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/include/QtGui/qicon.h \
-  /opt/homebrew/include/QtCore/qsize.h \
-  /opt/homebrew/include/QtCore/qmargins.h \
-  /opt/homebrew/include/QtGui/qpixmap.h \
-  /opt/homebrew/include/QtGui/qpaintdevice.h \
-  /opt/homebrew/include/QtGui/qwindowdefs.h \
-  /opt/homebrew/include/QtCore/qrect.h \
-  /opt/homebrew/include/QtCore/qpoint.h \
-  /opt/homebrew/include/QtGui/qcolor.h \
-  /opt/homebrew/include/QtGui/qrgb.h \
-  /opt/homebrew/include/QtGui/qrgba64.h \
   /opt/homebrew/include/QtGui/qimage.h \
   /opt/homebrew/include/QtGui/qpixelformat.h \
   /opt/homebrew/include/QtGui/qtransform.h \
@@ -510,8 +493,21 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/include/QtCore/qline.h \
   /opt/homebrew/include/QtGui/qkeysequence.h \
   /opt/homebrew/include/QtWidgets/qwidget.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobject_impl.h \
+  /opt/homebrew/include/QtCore/qbindingstorage.h \
   /opt/homebrew/include/QtGui/qaction.h \
   /opt/homebrew/include/QtCore/qvariant.h \
+  /opt/homebrew/include/QtCore/qdebug.h \
+  /opt/homebrew/include/QtCore/qtextstream.h \
+  /opt/homebrew/include/QtCore/qstringconverter_base.h \
+  /opt/homebrew/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/include/QtCore/qmap.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /opt/homebrew/include/QtCore/qset.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qvarlengtharray.h \
+  /opt/homebrew/include/QtCore/q20memory.h \
   /opt/homebrew/include/QtGui/qpalette.h \
   /opt/homebrew/include/QtGui/qbrush.h \
   /opt/homebrew/include/QtGui/qfont.h \
@@ -520,6 +516,12 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/roweditdialog.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_roweditdialog.h \
+  /opt/homebrew/include/QtCore/QVariant \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
+  /opt/homebrew/include/QtWidgets/QAbstractButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /opt/homebrew/include/QtWidgets/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/include/QtCore/qcoreapplication.h \
@@ -562,6 +564,4 @@ CMakeFiles/healthServices.dir/roweditdialog.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/include/QtWidgets/qpushbutton.h \
-  /opt/homebrew/include/QtWidgets/qabstractbutton.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h

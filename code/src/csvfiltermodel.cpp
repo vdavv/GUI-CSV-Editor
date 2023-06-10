@@ -1,13 +1,13 @@
 #include "csvfiltermodel.h"
 #include <QStandardItemModel>
 
-CSVFilterModel::CSVFilterModel(QObject *parent)
+CSVFilterModel::CSVFilterModel(QObject* parent)
     : QSortFilterProxyModel(parent)
 {
 }
 
 
-void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>> &filterMap)
+void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>>& filterMap)
 {
     if (isUpdatingFilter)
         return;
@@ -15,28 +15,32 @@ void CSVFilterModel::setFilterMap(const QMap<int, QPair<double, double>> &filter
 }
 
 
-QString CSVFilterModel::extractState(const QString& cityState) const {
+QString CSVFilterModel::extractState(const QString& cityState) const
+{
     QStringList parts = cityState.split(',');
-    if (parts.size() > 1) {
-        return parts[1].trimmed(); // Return the second part, trimmed of whitespace
+    if (parts.size() > 1)
+    {
+        return parts[1].trimmed();// Return the second part, trimmed of whitespace
     }
-    return QString(); // Return an empty string if there is no comma
+    return QString();// Return an empty string if there is no comma
 }
 
 
-bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
+bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex& source_parent) const
 {
-    auto *sourceModel = qobject_cast<QAbstractTableModel*>(this->sourceModel());
+    auto* sourceModel = qobject_cast<QAbstractTableModel*>(this->sourceModel());
     if (!sourceModel)
         return false;
 
-    if (!modelStateFilter.isEmpty()) {
+    if (!modelStateFilter.isEmpty())
+    {
         auto stateIndex = sourceModel->index(source_row, 0, source_parent);
         if (extractState(sourceModel->data(stateIndex).toString()) != modelStateFilter)
             return false;
     }
 
-    for (auto it = modelFilterMap.begin(); it != modelFilterMap.end(); ++it) {
+    for (auto it = modelFilterMap.begin(); it != modelFilterMap.end(); ++it)
+    {
         int column = it.key();
         double min = it.value().first;
         double max = it.value().second;
@@ -52,7 +56,7 @@ bool CSVFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_
 }
 
 
-bool CSVFilterModel::lessThan(const QModelIndex &left, const QModelIndex &right) const
+bool CSVFilterModel::lessThan(const QModelIndex& left, const QModelIndex& right) const
 {
     if (left.column() != 0 && right.column() != 0)
         return left.data().toFloat() < right.data().toFloat();
@@ -66,10 +70,7 @@ void CSVFilterModel::refreshFilter()
 }
 
 
-void CSVFilterModel::setStateFilter(const QString &state)
+void CSVFilterModel::setStateFilter(const QString& state)
 {
-    // qDebug() << "Setting state filter to" << state;
-
     modelStateFilter = state;
-    // invalidateFilter();
 }

@@ -1,6 +1,7 @@
 CMakeFiles/healthServices.dir/helpwindow.cpp.o: \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/helpwindow.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
@@ -517,6 +518,13 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtGui/qpicture.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/build-src-Clang-Debug/healthServices_autogen/include/ui_helpwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -544,7 +552,6 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
   /opt/homebrew/include/QtCore/qabstractitemmodel.h \
   /opt/homebrew/include/QtWidgets/QDialog \
   /opt/homebrew/include/QtWidgets/QGridLayout \
@@ -564,15 +571,8 @@ CMakeFiles/healthServices.dir/helpwindow.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtextbrowser.h \
   /opt/homebrew/include/QtWidgets/qtextedit.h \
   /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtGui/qtextcursor.h \
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
-  /opt/homebrew/include/QtWidgets/QVBoxLayout \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/logowindow.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtGui/qpicture.h \
-  /opt/homebrew/include/QtCore/qiodevice.h
+  /opt/homebrew/include/QtWidgets/QVBoxLayout

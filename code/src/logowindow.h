@@ -4,7 +4,8 @@
 #include <QDialog>
 #include <QLabel>
 
-namespace Ui {
+namespace Ui
+{
 class LogoWindow;
 }
 
@@ -13,12 +14,12 @@ class LogoWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit LogoWindow(QWidget *parent = nullptr, int lang = 0);
+    explicit LogoWindow(QWidget* parent = nullptr, int lang = 0);
     ~LogoWindow();
-    void paintEvent(QPaintEvent * /* event */);
+    void paintEvent(QPaintEvent* /* event */);
 
 private:
-    Ui::LogoWindow *ui;
+    Ui::LogoWindow* ui;
 };
 
-#endif // LOGOWINDOW_H
+#endif// LOGOWINDOW_H

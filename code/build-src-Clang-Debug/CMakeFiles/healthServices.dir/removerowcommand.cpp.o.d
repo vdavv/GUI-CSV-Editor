@@ -1,9 +1,11 @@
 CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.cpp \
   /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/removerowcommand.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
-  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
-  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
+  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
   /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
@@ -308,22 +310,7 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /opt/homebrew/include/QtCore/qtresource.h \
   /opt/homebrew/include/QtCore/qttranslation.h \
   /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtGui/qtgui-config.h \
-  /opt/homebrew/include/QtGui/qtguiexports.h \
-  /opt/homebrew/include/QtCore/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qcontainertools_impl.h \
   /opt/homebrew/include/QtCore/qxptype_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
@@ -420,6 +407,18 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
   /opt/homebrew/include/QtCore/qstringfwd.h \
@@ -440,15 +439,15 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /opt/homebrew/include/QtCore/qanystringview.h \
   /opt/homebrew/include/QtCore/qutf8stringview.h \
   /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qlist.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
   /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
   /opt/homebrew/include/QtCore/qscopedpointer.h \
   /opt/homebrew/include/QtCore/qmetatype.h \
   /opt/homebrew/include/QtCore/qcompare.h \
@@ -472,10 +471,6 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/include/QtCore/qobject_impl.h \
   /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /Users/vdav/Yandex.Disk.localized/HSE/Cpp/BigHW/dsba-itop2023-hw/code/src/csvmodel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QAbstractTableModel \
-  /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
-  /opt/homebrew/include/QtCore/qhash.h \
   /opt/homebrew/include/QtCore/qvariant.h \
   /opt/homebrew/include/QtCore/qdebug.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
@@ -489,7 +484,12 @@ CMakeFiles/healthServices.dir/removerowcommand.cpp.o: \
   /opt/homebrew/include/QtCore/qset.h \
   /opt/homebrew/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h
+  /opt/homebrew/lib/QtGui.framework/Headers/QUndoCommand \
+  /opt/homebrew/lib/QtGui.framework/Headers/qundostack.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h

@@ -1,8 +1,8 @@
 #ifndef EDITROWCOMMAND_H
 #define EDITROWCOMMAND_H
 
-#include <QUndoCommand>
 #include "csvmodel.h"
+#include <QUndoCommand>
 
 class EditRowCommand : public QUndoCommand
 {
@@ -18,4 +18,4 @@ private:
     QStringList newData;
 };
 
-#endif // EDITROWCOMMAND_H
+#endif// EDITROWCOMMAND_H
