@@ -3,6 +3,8 @@
 #include <QTableView>
 #include <QMessageBox>
 #include <QMouseEvent>
+#include <QFileDialog>
+#include <QTextStream>
 #include "rowadddialog.h"
 #include "roweditdialog.h"
 #include "helpwindow.h"
@@ -142,9 +144,51 @@ void MainWindow::RemoveRow()
 
 void MainWindow::SaveCSV()
 {
-    if (!model.saveCSV(MainWindow::FILEPATH))
+    QString dialogTitleName;
+    switch(lang)
     {
-        QMessageBox::critical(this, "Error", "Failed to save CSV file.");
+    case 1:
+        dialogTitleName = "Сохранить Файл";
+        break;
+    default:
+        dialogTitleName = "Save File";
+    }
+
+    QString filePath = QFileDialog::getSaveFileName(
+        this,
+        dialogTitleName,
+        CSV_FILE_PATH, // use your current file path
+        tr("CSV files (*.csv)")
+        );
+
+    // if filePath is not empty, the user has not clicked Cancel
+    if (!filePath.isEmpty()) {
+        QFile file(filePath);
+        if (file.open(QIODevice::WriteOnly)) {
+            QTextStream stream(&file);
+            QStringList strList;
+
+            // write headers
+            strList.clear();
+            for (int column = 0; column < model.columnCount(); ++column)
+                strList << "\"" + model.headerData(column, Qt::Horizontal, Qt::DisplayRole).toString() + "\"";
+            stream << strList.join(",") + "\n";
+
+            // write data rows
+            for (int row = 0; row < model.rowCount(); ++row) {
+                strList.clear();
+                for (int column = 0; column < model.columnCount(); ++column)
+                    strList << "\"" + model.data(model.index(row, column)).toString() + "\"";
+                stream << strList.join(",") + "\n";
+            }
+
+            file.close();
+            // update the current file path
+            // CSV_FILE_PATH = filePath;
+        } else {
+            // show an error message if the file couldn't be opened
+            QMessageBox::critical(this, tr("Error"), tr("Could not open file for writing"));
+        }
     }
 }
 
